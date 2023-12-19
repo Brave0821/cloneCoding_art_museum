@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>메인페이지</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <!-- 스마트검색 위치 스마트 검색 눌렀을때 open -> div
+    숨어있는(display non) div가 열린다는 개념 -->
+    <div class="smart_such">
+        <a href=""><img src="" alt="스마트검색"></a>
+    </div>
+    <div class="wrap"> <!-- main 컨데이너  -->
+        <header>
+            <!-- 반응형 해드 -->
+            <!-- <div class="respon_top">
+                <h1><a href="./index.html"><img src="./images/1.mainPage/main_logo.png" alt="반응형메인로고"></a></h1>
+            </div> -->
+            <!--respon_top 반응형 해드 끝  -->
+            <div class="header_top">
+                <h1><a href="./index.html"><img src="./images/1.mainPage/main_logo.png" alt="메인로고"></a></h1> <!-- 로고 -->
+                <div class="top_right">
+                    <a href="./join.html" class="join"> MMCA회원가입</a>
+                    <a href="./login.html">로그인</a>
+                    <select name="lang_option" id="lang_option">
+                        <option value>한국어 <img src="./images/1.mainPage/icon_select_arrow.png" alt=""></option>
+                        <option value="en">ENG</option>
+                        <option value="ch">中文</option>
+                        <option value="jp">日本語</option>
+                    </select>
+                    <button type="button" class="lang_go">GO</button>
+                </div> <!-- 로고 오른쪽  -->
+                <!-- <div class="tav">
+                    <a href="./index.html"><img src="./images/1.mainPage/bg_logo_full.png" alt="태블릿 로고이미지"></a>
+                    <button type="button" onClick="location.href='JOIN.html'"><img src="./images/1.mainPage/btn_totalsearch.png" alt=""></button> 
+                    <button type="button" onClick="location.href='menu.html'"><img src="./images/1.mainPage/menu.png" alt=""></button>
+                </div> -->
+            </div>
+            <nav class="bnr_museum">
+                <ul>
+                    <li><a href="">관람</a>
+                        <li><a href="">서울</a></li>
+                        <li><a href="">과천</a></li>
+                        <li><a href="">덕수궁</a></li>
+                        <li><a href="">청주</a></li>
+                        <li><a href="">어린이미술관</a></li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">통합예약</a></li>
+                        <li><a href="">전시해설</a></li>
+                        <li><a href="">레지던시</a></li>
+                        <li><a href="">미술은행</a></li>
+                    </li>
+                </ul><!-- 메인 메뉴바 하위로 ul인지 li인지 그리고 li를 a로 묶어도 괜찮은지?  -->
+                <button type="button" onClick="location.href='JOIN.html'"><img src="./images/1.mainPage/btn_totalsearch.png" alt=""></button> 
+            </nav>
+        </header>
+        <main>
+            <p><strong>국립현대미술관 관람 예약 바로가기</strong></p>
+            <p>화요일-일요일 10:00-18:00(월요일 서울 개관)</p>
+            <p>서울·덕수궁:수요일,토요일 야간개장 10:00-21:00</p>
+            <!-- 관람 예약 및 질문 바로가기 버튼  -->
+            <a href="#">전시 관람 예약하기</a>
+            <a href="#">자주 묻는 질문 바로가기</a>
+            <!-- alt + 183 누르면 가운뎃 점 생긴다. -->
+            <a href="#"><img src="./images/1.mainPage/icon_dialog_closeL.png" alt="x아이콘"></a> 
+        </main>
+        <footer>
+
+        </footer>
+    </div> <!-- wrap main 컨테이너 끝. -->
+</body>
+
+</html>
