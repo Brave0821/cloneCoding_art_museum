@@ -11,34 +11,34 @@
     <link rel="stylesheet" href="./styles/responsive.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
-
+<!-- https://www.mmca.go.kr/  -->
 <body>
     <!-- 스마트검색 위치 스마트 검색 눌렀을때 open -> div
     숨어있는(display non) div가 열린다는 개념 -->
     <div class="smart_such">
-        <a href=""><img src="" alt="스마트검색"></a>
+        <a href="#"><img src="#" alt="스마트검색"></a>
     </div>
-    <div class="wrap_main_page">
+    <div class="wrap_full_main_page_container">
         <!-- main 컨데이너  -->
         <header>
-            <div class="header_top">
+            <div class="header_first_top">
                 <!-- 상단 메인 로고 -->
                 <h1><a href="./index.html"><img src="./images/1.mainPage/main_logo.png" alt="메인로고"></a></h1> <!-- 로고 -->
                 <!-- 상단 오른쪽 메뉴 -->
-                <div class="top_right">
-                    <a href="./join.html" class="join"> MMCA회원가입</a>
+                <div class="first_top_right">
+                    <a href="./join.html" class="mmca_first_top_join">MMCA회원가입</a>
                     <a href="./login.html">로그인</a>
-                    <select name="lang_option" id="lang_option">
-                        <option value>한국어 <img src="./images/1.mainPage/icon_select_arrow.png" alt=""></option>
+                    <select name="first_top_lang_option" id="first_top_lang_option">
+                        <option value>한국어 <img src="./images/1.mainPage/icon_select_arrow.png" alt="#"></option>
                         <option value="en">ENG</option>
                         <option value="ch">中文</option>
                         <option value="jp">日本語</option>
                     </select>
-                    <button type="button" class="lang_go">GO</button>
+                    <button type="button" class="first_top_lang_go_btn">GO</button>
                 </div> <!-- 로고 오른쪽 회원가입. -->
-            </div>  <!-- 상단 해드 끝 -->
+            </div> <!-- 상단 해드 끝 -->
 
-            <!-- 오른쪽 회원가입 등 div a로할지 ul li로 할지 고민중. -->
+            <!-- 오른쪽 회원가입 등 div a로할지 ul li로 할지 고민중. move2  -->
             <!-- <div class="right_top">
                 <ul>
                     <li class="mmca_join"><a href="#">MMCA회원가입</a></li>
@@ -55,89 +55,113 @@
                 </ul>
             </div> -->
 
-            <!-- 클래스명 변경하기 -->
-            <nav class="bnr_museum">
-                <!-- 배운방식 cssStudy- > pst2.html참고  -->
+<!-- 변경사항 및 해야할 것 12/22 ****************************************************************** 
+1. 메인 배너 클래스명 태블릿 모드처럼 div 넣어주기(세밀한 조정 및 완성도 올리기.) 
+2. 주석 한번 더 꼼꼼히 달아주고 클래스명 한번 더 점검 ( css 적용 시 부담)
+3. 
+-->
+            <!-- 12/22 클래스명 변경하기 -->
+            <nav class="main_top_bnr_museum">
+                <!-- 배운 곳 cssStudy- > pst2.html참고 - > 여기에 혹시 모르니 div로 묶으면 어떨까 질문드림(12/21) - > 
+                    괜찮다고 하셔서 태블릿 모드는 div 넣음 - > 
+                    데탑 모드 배너에도 적용바람(12/22) <적용완료> -->
                 <ul>
                     <li>
-                        <a href="">관람·참여</a>
-                        <ul class="art_view">
-                            <!-- art_view 관람 참여 탭 -->
-                            <li><a href="#">서울</a></li>
-                            <li><a href="#">과천</a></li>
-                            <li><a href="#">덕수궁</a></li>
-                            <li><a href="#">청주</a></li>
-                            <li><a href="#">어린이미술관</a></li>
-                            <li><a href="#">이벤트</a></li>
-                            <li><a href="#">통합예약</a></li>
-                            <li><a href="#">전시해설</a></li>
-                            <li><a href="#">레지던시</a></li>
-                            <li><a href="#">미술은행</a></li>
-                        </ul>
+                        <a href="#">관람·참여</a>
+                        <!-- div로 한번 더 묶고 ul 클래스를 빼는게 좋을까? 12/22 - > 
+                            div>ul>li 구조로 바꿈(완) -->
+                        <div class="top_bnr_view">
+                            <ul>
+                                <!-- top_bnr_art_view 관람 참여 탭 -->
+                                <li><a href="#">서울</a></li>
+                                <li><a href="#">과천</a></li>
+                                <li><a href="#">덕수궁</a></li>
+                                <li><a href="#">청주</a></li>
+                                <li><a href="#">어린이미술관</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">통합예약</a></li>
+                                <li><a href="#">전시해설</a></li>
+                                <li><a href="#">레지던시</a></li>
+                                <li><a href="#">미술은행</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        <a href="">전시</a>
-                        <ul class="exhibition">
-                            <!-- exhibition 전시탭 -->
-                            <li><a href="#">현재전시</a></li>
-                            <li><a href="#">예정전시</a></li>
-                            <li><a href="#">과거전시</a></li>
-                        </ul>
+                        <a href="#">전시</a>
+                        <div class="top_bnr_display">
+                            <ul>
+                                <!-- top_bnr_art_display 전시탭 -->
+                                <li><a href="#">현재전시</a></li>
+                                <li><a href="#">예정전시</a></li>
+                                <li><a href="#">과거전시</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        <a href="">교육</a>
-                        <ul class="exhibition">
-                            <!-- exhibition 전시탭 -->
-                            <li><a href="#">미술관교육소개</a></li>
-                            <li><a href="#">어린이</a></li>
-                            <li><a href="#">청소년</a></li>
-                            <li><a href="#">교사</a></li>
-                            <li><a href="#">성인</a></li>
-                            <li><a href="#">교육자료실</a></li>
-                            <li><a href="#">참여신청</a></li>
-                        </ul>
+                        <a href="#">교육</a>
+                        <div class="top_bnr_education">
+                            <ul>
+                                <!--top_bnr_art_education 교육탭 -->
+                                <li><a href="#">미술관교육소개</a></li>
+                                <li><a href="#">어린이</a></li>
+                                <li><a href="#">청소년</a></li>
+                                <li><a href="#">교사</a></li>
+                                <li><a href="#">성인</a></li>
+                                <li><a href="#">교육자료실</a></li>
+                                <li><a href="#">참여신청</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        <a href="">소장품</a>
-                        <ul class="exhibition">
-                            <!-- exhibition 전시탭 -->
-                            <li><a href="#">소장품검색</a></li>
-                            <li><a href="#">소장품탐색</a></li>
-                            <li><a href="#">보존과학</a></li>
-                        </ul>
+                        <a href="#">소장품</a>
+                        <div class="top_bnr_collection">
+                            <ul>
+                                <!-- top_bnr_art_collection 소장품 -->
+                                <li><a href="#">소장품검색</a></li>
+                                <li><a href="#">소장품탐색</a></li>
+                                <li><a href="#">보존과학</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <a href="">미술연구</a>
-                        <ul class="exhibition">
-                            <!-- exhibition 전시탭 -->
-                            <li><a href="#">도서와 아카이브</a></li>
-                            <li><a href="#">연구</a></li>
-                            <li><a href="#">발간자료</a></li>
-                        </ul>
+                        <div class="top_bnr_research">
+                            <!-- research 연구 -->
+                            <ul>
+                                <!-- top_bnr_art_research 미술연구 -->
+                                <li><a href="#">도서와 아카이브</a></li>
+                                <li><a href="#">연구</a></li>
+                                <li><a href="#">발간자료</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <a href="">디지털미술관</a>
-                        <ul class="exhibition">
-                            <!-- exhibition 전시탭 -->
-                            <li><a href="#">메인</a></li>
-                            <li><a href="#">맞춤검색</a></li>
-                            <li><a href="#">오디오가이드</a></li>
-                            <li><a href="#">이용자갤러리</a></li>
-                        </ul>
+                        <div class="top_bnr_digital">
+                            <ul>
+                                <!-- top_bnr_art_digital 디지털미술관 -->
+                                <li><a href="#">메인</a></li>
+                                <li><a href="#">맞춤검색</a></li>
+                                <li><a href="#">오디오가이드</a></li>
+                                <li><a href="#">이용자갤러리</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <a href="">서울10축제</a>
-                        <ul class="exhibition">
-                            <!-- exhibition 전시탭 -->
-                            <li><a href="#">행사소개</a></li>
-                        </ul>
+                        <div class="top_bnr_seoul_festival">
+                            <ul>
+                                <!-- exhibition 전시탭 -->
+                                <li><a href="#">행사소개</a></li>
+                            </ul>
+                        </div>
                     </li>
-                </ul><!--최상단. ul 끝  -->
+                </ul>
+                <!--최상단. ul 끝  -->
             </nav><!--  nav bnr_museum  끝  -->
             <!-- nav 옆 돋보기 -->
-            <button type="button" onClick="location.href='JOIN.html'"><img
-                    src="./images/1.mainPage/btn_totalsearch.png" alt=""></button>
-        </header> 
+            <button type="button" onClick="location.href='JOIN.html'"><img src="./images/1.mainPage/btn_totalsearch.png" alt="옆 돋보기"></button>
+        </header>
         <!-- nav바 돋보기까지 해드 끝 -->
         <main>
             <p><strong>국립현대미술관 관람 예약 바로가기</strong></p>
@@ -149,85 +173,184 @@
             <!-- alt + 183 누르면 가운뎃 점 생긴다. -->
             <a href="#"><img src="./images/1.mainPage/icon_dialog_closeL.png" alt="x아이콘"></a>
             <div class="lets_go_reservation">
-                <img src="./images/1.mainPage/lets_go_reservation.jpg" alt="[과천] 한국의 기하학적 추상미술"><a href="#"></a></img>
+                <!-- reservation 예약 -->
+                <img src="./images/1.mainPage/lets_go_reservation.jpg" alt="[과천] 한국의 기하학적 추상미술"><a href="#"></a>
                 <h1><a href="#">[과천] 한국의 기하학적 추상미술</a></h1>
-                <button type="button" class="">전시 예약 바로가기</button>
+                <button type="button" class="lets_go_reservation_btn">전시 예약 바로가기</button>
             </div>
-            <!-- --- 중간선 여기 clss줘서 css에서 보더를 줘야할까? -->
-            <!-- 여기 자세히 확인하기  이미지 및 클래스 변경-->
-            <div class="place_museum">
+            <!-----중간선 여기 clss줘서 css에서 보더를 줘야할까?-->
+            <!--여기 자세히 확인하기  이미지 및 클래스 변경-->
+            <div class="place_museum_img_click">
                 <h2>미술관</h2>
-                <div class="place_museum_seoul">
-                <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="서울"></a>
-                <h1>서울</h1>
-                <p>월요일,화요일,목요일,금요일,<br>
-                    일요일 10:00-18:00<br>
-                    수요일, 토요일 야간개장 10:00-<br>
-                    21:00</p>
+                <div class="seoul_museum_img">
+                    <a href="#"><img src="./images/mainPage/img_place_seoul_off.jpg" alt="서울"></a>
+                    <h1>서울</h1>
+                    <p>월요일,화요일,목요일,금요일,<br>
+                        일요일 10:00-18:00<br>
+                        수요일, 토요일 야간개장 10:00-<br>
+                        21:00</p>
                     <a href="#">전시</a>
                     <a href="#">필름앤비디오</a>
                     <a href="#">다원예술</a>
                     <a href="#">교육</a>
                     <a href="#">이벤트</a>
-                </div>    
-                <div class="place_museum_seoul">
-                <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="서울"></a>
-                <h1>과천</h1>
-                <p>화요일–일요일(월요일 휴관),<br>
-                    10:00-18:00 </p>
+                </div>
+                <div class="gwacheon_museum_img">
+                    <a href="#"><img src="./images/mainPage/img_place_gwacheon_off.jpg" alt="과천"></a>
+                    <h1>과천</h1>
+                    <p>화요일–일요일(월요일 휴관),<br>
+                        10:00-18:00 </p>
                     <a href="#">전시</a>
                     <a href="#">교육</a>
                     <a href="#">어린이미술관</a>
                     <a href="#">이벤트</a>
-                </div>    
-                <div class="place_museum_seoul">
-                <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="서울"></a>
-                <h1>덕수궁</h1>
-                <p>화요일,목요일,금요일,일요일<br>
-                    (월요일 휴관), 10:00-18:00<br> 
-                    수요일, 토요일 야간개장 10:00-<br>
-                    21:00</p>
+                </div>
+                <div class="deoksugung_museum_img">
+                    <a href="#"><img src="./images/mainPage/img_place_deoksugung_off.jpg" alt="덕수궁"></a>
+                    <h1>덕수궁</h1>
+                    <p>화요일,목요일,금요일,일요일<br>
+                        (월요일 휴관), 10:00-18:00<br>
+                        수요일, 토요일 야간개장 10:00-<br>
+                        21:00</p>
                     <a href="#">전시</a>
-                </div>    
-                <div class="place_museum_seoul">
-                <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="서울"></a>
-                <h1>청주</h1>
-                <p>화요일–일요일(월요일 휴관),<br>
-                    10:00-18:00</p>
+                </div> 
+                <div class="cheongju_museum_img">
+                    <a href="#"><img src="./images/mainPage/img_place_cheongju_off.jpg" alt="청주"></a>
+                    <h1>청주</h1>
+                    <p>화요일–일요일(월요일 휴관),<br>
+                        10:00-18:00</p>
                     <a href="#">전시</a>
                     <a href="#">이벤트</a>
-                </div>    
-            </div>
-            <!-- place_museum 레인보우 위까지 끝 ----------------- 경계선 이거 위에랑 
-            마찬가지로 class 줘서 선 만들지.-->
+                </div>
+            </div> <!--place_museum_img_click 끝----------->
+            <!--place_museum 레인보우 위까지 끝 ----------------- 경계선 이거 위에랑 마찬가지로 class 줘서 선 만들기.-------------->
             <a href="#"><img src="./images/1.mainPage/main_mid_banner_pc_rainbow.jpg" alt="레인보우 중간배너"></a>
-            <!-- ---------------------------------------------------경계선 -->
-            <div class="art_display">
-                <ul>
-                    <li></li>
-                </ul>
-            </div>
-        </main>
-        <footer>
-
-        </footer>
+            <!-----------------------------------------------------경계선-------------------------------------------------------->
+            <!--move3! 여기 최대 고민. 23/12/21 상당히 고민된다. 밑에 middle_bnr_art_display_image 이미지 쪽-->
+            <div class="art_display_full_container">
+                <!-- display 전시 가장 상위 컨테이너 -->
+                <div class="art_display_container">
+                    <div class="middle_bnr_art_display">
+                        <!-- 전시 탭 위에 탑 메뉴형식 변수명 표기법 따름. "main_top_bnr_museum"-->
+                        <h2>전시</h2>
+                        <div class="middle_bnr_art_display_list">
+                            <ul>
+                                <!-- 위에 배너 메뉴에는 ul에도 혹시 몰라서 div로 묶고 클래스도 줬는데 여기도 동일하게 줄까? -->
+                                <li><a href="#">전체</a></li>
+                                <li><a href="#">서울</a></li>
+                                <li><a href="#">과천</a></li>
+                                <li><a href="#">덕수궁</a></li>
+                                <li><a href="#">청주</a></li>
+                                <li><a href="#">어린이미술관</a></li>
+                            </ul>
+                        </div> <!-- middle_bnr_art_display_list  -->
+                        <a href="#">전시모두보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
+                    </div> <!-- middle_bnr_art_display 배너 전체 묶어주는 div -->
+                    <div class="middle_bnr_art_display_image">
+                        <div class="display_img1">
+                            <!-- 여기 고민인게 이미지랑 글자 전체가 하나로 다 잡히는 느낌
+                            그리고 양쪽에 화살표는 어디에 배치를 해야할지? 12/21
+                            -->
+                            <a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a>
+                            <a href="#"><span>서울</span></a>
+                            <h2><a href="#">미술관을 말할 때 우리가 이야기하는 것들</a></h2>
+                            <a href="#">
+                                <p>2023-12-22~2024-04-06</p>
+                            </a>
+                        </div>
+                        <div class="display_img2">
+                            <!-- 여기 고민인게 이미지랑 글자 전체가 하나로 다 잡히는 느낌
+                            그리고 양쪽에 화살표는 어디에 배치를 해야할지? 12/21
+                            -->
+                            <a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a>
+                            <a href="#"><span>청주</span></a>
+                            <h2><a href="#">특별수장고&lt;&lt;국립현대미술관드로잉소장품&gt;&gt;</a></h2>
+                            <a href="#">
+                                <p>2023-12-14~2024-07-31</p>
+                            </a>
+                        </div>
+                        <div class="display_img3">
+                            <!-- 여기 고민인게 이미지랑 글자 전체가 하나로 다 잡히는 느낌
+                            그리고 양쪽에 화살표는 어디에 배치를 해야할지? 12/21
+                            -->
+                            <a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a>
+                            <a href="#"><span>해외</span></a>
+                            <h2><a href="#">특별수장고&lt;&lt;국립현대미술관드로잉소장품&gt;&gt;</a></h2>
+                            <a href="#">
+                                <p>2023-12-14~2024-07-31</p>
+                            </a>
+                        </div>
+                        <div class="display_img4">
+                            <!-- 여기 고민인게 이미지랑 글자 전체가 하나로 다 잡히는 느낌
+                            그리고 양쪽에 화살표는 어디에 배치를 해야할지? 12/21
+                            -->
+                            <a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a>
+                            <a href="#"><span>과천</span></a>
+                            <h2><a href="#">한국의기하학적추상미술</a></h2>
+                            <a href="#">
+                                <p>2023-11-16~2024-05-19</p>
+                            </a>
+                            <a href="#"><img src="#" alt="오디오가이드"></a>
+                        </div>
+                        <div class="display_img5">
+                            <!-- 여기 고민인게 이미지랑 글자 전체가 하나로 다 잡히는 느낌
+                            그리고 양쪽에 화살표는 어디에 배치를 해야할지? 12/21
+                            -->
+                            <a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a>
+                            <a href="#"><span>과천</span></a>
+                            <h2><a href="#">MMCA과천프로젝트2023:연결</a></h2>
+                            <a href="#">
+                                <p>2023-11-15~2024-10-20</p>
+                            </a>
+                        </div>
+                        <div class="display_img6">
+                            <!-- 여기 고민인게 이미지랑 글자 전체가 하나로 다 잡히는 느낌
+                            그리고 양쪽에 화살표는 어디에 배치를 해야할지? 12/21
+                            -->
+                            <a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a>
+                            <a href="#"><span>청주</span></a>
+                            <h2><a href="#">국립현대미술관청주개발수장고:전뢰진조각·드로잉</a></h2>
+                            <a href="#">
+                                <p>2023-11-07~2024-03-03</p>
+                            </a>
+                        </div>
+                        <!-- 왼쪽or오른쪽 버튼 -->
+                        <div class="direction">
+                            <a href="#" class="left_irection"><img src="#" alt="왼쪽버튼"></a>
+                            <a href="#" class="right_irection"><img src="#" alt="오른쪽 버튼"></a>
+                        </div>
+                    </div>
+                </div> <!-- art_display_container 하위 컨테이너 -->
+            </div> <!-- art_display_full_container 가장 상위 컨테이너 끝  -->
+    </div> <!-- wrap_full_main_page_container 최상위 전부 묶는 컨테이너 끝 -->
+    </main>
+    <footer>
+        <!-- MMCA 뉴스레터 구독신청부터 footer -->
+    </footer>
     </div> <!-- wrap_main_page 컨테이너 끝. -->
 
-<!-- 반응형 메뉴 다 만들고 어디로 올려야할지?-->
-<div class="top_menu">
-    <h1><img src="./images/1.mainPage/main_logo.png" alt="메인로고"><a href=""></a></img></h1>
-</div>
-<div class="respon_top_right_btn">
-    <button type="button" class="search_btn"><img src="#" alt="돋보기"></button>
-    <button type="button" class="menu_open_btn"><img src="#" alt="메뉴햄버거바"></button>
-</div>
+    <!--move1 ***************************************************반응형작업장******************************************************-->
+    <!-- 23/12/22 어디로 올려야할지? -->
+
+    <!-- 반응형 메뉴 다 만들고 어디로 올려야할지?
+    12/22 전시까지 끝 소장품 div 만들기.
+    respon - > 반응형 class, id 등에는 붙이기.    
+    -->
+    <div class="respon_top_menu">
+        <h1><img src="./images/1.mainPage/main_logo.png" alt="메인로고"><a href="#"></a></h1>
+    </div>
+    <div class="respon_top_right_btn">
+        <button type="button" class="search_btn"><img src="#" alt="돋보기"></button>
+        <button type="button" class="menu_open_btn"><img src="#" alt="메뉴햄버거바"></button>
+    </div>
     <nav>
+        <!-- 태블릿 반응형 여기 클래스명 변경하기 12/22 현재 : 변경X  -->
         <ul class="respon_menu">
             <li>
-                <a href="">관람·참여</a>
+                <a href="#">관람·참여</a>
                 <img src="#" alt="플러스">
-                <div class="view_hidden_menu">
-                    <ul>
+                <div class="view_hidden_bnr">
+                    <ul> <!-- top_bnr_art_view -->
                         <li><a href="">서울</a></li>
                         <li><a href="">과천</a></li>
                         <li><a href="">청주</a></li>
@@ -241,7 +364,7 @@
                 </div>
             </li>
             <li>
-                <a href="">전시</a>
+                <a href="#">전시</a>
                 <img src="#" alt="플러스">
                 <div class="exhibition_hidden_menu">
                     <ul>
@@ -252,7 +375,7 @@
                 </div>
             </li>
             <li>
-                <a href="">교육</a>
+                <a href="#">교육</a>
                 <img src="#" alt="플러스">
                 <div class="exhibition_hidden_menu">
                     <ul>
@@ -267,7 +390,7 @@
                 </div>
             </li>
             <li>
-                <a href="">소장품</a>
+                <a href="#">소장품</a>
                 <img src="#" alt="플러스">
                 <div class="exhibition_hidden_menu">
                     <ul>
@@ -278,7 +401,7 @@
                 </div>
             </li>
             <li>
-                <a href="">미술연구</a>
+                <a href="#">미술연구</a>
                 <img src="#" alt="플러스">
                 <div class="exhibition_hidden_menu">
                     <ul>
@@ -289,7 +412,7 @@
                 </div>
             </li>
             <li>
-                <a href="">디지털미술관</a>
+                <a href="#">디지털미술관</a>
                 <img src="#" alt="플러스">
                 <div class="exhibition_hidden_menu">
                     <ul>
@@ -301,7 +424,7 @@
                 </div>
             </li>
             <li>
-                <a href="">서울관10축제</a>
+                <a href="#">서울관10축제</a>
                 <img src="#" alt="플러스">
                 <div class="exhibition_hidden_menu">
                     <ul>
@@ -311,26 +434,110 @@
             </li>
         </ul>
     </nav>
-<!-- respon_menu 끝 뉴스레터 시작. 
-    다 만들면 위치 어디로 올려야할지.-->
-
-<div class="lets_go_hidden_reservation">
-    <!-- reservation 예약하다. -->
-    <h1>국립현대미술관 관람예약 바로가기</h1>
-    <p>화요일-일요일 10:00-18:00 (월요일 서울 개관)
-        서울·덕수궁:수요일, 토요일 야간개장 10:00-21:00</p>
-        <div class="right_button">
+    <!-- respon_menu 끝 뉴스레터 시작. 
+    다 만들면 위치 어디로 올려야할지. -->
+    <div class="respon_lets_go_hidden_reservation">
+        <!-- reservation 예약하다. -->
+        <h1>국립현대미술관 관람예약 바로가기</h1>
+        <p>화요일-일요일 10:00-18:00 (월요일 서울 개관)
+            서울·덕수궁:수요일, 토요일 야간개장 10:00-21:00</p>
+        <div class="respon_right_button">
             <button type="button" class="black_button_reservation"></button>
-            <button type="button"class="white_button_reservation"></button>
-            <img class="hidden_reservation" src="#" alt="display_x_아이콘"><a href=""></a></img>
+            <button type="button" class="white_button_reservation"></button>
+            <img class="hidden_reservation" src="#" alt="display_x_아이콘"><a href=""></a>
         </div>
-</div>
-    <div class="lets_go_reservation">
-        <img src="#" alt="[과천] 한국의 기하학적 추상미술"><a href="#"></a></img>
-        <h1><a href="#">[과천] 한국의 기하학적 추상미술</a></h1>
-        <button type="button" class="">전시 예약 바로가기</button>
     </div>
+    <div class="respon_lets_go_reservation">
+        <img src="#" alt="[과천] 한국의 기하학적 추상미술"><a href="#"></a>
+        <h1><a href="#">[과천] 한국의 기하학적 추상미술</a></h1>
+        <button type="button" class="respon_lets_go_reservation_btn">전시 예약 바로가기</button>
+    </div>
+    <!--다음 div ----------------------------------------------------------------------------------->
+    <div class="respon_place_museum">
+        <h2>미술관</h2>
+        <div class="place_museum_seoul">
+            <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="서울"></a>
+            <h1>서울</h1>
+            <p>월요일,화요일,목요일,금요일,<br>
+                일요일 10:00-18:00<br>
+                수요일, 토요일 야간개장 10:00-<br>
+                21:00</p>
+            <a href="#">전시</a>
+            <a href="#">필름앤비디오</a>
+            <a href="#">다원예술</a>
+            <a href="#">교육</a>
+            <a href="#">이벤트</a>
+        </div>
+        <div class="respon_place_museum_gwacheon">
+            <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="과천"></a>
+            <h1>과천</h1>
+            <p>화요일–일요일(월요일 휴관),<br>
+                10:00-18:00 </p>
+            <a href="#">전시</a>
+            <a href="#">교육</a>
+            <a href="#">어린이미술관</a>
+            <a href="#">이벤트</a>
+        </div>
+        <div class="respon_place_museum_deoksugung">
+            <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="덕수궁"></a>
+            <h1>덕수궁</h1>
+            <p>화요일,목요일,금요일,일요일<br>
+                (월요일 휴관), 10:00-18:00<br>
+                수요일, 토요일 야간개장 10:00-<br>
+                21:00</p>
+            <a href="#">전시</a>
+        </div>
+        <div class="respon_place_museum_cheongju">
+            <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="청주"></a>
+            <h1>청주</h1>
+            <p>화요일–일요일(월요일 휴관),<br>
+                10:00-18:00</p>
+            <a href="#">전시</a>
+            <a href="#">이벤트</a>
+        </div>
+    </div>
+    <!---------------------------------------------------------- 레인보우 이미지 위 -->
+    <a href="#"><img src="./images/1.mainPage/main_mid_banner_pc_rainbow.jpg" alt="레인보우 중간배너"></a>
+    <!-- 레인보우 이미지 끝 -->
+    <div class="respon_art_display_full_container">
+        <!-- display 전시 가장 상위 컨테이너 -->
+        <div class="respon_art_display_container">
+            <a href="#">전시모두보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
+            <!-- 이상하게 반응형 모드 전시탭이 전시모두보기 외에 비어있음.  -->
+            <div class="respon_middle_bnr_art_display">
+                <!-- 전시 탭 위에 탑 메뉴형식 변수명 표기법 따름. "main_top_bnr_museum"-->
+                <h2>전시</h2>
+                <div class="respon_middle_bnr_art_display_list">
+                    <ul>
+                        <!-- 위에 배너 메뉴에는 ul에도 혹시 몰라서 div로 묶고 클래스도 줬는데 여기도 동일하게 줄까? -->
+                        <li><a href="#">전체</a></li>
+                        <li><a href="#">서울</a></li>
+                        <li><a href="#">과천</a></li>
+                        <li><a href="#">덕수궁</a></li>
+                        <li><a href="#">청주</a></li>
+                        <li><a href="#">어린이미술관</a></li>
+                    </ul>
+                </div> <!-- middle_bnr_art_display_list  -->
+                <a href="#">전시모두보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
+            </div> <!-- middle_bnr_art_display 배너 전체 묶어주는 div -->
+            <div class="respon_middle_bnr_art_display_image">
+                <div class="display_img1">
+                    <!-- 여기 고민인게 이미지랑 글자 전체가 하나로 다 잡히는 느낌
+                    그리고 양쪽에 화살표는 어디에 배치를 해야할지? 12/21 move4
+                    -->
+                    <a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a>
+                    <a href="#"><span>서울</span></a>
+                    <h2><a href="#">미술관을 말할 때 우리가 이야기하는 것들</a></h2>
+                    <a href="#">
+                        <p>2023-12-22~2024-04-06</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 소장품 만들기. 12/22 -->
 </body>
+
 </html>
 <!--  -->
 <!-- <ul>
