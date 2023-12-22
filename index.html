@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="">
@@ -15,26 +14,29 @@
 <body>
     <!-- 스마트검색 위치 스마트 검색 눌렀을때 open -> div
     숨어있는(display non) div가 열린다는 개념 -->
-    <div class="smart_such">
-        <a href="#"><img src="#" alt="스마트검색"></a>
+    <div class="smart_search_top">
+        <!--  -->
+        <a href="#">스마트검색<img src="#" alt="스마트검색"></a>
+        <a href="#"><img src="#" alt="top으로 올라가는 버튼"></a>
     </div>
-    <div class="wrap_full_main_page_container">
+    <div class="wrap">
         <!-- main 컨데이너  -->
         <header>
-            <div class="header_first_top">
-                <!-- 상단 메인 로고 -->
-                <h1><a href="./index.html"><img src="./images/1.mainPage/main_logo.png" alt="메인로고"></a></h1> <!-- 로고 -->
+            <div class="header_first_top"> <!-- class 명 너무 길기에 수정하기 12/22 -->
+                <!-- 상단 메인 로고  ** 이미지 수정하기12/22-->
+                <h1><a href="./index.html"><img src="#" alt="국립현대미술관"></a></h1> <!-- 로고 -->
                 <!-- 상단 오른쪽 메뉴 -->
                 <div class="first_top_right">
-                    <a href="./join.html" class="mmca_first_top_join">MMCA회원가입</a>
+                    <a href="./join.html" class="mmca_join">MMCA회원가입</a>
                     <a href="./login.html">로그인</a>
                     <select name="first_top_lang_option" id="first_top_lang_option">
-                        <option value>한국어 <img src="./images/1.mainPage/icon_select_arrow.png" alt="#"></option>
+                        <option value>한국어</option>
                         <option value="en">ENG</option>
                         <option value="ch">中文</option>
                         <option value="jp">日本語</option>
                     </select>
-                    <button type="button" class="first_top_lang_go_btn">GO</button>
+                    <button type="button" class="lang_btn">GO</button>
+                    <!-- 옆에 반응형 줄어든거 돋보기랑 햄버거바 배치하기 -->
                 </div> <!-- 로고 오른쪽 회원가입. -->
             </div> <!-- 상단 해드 끝 -->
 
@@ -124,7 +126,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="">미술연구</a>
+                        <a href="#">미술연구</a>
                         <div class="top_bnr_research">
                             <!-- research 연구 -->
                             <ul>
@@ -136,7 +138,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="">디지털미술관</a>
+                        <a href="#">디지털미술관</a>
                         <div class="top_bnr_digital">
                             <ul>
                                 <!-- top_bnr_art_digital 디지털미술관 -->
@@ -148,7 +150,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="">서울10축제</a>
+                        <a href="#">서울10축제</a>
                         <div class="top_bnr_seoul_festival">
                             <ul>
                                 <!-- exhibition 전시탭 -->
@@ -158,9 +160,11 @@
                     </li>
                 </ul>
                 <!--최상단. ul 끝  -->
-            </nav><!--  nav bnr_museum  끝  -->
+            </nav><!--  nav bnr_museum  끝 
+            onClick="location.href='JOIN.html'"
+            -->
             <!-- nav 옆 돋보기 -->
-            <button type="button" onClick="location.href='JOIN.html'"><img src="./images/1.mainPage/btn_totalsearch.png" alt="옆 돋보기"></button>
+            <button type="button" onClick=""><img src="#" alt="검색아이콘"></button>
         </header>
         <!-- nav바 돋보기까지 해드 끝 -->
         <main>
