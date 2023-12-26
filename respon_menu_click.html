@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="">
@@ -21,17 +20,18 @@
                     <h1><img src="./images/1.mainPage/main_logo.png" alt="메인로고"><a href="#"></a></h1>
                 </div>
                 <div class="respon_right_menu">
-                    <button type="button" class="search_btn"><img src="#" alt="돋보기"></button>
+                    <button type="button" class="search_btn"><img src="#" alt="검색"></button>
                     <!-- 반응형 페이지에서 햄버거바 누르면 새로운 페이지 열리면 이 페이지 메뉴 닫기 버튼 x가 있다.  -->
-                    <button type="button" class="menu_close"><img src="#" alt="메뉴닫기"></button>
+                    <button type="button" class="menu_close"><img src="#" alt="닫기"></button>
                     <!-- -->
                     <!-- menu_btn(햄버거바) - > 클릭 시 다른 페이지(div 열리는 개념) -->
                 </div>
                 <!-- 돋보기 눌렀을때 검색페이지 별개의 페이지 div 하나 더 만들기. -->
                 <!-- nav 옆 돋보기 12/25 생성 -->
                 <!-- 12/25 돋보기 눌렀을때 별개의 검색 페이지 생성  -->
-                <div class="search_btn">
-                    <p class="font_gray">검색어를 입력하세요.</p>
+                <div class="search_click">
+                    <input type="text" id="user_search" placeholder="검색어를 입력하세요.">
+                    <a href="#" class="close_button"><img src="#" alt="닫기"></a>
                     <button class="search_button">검색</button>
                 </div>
         </header>

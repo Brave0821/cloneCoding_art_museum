@@ -63,8 +63,7 @@
             2. 
             3. 
             -------------------------------------------------------------------------------------------------->
-            
-            <nav class="top_bnr">
+            <nav> <!-- nav 클래스 삭제 2차 점검사항 -->
                 <!-- 배운 곳 cssStudy- > pst2.html참고 - > 여기에 혹시 모르니 div로 묶으면 어떨까 질문드림(12/21) - > 
                     괜찮다고 하셔서 태블릿 모드는 div 넣음 - > 
                     데탑 모드 배너에도 적용바람(12/22) <적용완료> -->
@@ -165,14 +164,15 @@
                 </ul>
                 <!--최상단. ul 끝  -->
                 <!-- nav 옆 돋보기 12/25 생성 -->
-                <button type="button" class="search_button" onClick=""><img src="#" alt="검색"></button>
+                <button type="button" class="search_btn" onClick=""><img src="#" alt="검색"></button>
             </nav>
             <!--  nav bnr_museum  끝 
             onClick="location.href='JOIN.html'"
             -->
-            <!-- 12/25 돋보기 눌렀을때 별개의 검색 페이지 생성  -->
+            <!-- 12/25 돋보기 눌렀을때 별도로 열리는 페이지  -->
             <div class="search_click">
-                <p class="font_gray">검색어를 입력하세요.</p>
+                <input type="text" id="user_search" placeholder="검색어를 입력하세요.">
+                <a href="#" class="close_button"><img src="#" alt="닫기"></a>
                 <button class="search_button">검색</button>
             </div>
         </header>
@@ -192,7 +192,7 @@
                     <a href="#" class="close_button"><img src="#" alt="닫기"></a>
                 </div>
             </div>
-            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------>
             <div class="display_reservation">
                 <!-- reservation 예약 -->
                 <img src="#" alt="[과천] 한국의 기하학적 추상미술"><a href="#"></a>
@@ -324,13 +324,52 @@
                         </div>
                         <!-- 왼쪽or오른쪽 버튼 -->
                         <div class="direction"> 
-                        <!-- 그림 상으론 따로 div 안만들고 "display_image 안에 포함되면 될 것 같은데?  -->
+                        <!-- 그림 상으론 따로 div div 안만듬 - > 반응형 페이지는 안만듬 -->
                             <a href="#" class="left_direction"><img src="#" alt="왼쪽버튼"></a>
                             <a href="#" class="right_direction"><img src="#" alt="오른쪽 버튼"></a>
                         </div>
                     </div><!-- div.img 끝 -->
                 </div> <!-- 2번째 전시를 묶는 컨테이너 div 2  -->
             </div> <!-- 전시 전체를 묶는 가장 상위 div 1  -->
+            <!-- ----------------------------------------------------------------------------------------------- -->
+            <!-- 소장품 시작. 여기 자세하게 구조 한번 더 점검하기 12/26 move1-->
+            <div class="collection_full_container">
+                <div class="collection_container">
+                    <div class="collection_head">
+                        <h2>소장품</h2>
+                        <a href="#">소장품모두보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
+                    </div>
+                    <div class="collection_img1">
+                        <a href="#"><img src="#" alt="국립현대미술관 소장품300"></a>
+                        <h2><a href="#">국립현대미술관 소장품300</a></h2>
+                        <p>1910년대-1920년대<a href=""></a></p>
+                    </div>
+                    <div class="collection_img2">
+                        <a href="#"><img src="#" alt="국립현대미술관 소장품300"></a>
+                        <h2><a href="#">국립현대미술관 소장품300</a></h2>
+                        <p>1930년대-1940년대<a href=""></a></p>
+                    </div>
+                    <div class="collection_img3">
+                        <a href="#"><img src="#" alt="국립현대미술관 소장품300"></a>
+                        <h2><a href="#">국립현대미술관 소장품300</a></h2>
+                        <p>1950년대-1960년대<a href=""></a></p>
+                    </div>
+                    <div class="collection_img4">
+                        <a href="#"><img src="#" alt="국립현대미술관 소장품300"></a>
+                        <h2><a href="#">국립현대미술관 소장품300</a></h2>
+                        <p>1970년대-1980년대<a href=""></a></p>
+                    </div>
+                    <a href="#" class="left_direction"><img src="#" alt="왼쪽버튼"></a>
+                    <a href="#" class="right_direction"><img src="#" alt="오른쪽 버튼"></a>
+                </div>
+            </div> <!-- "collection_full_container" 끝 -->
+            <div class="digital_full_container">
+                <div class="digital_container">
+                    <div class="digital_video1">
+                        <video src="#"></video>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
             <!-- MMCA 뉴스레터 구독신청부터 footer -->

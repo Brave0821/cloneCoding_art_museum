@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="">
@@ -18,12 +17,18 @@
                 <button type="button" class="search_btn"><img src="#" alt="돋보기"></button>
                 <button type="button" class="menu_open_btn"><img src="#" alt="메뉴햄버거바"></button>
             </div>
-            <!-- 햄버거바를 눌러야 - > 메뉴가 나옴 respon_menu_click에 만들어둠 -->
+            <!-- 검색 돋보기를 눌렀을때 열리는 검색 페이지 -->
+            <div class="search_click">
+                <input type="text" id="user_search" placeholder="검색어를 입력하세요.">
+                <a href="#" class="close_button"><img src="#" alt="닫기"></a>
+                <button class="search_button">검색</button>
+            </div>
+            <!-- 햄버거바(메뉴바) 클릭 -> respon_menu_click 페이지 열림. -->
             <!-- ------------------------------------------------------------------------------------------------ -->
             <div class="respon_hidden_reservation">
                 <!-- reservation 예약하다. -->
                 <h1>국립현대미술관 관람예약 바로가기</h1> <!-- h1에 div를 줘야할지? -->
-                <img class="respon_close_button" src="#" alt="메뉴닫기"><a href="#"></a>
+                <img class="respon_close_button" src="#" alt="닫기"><a href="#"></a>
                 <div class="respon_button">
                     <button type="button" class="black_button_reservation">전시 관람 예약하기</button>
                     <button type="button" class="white_button_reservation">자주 묻는 질문 바로가기</button>
