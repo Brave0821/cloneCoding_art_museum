@@ -38,7 +38,6 @@
                         <option value="jp">日本語</option>
                     </select>
                     <button type="button" class="lang_btn">GO</button>
-                    <!-- 옆에 반응형 줄어든거 돋보기랑 햄버거바 배치하기 -->
                 </div> <!-- 로고 오른쪽 회원가입. -->
             </div> <!-- 상단 해드 끝 -->
 
@@ -59,11 +58,12 @@
                 </ul>
             </div> -->
 
-            <!-- 변경사항 및 해야할 것 12/22 ****************************************************************** 
-1. 메인 배너 클래스명 태블릿 모드처럼 div 넣어주기(세밀한 조정 및 완성도 올리기.) 
-2. 주석 한번 더 꼼꼼히 달아주고 클래스명 한번 더 점검 ( css 적용 시 부담)
-3. 
--->
+            <!-- 변경사항 및 해야할 것 12/26 ****************************************************************** 
+            1. 
+            2. 
+            3. 
+            -------------------------------------------------------------------------------------------------->
+            
             <nav class="top_bnr">
                 <!-- 배운 곳 cssStudy- > pst2.html참고 - > 여기에 혹시 모르니 div로 묶으면 어떨까 질문드림(12/21) - > 
                     괜찮다고 하셔서 태블릿 모드는 div 넣음 - > 
@@ -178,27 +178,37 @@
         </header>
         <!-- nav바 돋보기까지 해드 끝 -->
         <main>
-            <h1>국립현대미술관 관람 예약 바로가기</h1>
-            <p>화요일-일요일 10:00-18:00(월요일 서울 개관)</p>
-            <p>서울·덕수궁:수요일,토요일 야간개장 10:00-21:00</p>
-            <!-- 관람 예약 및 질문 바로가기 버튼  -->
-            <a href="#">전시 관람 예약하기</a>
-            <a href="#">자주 묻는 질문 바로가기</a>
-            <!-- alt + 183 누르면 가운뎃 점 생긴다. -->
-            <a href="#" class="close_button"><img src="#" alt="닫기"></a>
+            <div class="reservation_container"> 
+                <div class="reservation_lift">
+                    <h1>국립현대미술관 관람 예약 바로가기</h1>
+                    <p>화요일-일요일 10:00-18:00(월요일 서울 개관)</p>
+                    <p>서울·덕수궁:수요일,토요일 야간개장 10:00-21:00</p>
+                </div>
+                <div class="reservation_right">
+                    <!-- 관람 예약 및 질문 바로가기 버튼  -->
+                    <a href="#">전시 관람 예약하기</a>
+                    <a href="#">자주 묻는 질문 바로가기</a>
+                    <!-- alt + 183 누르면 가운뎃 점 생긴다. -->
+                    <a href="#" class="close_button"><img src="#" alt="닫기"></a>
+                </div>
+            </div>
             <!-- ------------------------------------------------------------------------------------------------------------------- -->
             <div class="display_reservation">
                 <!-- reservation 예약 -->
                 <img src="#" alt="[과천] 한국의 기하학적 추상미술"><a href="#"></a>
+                <div class="reservation_left">
                 <h1><a href="#">[과천] 한국의 기하학적 추상미술</a></h1>
-                <button type="button" class="display_reservation_btn">전시 예약 바로가기</button>
+                <a href="#"><p>2023.11.16.-2024.5.19.</p></a> <!-- 이 부분 마우스 커서대면 손모양나오게 개선하기 --></div>
+                <div class="reservation_right">
+                    <button type="button" class="display_reservation_btn">전시 예약 바로가기</button>
+                </div>
             </div>
             <!-----중간선 여기 clss줘서 css에서 보더를 줘야할까?-->
             <div class="place_museum_img">
                 <!-- 000_museum_img -->
                 <h2>미술관</h2>
                 <div class="seoul_museum_img">
-                    <a href="#"><img src="#" alt="서울"></a>
+                    <a href="./images/mainPage/img_place_seoul1_off.jpg"><img src="#" alt="서울"></a>
                     <h1>서울</h1>
                     <p>월요일,화요일,목요일,금요일,<br>
                         일요일 10:00-18:00<br>
@@ -239,18 +249,15 @@
                 </div>
             </div>
             <!--place_museum_img_click 끝----------->
-            <!--place_museum 레인보우 위까지 끝 ----------------- 경계선 이거 위에랑 마찬가지로 class 줘서 선 만들기.-------------->
+            <!--place_museum 레인보우 이미지 시작.  ----------------- 경계선 이거 위에랑 마찬가지로 class 줘서 선 만들기.-------------->
             <a href="#"><img src="./images/1.mainPage/main_mid_banner_pc_rainbow.jpg" alt="레인보우 중간배너"></a>
             <!-----------------------------------------------------경계선-------------------------------------------------------->
-            <!--move3! 여기 최대 고민. 23/12/21 상당히 고민된다. 밑에 middle_bnr_art_display_image 이미지 쪽-->
-            <div class="display_full_container"> <!-- 전시 전체를 묶는 DIV 1 -->
-                <!-- display 전시 가장 상위 컨테이너 -->
-                <div class="art_display_container"> <!-- 2번째로 전체를 묶는 컨테이너 2 사실 없어도 될 것 같다. -->
+            <div class="display_full_container"> <!-- 전시 전체를 묶는 가장 상위 div 1 -->
+                <div class="display_container"> <!-- 2번째 전시를 묶는 컨테이너 div 2 -->
                     <!--  밑에는 전시 탭 해더  -->
-                    <div class="middle_bnr_art_display">
-                        <!-- 전시 탭 위에 탑 메뉴형식 변수명 표기법 따름. "main_top_bnr_museum"-->
+                    <div class="display_bnr">
                         <h2>전시</h2>
-                        <div class="middle_bnr_art_display_list">
+                        <div class="display_bnr_list">
                             <ul>
                                 <!-- 위에 배너 메뉴에는 ul에도 혹시 몰라서 div로 묶고 클래스도 줬는데 여기도 동일하게 줄까? -->
                                 <li><a href="#">전체</a></li>
@@ -265,11 +272,8 @@
                     </div> <!-- middle_bnr_art_display 배너 전체 묶어주는 div -->
                     <!--  전시 탭 해더 끝. -->
                     <!--  -->
-                    <div class="display_image"> <!-- ul - > li 형식으로 해야할지? -->
+                    <div class="display_image"> 
                         <div class="display_img1">
-                            <!-- 여기 고민인게 이미지랑 글자 전체가 하나로 다 잡히는 느낌
-                            그리고 양쪽에 화살표는 어디에 배치를 해야할지? 12/21
-                            -->
                             <a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a>
                             <a href="#"><span>서울</span></a>
                             <h2><a href="#">미술관을 말할 때 우리가 이야기하는 것들</a></h2>
@@ -278,9 +282,6 @@
                             </a>
                         </div>
                         <div class="display_img2">
-                            <!-- 여기 고민인게 이미지랑 글자 전체가 하나로 다 잡히는 느낌
-                            그리고 양쪽에 화살표는 어디에 배치를 해야할지? 12/21
-                            -->
                             <a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a>
                             <a href="#"><span>청주</span></a>
                             <h2><a href="#">특별수장고&lt;&lt;국립현대미술관드로잉소장품&gt;&gt;</a></h2>
@@ -289,9 +290,6 @@
                             </a>
                         </div>
                         <div class="display_img3">
-                            <!-- 여기 고민인게 이미지랑 글자 전체가 하나로 다 잡히는 느낌
-                            그리고 양쪽에 화살표는 어디에 배치를 해야할지? 12/21
-                            -->
                             <a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a>
                             <a href="#"><span>해외</span></a>
                             <h2><a href="#">특별수장고&lt;&lt;국립현대미술관드로잉소장품&gt;&gt;</a></h2>
@@ -300,9 +298,6 @@
                             </a>
                         </div>
                         <div class="display_img4">
-                            <!-- 여기 고민인게 이미지랑 글자 전체가 하나로 다 잡히는 느낌
-                            그리고 양쪽에 화살표는 어디에 배치를 해야할지? 12/21
-                            -->
                             <a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a>
                             <a href="#"><span>과천</span></a>
                             <h2><a href="#">한국의기하학적추상미술</a></h2>
@@ -312,9 +307,6 @@
                             <a href="#"><img src="#" alt="오디오가이드"></a>
                         </div>
                         <div class="display_img5">
-                            <!-- 여기 고민인게 이미지랑 글자 전체가 하나로 다 잡히는 느낌
-                            그리고 양쪽에 화살표는 어디에 배치를 해야할지? 12/21
-                            -->
                             <a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a>
                             <a href="#"><span>과천</span></a>
                             <h2><a href="#">MMCA과천프로젝트2023:연결</a></h2>
@@ -323,9 +315,6 @@
                             </a>
                         </div>
                         <div class="display_img6">
-                            <!-- 여기 고민인게 이미지랑 글자 전체가 하나로 다 잡히는 느낌
-                            그리고 양쪽에 화살표는 어디에 배치를 해야할지? 12/21
-                            -->
                             <a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a>
                             <a href="#"><span>청주</span></a>
                             <h2><a href="#">국립현대미술관청주개발수장고:전뢰진조각·드로잉</a></h2>
@@ -334,13 +323,14 @@
                             </a>
                         </div>
                         <!-- 왼쪽or오른쪽 버튼 -->
-                        <div class="direction"> <!-- 그림 상으론 따로 div 안만들고 "display_image 안에 포함되면 될 것 같은데?  -->
-                            <a href="#" class="left_irection"><img src="#" alt="왼쪽버튼"></a>
-                            <a href="#" class="right_irection"><img src="#" alt="오른쪽 버튼"></a>
+                        <div class="direction"> 
+                        <!-- 그림 상으론 따로 div 안만들고 "display_image 안에 포함되면 될 것 같은데?  -->
+                            <a href="#" class="left_direction"><img src="#" alt="왼쪽버튼"></a>
+                            <a href="#" class="right_direction"><img src="#" alt="오른쪽 버튼"></a>
                         </div>
-                    </div>
-                </div> <!-- art_display_container 하위 컨테이너 -->
-            </div> <!-- art_display_full_container 가장 상위 컨테이너 끝  -->
+                    </div><!-- div.img 끝 -->
+                </div> <!-- 2번째 전시를 묶는 컨테이너 div 2  -->
+            </div> <!-- 전시 전체를 묶는 가장 상위 div 1  -->
         </main>
         <footer>
             <!-- MMCA 뉴스레터 구독신청부터 footer -->
@@ -348,6 +338,21 @@
     </div> <!--   <div class="wrap"> 최상위 전부 묶는 컨테이너 끝 -->
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     <!--move1 ***************************************************반응형작업장******************************************************-->
     <!-- 23/12/22 어디로 올려야할지? -->
 
@@ -359,8 +364,8 @@
     <!-- respon_menu 끝 뉴스레터 시작. 
     다 만들면 위치 어디로 올려야할지. -->
 
-<!-- 26일 마저 respon 페이지로 옮기기. -->
-        
+    <!-- 26일 마저 respon 페이지로 옮기기. -->
+
     <div class="respon_lets_go_reservation">
         <img src="#" alt="[과천] 한국의 기하학적 추상미술"><a href="#"></a>
         <h1><a href="#">[과천] 한국의 기하학적 추상미술</a></h1>
@@ -368,7 +373,7 @@
     </div>
     <!--다음 div ----------------------------------------------------------------------------------->
     <div class="respon_place_museum">
-        <h2>미술관</h2>
+        <h1>미술관</h1>
         <div class="place_museum_seoul">
             <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="서울"></a>
             <h1>서울</h1>
@@ -382,7 +387,7 @@
             <a href="#">교육</a>
             <a href="#">이벤트</a>
         </div>
-        <div class="respon_place_museum_gwacheon">
+        <div class="place_museum_gwacheon">
             <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="과천"></a>
             <h1>과천</h1>
             <p>화요일–일요일(월요일 휴관),<br>
@@ -392,7 +397,7 @@
             <a href="#">어린이미술관</a>
             <a href="#">이벤트</a>
         </div>
-        <div class="respon_place_museum_deoksugung">
+        <div class="place_museum_deoksugung">
             <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="덕수궁"></a>
             <h1>덕수궁</h1>
             <p>화요일,목요일,금요일,일요일<br>
@@ -401,7 +406,7 @@
                 21:00</p>
             <a href="#">전시</a>
         </div>
-        <div class="respon_place_museum_cheongju">
+        <div class="place_museum_cheongju">
             <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="청주"></a>
             <h1>청주</h1>
             <p>화요일–일요일(월요일 휴관),<br>
@@ -417,7 +422,6 @@
         <!-- display 전시 가장 상위 컨테이너 -->
         <div class="respon_art_display_container">
             <a href="#">전시모두보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
-            <!-- 이상하게 반응형 모드 전시탭이 전시모두보기 외에 비어있음.  -->
             <div class="respon_middle_bnr_art_display">
                 <!-- 전시 탭 위에 탑 메뉴형식 변수명 표기법 따름. "main_top_bnr_museum"-->
                 <h2>전시</h2>

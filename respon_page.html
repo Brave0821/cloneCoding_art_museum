@@ -22,8 +22,8 @@
             <!-- ------------------------------------------------------------------------------------------------ -->
             <div class="respon_hidden_reservation">
                 <!-- reservation 예약하다. -->
-                <h1>국립현대미술관 관람예약 바로가기</h1>
-                <img class="respon_close_button" src="#" alt="display_x_아이콘"><a href="#"></a>
+                <h1>국립현대미술관 관람예약 바로가기</h1> <!-- h1에 div를 줘야할지? -->
+                <img class="respon_close_button" src="#" alt="메뉴닫기"><a href="#"></a>
                 <div class="respon_button">
                     <button type="button" class="black_button_reservation">전시 관람 예약하기</button>
                     <button type="button" class="white_button_reservation">자주 묻는 질문 바로가기</button>
@@ -34,6 +34,90 @@
             <!-- ----------------------------------------------------------------------------------------------- -->
         </header>
         <main>
+            <!-- 이미지 - > [과천]한국의 기하학적 추상미술 -->
+            <div class="respon_display_reservation">
+                <!-- reservation 예약 -->
+                <img src="#" alt="[과천] 한국의 기하학적 추상미술"><a href="#"></a>
+                <h1><a href="#">[과천] 한국의 기하학적 추상미술</a></h1>
+                <a href="#">
+                    <p>2023.11.16.-2024.5.19.</p>
+                </a> <!-- 이 부분 마우스 커서대면 손모양나오게 개선하기 -->
+                <button type="button" class="display_reservation_btn">전시 예약 바로가기</button>
+            </div>
+            <!-----중간선 여기 clss줘서 css에서 보더를 줘야할까?-->
+            <!-- 미술관 place-img -->
+            <div class="respon_place_img">
+                <!-- 000_museum_img -->
+                <h2>미술관</h2>
+                <div class="respon_seoul_img">
+                    <a href="#"><img src="./images/mainPage/img_place_seoul1_off.jpg" alt="서울"></a>
+                    <h1>서울</h1>
+                    <p>월요일,화요일,목요일,금요일,<br>
+                        일요일 10:00-18:00<br>
+                        수요일, 토요일 야간개장 10:00-<br>
+                        21:00</p>
+                    <a href="#">전시</a>
+                    <a href="#">필름앤비디오</a>
+                    <a href="#">다원예술</a>
+                    <a href="#">교육</a>
+                    <a href="#">이벤트</a>
+                </div>
+                <div class="respon_gwacheon_img">
+                    <a href="#"><img src="./images/mainPage/img_place_gwacheon_off.jpg" alt="과천"></a>
+                    <h1>과천</h1>
+                    <p>화요일–일요일(월요일 휴관),<br>
+                        10:00-18:00 </p>
+                    <a href="#">전시</a>
+                    <a href="#">교육</a>
+                    <a href="#">어린이미술관</a>
+                    <a href="#">이벤트</a>
+                </div>
+                <div class="respon_deoksugung_img">
+                    <a href="#"><img src="./images/mainPage/img_place_deoksugung_off.jpg" alt="덕수궁"></a>
+                    <h1>덕수궁</h1>
+                    <p>화요일,목요일,금요일,일요일<br>
+                        (월요일 휴관), 10:00-18:00<br>
+                        수요일, 토요일 야간개장 10:00-<br>
+                        21:00</p>
+                    <a href="#">전시</a>
+                </div>
+                <div class="respon_cheongju_img">
+                    <a href="#"><img src="./images/mainPage/img_place_cheongju_off.jpg" alt="청주"></a>
+                    <h1>청주</h1>
+                    <p>화요일–일요일(월요일 휴관),<br>
+                        10:00-18:00</p>
+                    <a href="#">전시</a>
+                    <a href="#">이벤트</a>
+                </div>
+            </div>
+            <!--------------------------------레인보우이미지------------------------------------------>
+            <!--place_museum 레인보우 위까지 끝 ----------------- 경계선 이거 위에랑 마찬가지로 class 줘서 선 만들기.-------------->
+            <a href="#"><img src="./images/1.mainPage/main_mid_banner_pc_rainbow.jpg" alt="레인보우 중간배너"></a>
+            <!-----------------------------------------------------경계선-------------------------------------------------------->
+            <!-- 전시 모두보기 -->
+            <div class="respon_display_container">
+                <div class="display_head">
+                    <h2>전시</h2>
+                    <!--→ 방향 화살표 이미지.--> 
+                    <a href="#">전시 모두 보기<img src="#" alt="전시모두보기"></a>
+                </div>
+                <div class="respon_display_img">
+                    <a href="#"><img src="#" alt="미술관을 말할 때 우리가 이야기하는 것들"></a>
+                    <!-- 경계선---- -->
+                    <a href="#"><span>서울</span></a>
+                    <h2><a href="#">미술관을 말할 때 우리가 이야기하는 것들</a></h2>
+                    <a href="#">
+                        <p>2023-12-22~2024-04-06</p>
+                    </a>
+                    <!-- 그림 상으론 따로 div 안만들고 "display_image 안에 넣어서 만들어봄
+                    index 는 idv 따로 만듬 -->
+                    <a href="#" class="left_direction"><img src="#" alt="왼쪽버튼"></a>
+                    <a href="#" class="right_direction"><img src="#" alt="오른쪽 버튼"></a>
+                </div>
+            </div>
+            <div class="c"><!-- 소장품  -->
+
+            </div>
             <!-- 새소식까지 메인  -->
         </main>
         <footer>
