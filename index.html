@@ -29,7 +29,7 @@
                 <!-- 상단 오른쪽 메뉴 -->
                 <div class="first_top_right">
                     <a href="./join.html" class="mmca_join">MMCA회원가입</a>
-                    <a href="./login.html" class="font_thin">로그인</a>
+                    <a href="./login.html">로그인</a>
                     <!-- class="font_thin" lang_option도 얇은폰트 -->
                     <select name="top_lang_option" id="top_lang_option">
                         <option value>한국어</option>
@@ -64,8 +64,7 @@
 2. 주석 한번 더 꼼꼼히 달아주고 클래스명 한번 더 점검 ( css 적용 시 부담)
 3. 
 -->
-            <!-- 12/22 클래스명 변경하기 -->
-            <nav class="main_top_bnr_museum">
+            <nav class="top_bnr">
                 <!-- 배운 곳 cssStudy- > pst2.html참고 - > 여기에 혹시 모르니 div로 묶으면 어떨까 질문드림(12/21) - > 
                     괜찮다고 하셔서 태블릿 모드는 div 넣음 - > 
                     데탑 모드 배너에도 적용바람(12/22) <적용완료> -->
@@ -74,7 +73,7 @@
                         <a href="#">관람·참여</a>
                         <!-- div로 한번 더 묶고 ul 클래스를 빼는게 좋을까? 12/22 - > 
                             div>ul>li 구조로 바꿈(완) -->
-                        <div class="top_bnr_view">
+                        <div class="lnb">
                             <ul>
                                 <!-- top_bnr_art_view 관람 참여 탭 -->
                                 <li><a href="#">서울</a></li>
@@ -86,6 +85,7 @@
                                 <li><a href="#">통합예약</a></li>
                                 <!-- 얇은 폰트 외에는 굵은 글씨들. -->
                                 <!-- class="font_thin" 얇은 폰트. -->
+                                <!-- 이걸 빼야할지.. nth로 줘야할지.. 12/26 -->
                                 <li><a href="#" class="font_thin">전시해설</a></li>
                                 <li><a href="#" class="font_thin">레지던시</a></li>
                                 <li><a href="#" class="font_thin">미술은행</a></li>
@@ -94,7 +94,7 @@
                     </li>
                     <li>
                         <a href="#">전시</a>
-                        <div class="top_bnr_display">
+                        <div class="lnb">
                             <ul>
                                 <!-- top_bnr_art_display 전시탭 -->
                                 <li><a href="#">현재전시</a></li>
@@ -105,7 +105,7 @@
                     </li>
                     <li>
                         <a href="#">교육</a>
-                        <div class="top_bnr_education">
+                        <div class="lnb">
                             <ul>
                                 <!--top_bnr_art_education 교육탭 -->
                                 <li><a href="#">미술관교육소개</a></li>
@@ -120,7 +120,7 @@
                     </li>
                     <li>
                         <a href="#">소장품</a>
-                        <div class="top_bnr_collection">
+                        <div class="lnb">
                             <ul>
                                 <!-- top_bnr_art_collection 소장품 -->
                                 <li><a href="#">소장품검색</a></li>
@@ -131,7 +131,7 @@
                     </li>
                     <li>
                         <a href="#">미술연구</a>
-                        <div class="top_bnr_research">
+                        <div class="lnb">
                             <!-- research 연구 -->
                             <ul>
                                 <!-- top_bnr_art_research 미술연구 -->
@@ -143,7 +143,7 @@
                     </li>
                     <li>
                         <a href="#">디지털미술관</a>
-                        <div class="top_bnr_digital">
+                        <div class="lnb">
                             <ul>
                                 <!-- top_bnr_art_digital 디지털미술관 -->
                                 <li><a href="#">메인</a></li>
@@ -155,7 +155,7 @@
                     </li>
                     <li>
                         <a href="#">서울10축제</a>
-                        <div class="top_bnr_seoul_festival">
+                        <div class="lnb">
                             <ul>
                                 <!-- exhibition 전시탭 -->
                                 <li><a href="#">행사소개</a></li>
@@ -164,12 +164,12 @@
                     </li>
                 </ul>
                 <!--최상단. ul 끝  -->
+                <!-- nav 옆 돋보기 12/25 생성 -->
+                <button type="button" class="search_button" onClick=""><img src="#" alt="검색"></button>
             </nav>
             <!--  nav bnr_museum  끝 
             onClick="location.href='JOIN.html'"
             -->
-            <!-- nav 옆 돋보기 12/25 생성 -->
-            <button type="button" onClick=""><img src="#" alt="검색아이콘"></button>
             <!-- 12/25 돋보기 눌렀을때 별개의 검색 페이지 생성  -->
             <div class="search_click">
                 <p class="font_gray">검색어를 입력하세요.</p>
@@ -178,27 +178,27 @@
         </header>
         <!-- nav바 돋보기까지 해드 끝 -->
         <main>
-            <p><strong>국립현대미술관 관람 예약 바로가기</strong></p>
+            <h1>국립현대미술관 관람 예약 바로가기</h1>
             <p>화요일-일요일 10:00-18:00(월요일 서울 개관)</p>
             <p>서울·덕수궁:수요일,토요일 야간개장 10:00-21:00</p>
             <!-- 관람 예약 및 질문 바로가기 버튼  -->
             <a href="#">전시 관람 예약하기</a>
             <a href="#">자주 묻는 질문 바로가기</a>
             <!-- alt + 183 누르면 가운뎃 점 생긴다. -->
-            <a href="#"><img src="./images/1.mainPage/icon_dialog_closeL.png" alt="x아이콘"></a>
-            <div class="lets_go_reservation">
+            <a href="#" class="close_button"><img src="#" alt="닫기"></a>
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <div class="display_reservation">
                 <!-- reservation 예약 -->
-                <img src="./images/1.mainPage/lets_go_reservation.jpg" alt="[과천] 한국의 기하학적 추상미술"><a href="#"></a>
+                <img src="#" alt="[과천] 한국의 기하학적 추상미술"><a href="#"></a>
                 <h1><a href="#">[과천] 한국의 기하학적 추상미술</a></h1>
-                <button type="button" class="lets_go_reservation_btn">전시 예약 바로가기</button>
+                <button type="button" class="display_reservation_btn">전시 예약 바로가기</button>
             </div>
             <!-----중간선 여기 clss줘서 css에서 보더를 줘야할까?-->
-            <!--여기 자세히 확인하기  이미지 및 클래스 변경-->
             <div class="place_museum_img">
                 <!-- 000_museum_img -->
                 <h2>미술관</h2>
                 <div class="seoul_museum_img">
-                    <a href="#"><img src="./images/mainPage/img_place_seoul_off.jpg" alt="서울"></a>
+                    <a href="#"><img src="#" alt="서울"></a>
                     <h1>서울</h1>
                     <p>월요일,화요일,목요일,금요일,<br>
                         일요일 10:00-18:00<br>
@@ -358,7 +358,6 @@
 
     <!-- respon_menu 끝 뉴스레터 시작. 
     다 만들면 위치 어디로 올려야할지. -->
-   
 
 <!-- 26일 마저 respon 페이지로 옮기기. -->
         
