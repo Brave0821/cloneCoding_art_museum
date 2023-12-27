@@ -32,20 +32,20 @@
 
 ### 2차 점검 결과사항(23/12/27) ---------------------------------------------------------------------------------
 
-*  로그인이나 얇은 글씨에 class를 줬는데 - > 클래스 뺴고 CSS에서 nth로 완료
-*  top_bnr에 class명 lnb로 통일시킴. -> 완료
-* -> 반응형 페이지에도 적용하기 ex) respon_lnb
+*  로그인이나 얇은 글씨에 class를 줬는데 - > 클래스 뺴고 CSS에서 nth로 완료 move1
+*  top_bnr에 class명 lnb로 통일시킴. -> 완료 move2
+* -> 반응형 페이지에도 적용하기 ex) respon_lnb  -> respon_menu_click 에 move2
 *  검색 눌렸을 때 열리는 페이지 입력되므로 input txt주기  -> 완료 `name="user_search" id="user_search"`
-*  x 닫기 버튼에 클래스주기 - > 완료 close_button으로 줬음.
-*  이미지 넣거나 경로 변경하기 아니면 차라리 닫기 - > 완료 # 처리 (html 전부 짜고 이미지 확인하면서 넣을 계획.)
-*  nav 클래스 삭제 - > 완료
-*  2차 점검 수정사항 한번 더 감싸기 div로 감싸고 left, right로 나누기 - > 완료 brave로 이동
-*  2차 점검 수정사항 a div로 감싸기 brave 밑
+*  x 닫기 버튼에 클래스주기 - > 완료 close_button으로 줬음. move3
+*  이미지 넣거나 경로 변경하기 아니면 차라리 닫기 - > 완료 # 처리 (html 전부 짜고 이미지 확인하면서 넣을 계획.) move4
+*  nav 클래스 삭제 - > 완료 move5
+*  2차 점검 수정사항 한번 더 감싸기 div로 감싸고 left, right로 나누기 - > 완료 brave로 이동 move6
+*  2차 점검 수정사항 a div로 감싸기 brave 밑 move6
 *    ex)`<div class="museum_button"> `
         ` <a href="#">전시</a>` 
         `<a href="#">필름앤비디오</a>` a를 div로 - > 완료
-*  2차 점검 수정사항 div a - >  ul li로 만들고 사진이랑 글자들 전부 잡히게 a로 묶기. brave로 이동. - > test.html에 일단 만들어둠 완료
-*  중간에 레인보우 이미지 alt 내용 변경 - > 완료
+*  2차 점검 수정사항 div a - >  ul li로 만들고 사진이랑 글자들 전부 잡히게 a로 묶기. brave로 이동. - > test.html에 일단 만들어둠 완료  move7
+*  중간에 레인보우 이미지 alt 내용 변경 - > 완료 move8
 *  소장품 쪽 살펴보기 div -> a에서 ul li a로 바꾼 구조 소장품쪽에 적용할지? - > 진행중
 *  각 구역에 모두보기 ▶ class 부여 view_all 
 *  왼쪽 오른쪽 버튼에 class명 변경 left_direction -> left_button right_button 등등 
@@ -59,7 +59,7 @@
 * join, login, menu html 당장 쓰지않기에 삭제 - > 사유 복잡해보여서 
 * mave1로 이동 구조 자세히 한번 더 살펴보기
 * wrap 보다 container을 하위로 
-*
+
 ---------------------------------------------------------------------------------------------------------------------
 ### 12/27 매우 중요! 나눠둔 블럭 코드들(메인, 반응형(respon.html) 메인, 반응형 메뉴페이지 등등 어디에 배치할지?
 
