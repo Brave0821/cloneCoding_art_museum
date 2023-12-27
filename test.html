@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="keywords" content="">
- <meta name="description" content="">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="">
+<meta name="description" content="">
     <title>구조변환작업장</title>
 </head>
 <body>
-    <!-- index.html에서  div>a에서 ul>li>a 구조로 변화 brave3로 이동 -->
+    <!-- 원본 1 -->
+    <div class="display_image">
+        <!-- 여기 ul li a로 해서 a로 이미지 밑 글자까지 전부 묶어버리기. brave3 -->
+        <div class="display_img1">
+            <a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a>
+            <a href="#"><span>서울</span></a>
+            <h2><a href="#">미술관을 말할 때 우리가 이야기하는 것들</a></h2>
+            <a href="#">
+                <p>2023-12-22~2024-04-06</p>
+            </a>
+        </div>
+    </div>
+    <!-- 변경사항 1 -->
+    <!-- 블럭화 부품처럼 조립 
+        index.html에서  div>a에서 ul>li>a 구조로 변경시킴. index에 brave3로 이동 -->
     <div class="display_image">
         <ul class="display_img1">
             <li><a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a></li>
@@ -59,7 +73,7 @@
         <h2><a href="#">국립현대미술관 소장품300</a></h2>
         <p>1910년대-1920년대<a href=""></a></p>
     </div>
-    <!-- 소장품 전시 전체적 구조 -->
+    <!-- 소장품 전시 전체적 구조 2차 점검 때 위에 수정사항 처럼 div가 너무 많아서 ul li구조로 바꿔봄-->
     <div class="collection_full_container">
         <div class="head_bnr">
             <h2>소장품</h2>

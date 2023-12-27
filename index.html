@@ -83,12 +83,10 @@
                                 <li><a href="#">어린이미술관</a></li>
                                 <li><a href="#">이벤트</a></li>
                                 <li><a href="#">통합예약</a></li>
-                                <!-- 얇은 폰트 외에는 굵은 글씨들. -->
-                                <!-- class="font_thin" 얇은 폰트. -->
-                                <!-- 이걸 빼야할지.. nth로 줘야할지.. 12/26 -->
-                                <li><a href="#" class="font_thin">전시해설</a></li>
-                                <li><a href="#" class="font_thin">레지던시</a></li>
-                                <li><a href="#" class="font_thin">미술은행</a></li>
+                                <!-- 전시해설, 레지던시, 미술은행 전부 nth 사용해서 글자 얇게 -->
+                                <li><a href="#">전시해설</a></li>
+                                <li><a href="#">레지던시</a></li>
+                                <li><a href="#">미술은행</a></li>
                             </ul>
                         </div>
                     </li>
@@ -172,7 +170,9 @@
             -->
             <!-- 12/25 돋보기 눌렀을때 별도로 열리는 페이지  -->
             <div class="search_click">
-                <input type="text" id="user_search" placeholder="검색어를 입력하세요.">
+                <form action="#" method="post">
+                    <input type="text" name="user_search" id="user_search" placeholder="검색어를 입력하세요.">
+                </form>
                 <a href="#" class="close_button"><img src="#" alt="닫기"></a>
                 <button class="search_button">검색</button>
             </div>
@@ -180,7 +180,7 @@
         <!-- nav바 돋보기까지 해드 끝 -->
         <main>
             <div class="reservation_container">
-                <div class="container"> <!-- 2차 점검 수정사항 한번 더 감싸기  brave-->
+                <div class="go_container"> <!-- 2차 점검 수정사항 한번 더 감싸기  brave-->
                     <div class="left">
                         <h1>국립현대미술관 관람 예약 바로가기</h1>
                         <p>화요일-일요일 10:00-18:00(월요일 서울 개관)</p>
@@ -198,7 +198,7 @@
             <!-------------------------------------------------------------------------------------------------------->
             <div class="display_reservation">
                 <!-- reservation 예약 -->
-                <div class="container"> <!-- 2차 점검 수정사항 한번 더 감싸기 brave  -->
+                <div class="display_container"> <!-- 2차 점검 수정사항 한번 더 감싸기 brave  -->
                     <!-- 눌리는거 버튼만 눌리게 나머지 a 전부 뺴기. -->
                     <img src="#" alt="[과천] 한국의 기하학적 추상미술">
                     <div class="left">
@@ -221,23 +221,25 @@
                         일요일 10:00-18:00<br>
                         수요일, 토요일 야간개장 10:00-<br>
                         21:00</p>
-                <div class="button"> <!-- 2차 점검 수정사항 a div로 감싸기 brave -->
-                    <a href="#">전시</a>
-                    <a href="#">필름앤비디오</a>
-                    <a href="#">다원예술</a>
-                    <a href="#">교육</a>
-                    <a href="#">이벤트</a>
-                </div>
+                    <div class="museum_button"> <!-- 2차 점검 수정사항 a div로 감싸기 brave -->
+                        <a href="#">전시</a>
+                        <a href="#">필름앤비디오</a>
+                        <a href="#">다원예술</a>
+                        <a href="#">교육</a>
+                        <a href="#">이벤트</a>
+                    </div>
                 </div>
                 <div class="gwacheon_museum_img">
                     <a href="#"><img src="./images/mainPage/img_place_gwacheon_off.jpg" alt="과천"></a>
                     <h1>과천</h1>
                     <p>화요일–일요일(월요일 휴관),<br>
                         10:00-18:00 </p>
-                    <a href="#">전시</a>
-                    <a href="#">교육</a>
-                    <a href="#">어린이미술관</a>
-                    <a href="#">이벤트</a>
+                    <div class="museum_button">
+                        <a href="#">전시</a>
+                        <a href="#">교육</a>
+                        <a href="#">어린이미술관</a>
+                        <a href="#">이벤트</a>
+                    </div>
                 </div>
                 <div class="deoksugung_museum_img">
                     <a href="#"><img src="./images/mainPage/img_place_deoksugung_off.jpg" alt="덕수궁"></a>
@@ -246,15 +248,19 @@
                         (월요일 휴관), 10:00-18:00<br>
                         수요일, 토요일 야간개장 10:00-<br>
                         21:00</p>
-                    <a href="#">전시</a>
+                    <div class="museum_button">
+                        <a href="#">전시</a>
+                    </div>
                 </div>
                 <div class="cheongju_museum_img">
                     <a href="#"><img src="./images/mainPage/img_place_cheongju_off.jpg" alt="청주"></a>
                     <h1>청주</h1>
                     <p>화요일–일요일(월요일 휴관),<br>
                         10:00-18:00</p>
-                    <a href="#">전시</a>
-                    <a href="#">이벤트</a>
+                    <div class="museum_button">
+                        <a href="#">전시</a>
+                        <a href="#">이벤트</a>
+                    </div>
                 </div>
             </div>
             <!--place_museum_img_click 끝----------->
