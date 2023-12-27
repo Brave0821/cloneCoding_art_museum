@@ -64,10 +64,7 @@
             2. 
             3. 
             -------------------------------------------------------------------------------------------------->
-            <nav> <!-- nav 클래스 삭제 2차 점검사항 -->
-                <!-- 배운 곳 cssStudy- > pst2.html참고 - > 여기에 혹시 모르니 div로 묶으면 어떨까 질문드림(12/21) - > 
-                    괜찮다고 하셔서 태블릿 모드는 div 넣음 - > 
-                    데탑 모드 배너에도 적용바람(12/22) <적용완료> -->
+            <nav> 
                 <ul>
                     <li>
                         <a href="#">관람·참여</a>
@@ -284,7 +281,7 @@
                             </ul>
                         </div> <!-- middle_bnr_art_display_list  -->
                         <!-- 전시모두보기 같은거 밑에도 있으니까 class명 동일하게 주기 -->
-                        <a href="#">전시모두보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
+                        <a href="#" class="view_all">전시모두보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
                     </div> <!-- middle_bnr_art_display 배너 전체 묶어주는 div -->
                     <!--  전시 탭 해더 끝. -->
                     <!--  -->
@@ -342,8 +339,8 @@
                         <!-- 왼쪽or오른쪽 버튼 -->
                         <div class="direction">
                             <!-- 그림 상으론 따로 div div 안만듬 - > 반응형 페이지는 안만듬 -->
-                            <a href="#" class="left_direction"><img src="#" alt="왼쪽버튼"></a>
-                            <a href="#" class="right_direction"><img src="#" alt="오른쪽 버튼"></a>
+                            <a href="#" class="left_button"><img src="#" alt="왼쪽버튼"></a>
+                            <a href="#" class="right_button"><img src="#" alt="오른쪽 버튼"></a>
                         </div>
                     </div><!-- div.img 끝 -->
                 </div> <!-- 2번째 전시를 묶는 컨테이너 div 2  -->
@@ -354,7 +351,7 @@
                 <div class="collection_container">
                     <div class="collection_head">
                         <h2>소장품</h2>
-                        <a href="#">소장품모두보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
+                        <a href="#" class="view_all">소장품모두보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
                     </div>
                     <div class="collection_img1">
                         <a href="#"><img src="#" alt="국립현대미술관 소장품300"></a>
@@ -376,142 +373,23 @@
                         <h2><a href="#">국립현대미술관 소장품300</a></h2>
                         <p>1970년대-1980년대<a href=""></a></p>
                     </div>
-                    <a href="#" class="left_direction"><img src="#" alt="왼쪽버튼"></a>
-                    <a href="#" class="right_direction"><img src="#" alt="오른쪽 버튼"></a>
+                    <a href="#" class="left_button"><img src="#" alt="왼쪽버튼"></a>
+                    <a href="#" class="right_button"><img src="#" alt="오른쪽 버튼"></a>
                 </div>
             </div> <!-- "collection_full_container" 끝 -->
-            <div class="digital_full_container">
+            <div class="digital_wrap">
                 <div class="digital_container">
                     <div class="digital_video1">
                         <video src="#"></video>
                     </div>
                 </div>
             </div>
-        </main>
+        </main> <!-- 구독신청 전 새소식까지 main -->
         <footer>
             <!-- MMCA 뉴스레터 구독신청부터 footer -->
         </footer>
-    </div> <!--   <div class="wrap"> 최상위 전부 묶는 컨테이너 끝 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--move1 ***************************************************반응형작업장******************************************************-->
-    <!-- 23/12/22 어디로 올려야할지? -->
-
-    <!-- 반응형 메뉴 다 만들고 어디로 올려야할지?
-    12/22 전시까지 끝 소장품 div 만들기.
-    respon - > 반응형 class, id 등에는 붙이기.    
-    -->
-
-    <!-- respon_menu 끝 뉴스레터 시작. 
-    다 만들면 위치 어디로 올려야할지. -->
-
-    <!-- 26일 마저 respon 페이지로 옮기기. -->
-
-    <div class="respon_lets_go_reservation">
-        <img src="#" alt="[과천] 한국의 기하학적 추상미술"><a href="#"></a>
-        <h1><a href="#">[과천] 한국의 기하학적 추상미술</a></h1>
-        <button type="button" class="respon_lets_go_reservation_btn">전시 예약 바로가기</button>
-    </div>
-    <!--다음 div ----------------------------------------------------------------------------------->
-    <div class="respon_place_museum">
-        <h1>미술관</h1>
-        <div class="place_museum_seoul">
-            <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="서울"></a>
-            <h1>서울</h1>
-            <p>월요일,화요일,목요일,금요일,<br>
-                일요일 10:00-18:00<br>
-                수요일, 토요일 야간개장 10:00-<br>
-                21:00</p>
-            <a href="#">전시</a>
-            <a href="#">필름앤비디오</a>
-            <a href="#">다원예술</a>
-            <a href="#">교육</a>
-            <a href="#">이벤트</a>
-        </div>
-        <div class="place_museum_gwacheon">
-            <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="과천"></a>
-            <h1>과천</h1>
-            <p>화요일–일요일(월요일 휴관),<br>
-                10:00-18:00 </p>
-            <a href="#">전시</a>
-            <a href="#">교육</a>
-            <a href="#">어린이미술관</a>
-            <a href="#">이벤트</a>
-        </div>
-        <div class="place_museum_deoksugung">
-            <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="덕수궁"></a>
-            <h1>덕수궁</h1>
-            <p>화요일,목요일,금요일,일요일<br>
-                (월요일 휴관), 10:00-18:00<br>
-                수요일, 토요일 야간개장 10:00-<br>
-                21:00</p>
-            <a href="#">전시</a>
-        </div>
-        <div class="place_museum_cheongju">
-            <a href="#"><img src="./images/1.mainPage/place_museum1.jpg" alt="청주"></a>
-            <h1>청주</h1>
-            <p>화요일–일요일(월요일 휴관),<br>
-                10:00-18:00</p>
-            <a href="#">전시</a>
-            <a href="#">이벤트</a>
-        </div>
-    </div>
-    <!---------------------------------------------------------- 레인보우 이미지 위 -->
-    <a href="#"><img src="./images/1.mainPage/main_mid_banner_pc_rainbow.jpg" alt="레인보우 중간배너"></a>
-    <!-- 레인보우 이미지 끝 -->
-    <div class="respon_art_display_full_container">
-        <!-- display 전시 가장 상위 컨테이너 -->
-        <div class="respon_art_display_container">
-            <a href="#">전시모두보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
-            <div class="respon_middle_bnr_art_display">
-                <!-- 전시 탭 위에 탑 메뉴형식 변수명 표기법 따름. "main_top_bnr_museum"-->
-                <h2>전시</h2>
-                <div class="respon_middle_bnr_art_display_list">
-                    <ul>
-                        <!-- 위에 배너 메뉴에는 ul에도 혹시 몰라서 div로 묶고 클래스도 줬는데 여기도 동일하게 줄까? -->
-                        <li><a href="#">전체</a></li>
-                        <li><a href="#">서울</a></li>
-                        <li><a href="#">과천</a></li>
-                        <li><a href="#">덕수궁</a></li>
-                        <li><a href="#">청주</a></li>
-                        <li><a href="#">어린이미술관</a></li>
-                    </ul>
-                </div> <!-- middle_bnr_art_display_list  -->
-                <a href="#">전시모두보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
-            </div> <!-- middle_bnr_art_display 배너 전체 묶어주는 div -->
-            <div class="respon_middle_bnr_art_display_image">
-                <div class="display_img1">
-                    <!-- 여기 고민인게 이미지랑 글자 전체가 하나로 다 잡히는 느낌
-                    그리고 양쪽에 화살표는 어디에 배치를 해야할지? 12/21 move4
-                    -->
-                    <a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a>
-                    <a href="#"><span>서울</span></a>
-                    <h2><a href="#">미술관을 말할 때 우리가 이야기하는 것들</a></h2>
-                    <a href="#">
-                        <p>2023-12-22~2024-04-06</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 소장품 만들기. 12/22 -->
+    </div> <!--   <div class="wrap"> main 최상위 전부 묶는 컨테이너 끝 -->
 </body>
-
 </html>
 <!--  -->
 <!-- <ul>
