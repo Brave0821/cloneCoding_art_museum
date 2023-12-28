@@ -21,19 +21,17 @@
                 <div class="respon_right_menu">
                     <button type="button" class="search_btn"><img src="#" alt="검색"></button>
                     <!-- 반응형 페이지에서 햄버거바 누르면 새로운 페이지 열리면 이 페이지 메뉴 닫기 버튼 x가 있다.  -->
-                    <button type="button" class="menu_close"><img src="#" alt="닫기"></button>
-                    <!-- -->
+                    <a href="#" class="close_button"><img src="#" alt="닫기"></a>
                     <!-- menu_btn(햄버거바) - > 클릭 시 다른 페이지(div 열리는 개념) -->
                 </div>
-                <!-- 돋보기 눌렀을때 검색페이지 별개의 페이지 div 하나 더 만들기. -->
                 <!-- nav 옆 돋보기 12/25 생성 -->
                 <!-- 12/25 돋보기 눌렀을때 별개의 검색 페이지 생성  -->
+                <!-- 돋보기를 누르면 나오는 검색창 -->
                 <div class="search_click">
                     <form action="#" method="post">
                         <input type="text" name="user_search" id="user_search" placeholder="검색어를 입력하세요.">
-                    </form>
-                    <a href="#" class="close_button"><img src="#" alt="닫기"></a>
-                    <button type="submit" class="search_button">검색</button>
+                        <button type="submit" class="search_button">검색</button>
+                    </form> 
                 </div>
             </div>
         </header>
@@ -42,10 +40,11 @@
         <!-- 햄버거바 펼쳤을때 별개의 페이지 밑에. -->
         <main>
             <nav>
-                <ul class="respon_main_menu">
+                <ul class="respon_gnb">
                     <li>
                         <a href="#">관람·참여</a>
-                        <img src="#" alt="플러스">
+                        <a href="#"><img src="#" alt="+ 메뉴목록"></a>
+                        <a href="#"><img src="#" alt="- 메뉴닫기"></a>
                         <!-- 모바일용 + 아이콘을 누르면 좌르륵 밑으로 메뉴가 나온다. -->
                         <!-- 클래스명 변경 12/25 
                             top_bnr_000 (데탑) - > 000_hidden_menu (반응형) 클레스명 차이
@@ -60,17 +59,17 @@
                                 <li><a href="#">어린이 미술관</a></li>
                                 <li><a href="#">이벤트</a></li>
                                 <li><a href="#">통합예약</a></li>
-                                <!-- 얇은 폰트 외에는 굵은 글씨들. -->
-                                <!-- class="font_thin" 얇은 폰트. -->
-                                <li><a href="#" class="font_thin">전시해설</a></li>
-                                <li><a href="#" class="font_thin">레지던시</a></li>
-                                <li><a href="#" class="font_thin">미술은행</a></li>
+                              <!-- 전시해설, 레지던시, 미술은행 전부 nth 사용해서 글자 얇게  -->
+                                <li><a href="#">전시해설</a></li>
+                                <li><a href="#">레지던시</a></li>
+                                <li><a href="#">미술은행</a></li>
                             </ul>
                         </div>
                     </li>
                     <li>
                         <a href="#">전시</a>
-                        <img src="#" alt="플러스">
+                        <a href="#"><img src="#" alt="+ 메뉴목록"></a>
+                        <a href="#"><img src="#" alt="- 메뉴닫기"></a>
                         <div class="respon_lnb">
                             <ul>
                                 <li><a href="">현재전시</a></li>
@@ -81,7 +80,8 @@
                     </li>
                     <li>
                         <a href="#">교육</a>
-                        <img src="#" alt="플러스">
+                        <a href="#"><img src="#" alt="+ 메뉴목록"></a>
+                        <a href="#"><img src="#" alt="- 메뉴닫기"></a>
                         <div class="respon_lnb">
                             <ul>
                                 <li><a href="">미술관교육소개</a></li>
@@ -96,7 +96,8 @@
                     </li>
                     <li>
                         <a href="#">소장품</a>
-                        <img src="#" alt="플러스">
+                        <a href="#"><img src="#" alt="+ 메뉴목록"></a>
+                        <a href="#"><img src="#" alt="- 메뉴닫기"></a>
                         <div class="respon_lnb">
                             <ul>
                                 <li><a href="">소장품검색</a></li>
@@ -107,7 +108,8 @@
                     </li>
                     <li>
                         <a href="#">미술연구</a>
-                        <img src="#" alt="플러스">
+                        <a href="#"><img src="#" alt="+ 메뉴목록"></a>
+                        <a href="#"><img src="#" alt="- 메뉴닫기"></a>
                         <div class="respon_lnb">
                             <ul>
                                 <li><a href="">도서와 아카이브</a></li>
@@ -118,7 +120,8 @@
                     </li>
                     <li>
                         <a href="#">디지털미술관</a>
-                        <img src="#" alt="플러스">
+                        <a href="#"><img src="#" alt="+ 메뉴목록"></a>
+                        <a href="#"><img src="#" alt="- 메뉴닫기"></a>
                         <div class="respon_lnb">
                             <ul>
                                 <li><a href="">메인</a></li>
@@ -130,7 +133,8 @@
                     </li>
                     <li>
                         <a href="#">서울관10축제</a>
-                        <img src="#" alt="플러스">
+                        <a href="#"><img src="#" alt="+ 메뉴목록"></a>
+                        <a href="#"><img src="#" alt="- 메뉴닫기"></a>
                         <div class="respon_lnb">
                             <ul>
                                 <li><a href="">행사소개</a></li>
@@ -155,9 +159,10 @@
     </main>
     <footer>
         <!-- MMCA 회원가입 로그인 한국어 옵션 Bar go 버튼. -->
+        <!-- below 아래 -->
         <div class="respon_below_menu">
             <a href="./join.html" class="mmca_respon_join">MMCA회원가입</a>
-            <a href="./login.html" class="font_thin">로그인</a>
+            <a href="./login.html">로그인</a>
             <!-- class="font_thin" lang_option도 얇은폰트 -->
             <select name="below_lang_option" id="below_lang_option">
                 <option value>한국어</option>
@@ -171,6 +176,7 @@
     </footer>
 </body>
 </html>
+
 <!-- 하위 단 ul > li 구조로 해도 괜찮  -->
 <!-- <div class="right_top">
                 <ul>
