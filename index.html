@@ -5,7 +5,7 @@
     <meta name="viewport" content="">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>메인페이지</title>
+    <title>국립현대미술관</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/responsive.css">
     <link rel="stylesheet" href="./styles/index.css">
@@ -13,26 +13,28 @@
 <!-- https://www.mmca.go.kr/  -->
 <!-- 팝업은 body 위로 관람예약 및 회원가입(로그인) 서비스 일시중단 안내 -->
 <div class="popup">
-<h1>국립현대미술관 신정(24.1.1-1.2)휴관안내</h1>
-<textarea name="popup_content" id="popup_content" cols="40" rows="5">
-    신정(24년1월1일)연휴<br>
-    º 1월1일(월):4관(서울,과천,덕수궁,청주)휴관<br>
-    º 1월2일(화):3관(서울,과천,청주)정상개관<br>
-    ※ 덕수궁 휴궁으로 휴관
-    <a href="#" class="link">더 알아보기</a>
-</textarea>
-<!-- link 클래스 준 이유 밑에도 더 알아보기가 있기 때문에 -->
+    <h1>국립현대미술관 신정(24.1.1-1.2)휴관안내</h1>
+    <div class="popup_contents">
+        <h2>신정(24년1월1일)연휴<br></h2>
+        <p>
+            º 1월1일(월):4관(서울,과천,덕수궁,청주)휴관<br>
+            º 1월2일(화):3관(서울,과천,청주)정상개관<br>
+            ※ 덕수궁 휴궁으로 휴관
+        </p>
     </div>
+    <a href="#" class="link">더 알아보기</a>
+    <!-- link 클래스 준 이유 밑에도 더 알아보기가 있기 때문에 -->
     <div class="popup_btm">
         <!-- 라벨 for과 인풋 id와 같은 변수명으로 선언하기 -->
         <label for="left_popup">
             <input type="checkbox" id="left_popup" name="left_popup">
             <span>오늘 그만보기</span>
         </label>
-        <a href="#" class="close_button"><img src="#" alt="닫기"></a> 
+        <a href="#" class="close_button"><img src="#" alt="닫기"></a>
     </div>
-    
-    <body>
+</div> <!-- popup 12/29 popup_btm - > popup 안으로 넣고 & textarea 교체 -->
+
+<body>
     <!-- 스마트검색 위치 스마트 검색 눌렀을때 open -> div
     숨어있는(display non) div가 열린다는 개념 -->
     <div class="smart_search">
@@ -43,15 +45,11 @@
         <!-- main 컨데이너  -->
         <header>
             <div class="header_first_top">
-                <!-- class 명 너무 길기에 수정하기 12/22 -->
-                <!-- 상단 메인 로고  ** 이미지 수정하기12/22-->
                 <h1><a href="./index.html"><img src="#" alt="국립현대미술관"></a></h1> <!-- 로고 -->
-                <!-- move4 -->
                 <!-- 상단 오른쪽 메뉴 -->
                 <div class="first_top_right">
                     <a href="./join.html" class="mmca_join">MMCA회원가입</a>
                     <a href="./login.html">로그인</a>
-                    <!-- class="font_thin" lang_option도 얇은폰트 -->
                     <select name="top_lang_option" id="top_lang_option">
                         <option value>한국어</option>
                         <option value="en">ENG</option>
@@ -78,13 +76,14 @@
                     </li>
                 </ul>
             </div> -->
-            <nav>  
-                <ul>
+            <nav>
+                <ul class="gnb">
+                    <!-- 12/29 gnb class추가 -->
                     <li>
                         <a href="#">관람·참여</a>
                         <!-- div로 한번 더 묶고 ul 클래스를 빼는게 좋을까? 12/22 - > 
                             div>ul>li 구조로 바꿈(완) -->
-                        <div class="lnb"> 
+                        <div class="lnb">
                             <ul>
                                 <!-- top_bnr_art_view 관람 참여 탭 -->
                                 <li><a href="#">서울</a></li>
@@ -103,7 +102,7 @@
                     </li>
                     <li>
                         <a href="#">전시</a>
-                        <div class="lnb"> 
+                        <div class="lnb">
                             <ul>
                                 <!-- top_bnr_art_display 전시탭 -->
                                 <li><a href="#">현재전시</a></li>
@@ -175,24 +174,26 @@
                 <!--최상단. ul 끝  -->
                 <!-- nav 옆 돋보기 12/25 생성 -->
                 <button type="button" class="search_btn"><img src="#" alt="검색"></button>
+                <!--    <div class="search_click">에서 여기로 이동. 12/29 -->
+                <a href="#" class="close_button"><img src="#" alt="닫기"></a> <!-- 29 이동 완료 -->
             </nav>
             <!--  nav bnr_museum  끝 
             onClick="location.href='JOIN.html'"
             -->
             <!-- 12/25 돋보기 눌렀을때 별도로 열리는 페이지  -->
-            <div class="search_click"> 
+            <div class="search_click">
                 <form action="#" method="post">
                     <input type="text" name="user_search" id="user_search" placeholder="검색어를 입력하세요.">
-                </form>
-                <a href="#" class="close_button"><img src="#" alt="닫기"></a> 
-                <button type="submit" class="search_button">검색</button>
+                    <button type="submit" class="search_button">검색</button>
+                </form> <!-- form 경계 수정 12/29 -->
             </div>
         </header>
         <!-- nav바 돋보기까지 해드 끝 -->
         <main>
             <div class="reservation_container">
-                <div class="go_container"> <!-- 2차 점검 수정사항 한번 더 감싸기  -->
-                    <div class="left"> 
+                <div class="go_container">
+                    <!-- 2차 점검 수정사항 한번 더 감싸기  -->
+                    <div class="left">
                         <h1>국립현대미술관 관람 예약 바로가기</h1>
                         <p>화요일-일요일 10:00-18:00(월요일 서울 개관)</p>
                         <p>서울·덕수궁:수요일,토요일 야간개장 10:00-21:00</p>
@@ -209,10 +210,12 @@
             <!-------------------------------------------------------------------------------------------------------->
             <div class="display_top_wrap">
                 <!-- reservation 예약 -->
-                <div class="display_top_container"> <!-- 2차 점검 수정사항 한번 더 감싸기 -->
+                <div class="display_top_container">
+                    <!-- 2차 점검 수정사항 한번 더 감싸기 -->
                     <!-- 눌리는거 버튼만 눌리게 나머지 a 전부 뺴기. -->
-                    <div class="images"> <!-- 12/27 3차 이미지 인라인이니까 div로 한번 더 묶음 -->
-                    <img src="#" alt="[과천] 한국의 기하학적 추상미술">
+                    <div class="images">
+                        <!-- 12/27 3차 이미지 인라인이니까 div로 한번 더 묶음 -->
+                        <img src="#" alt="[과천] 한국의 기하학적 추상미술">
                     </div>
                     <div class="display_container">
                         <div class="left">
@@ -220,7 +223,8 @@
                             <p>2023.11.16.-2024.5.19.</p>
                         </div>
                         <div class="right">
-                            <button type="button" class="reservation_btn">전시 예약 바로가기</button>
+                            <!-- 12/29 button에서 a로변경  -->
+                            <a href="#" class="reservation_btn">전시 예약 바로가기</a>
                         </div>
                     </div>
                 </div>
@@ -228,62 +232,69 @@
             <div class="place_museum_wrap">
                 <!-- 000_museum_img -->
                 <h2>미술관</h2>
-                <div class="museum_img"> <!-- "museum_img" class 명 줄이기. 12/27 3차-->
-                    <a href="./images/mainPage/img_place_seoul1_off.jpg"><img src="#" alt="서울"></a>
-                    <h1>서울</h1>
-                    <p>월요일,화요일,목요일,금요일,<br>
-                        일요일 10:00-18:00<br>
-                        수요일, 토요일 야간개장 10:00-<br>
-                        21:00</p>
-                    <div class="museum_button"> <!-- 2차 점검 수정사항 a div로 감싸기  -->
-                        <a href="#">전시</a>
-                        <a href="#">필름앤비디오</a>
-                        <a href="#">다원예술</a>
-                        <a href="#">교육</a>
-                        <a href="#">이벤트</a>
+                <div class="museum_contents">
+                    <!-- 12/29  <museum_contents> "museum_img" 묶는 div 추가 -->
+                    <div class="museum_img">
+                        <!-- "museum_img" class 명 줄이기. 12/27 3차-->
+                        <a href="./images/mainPage/img_place_seoul1_off.jpg"><img src="#" alt="서울"></a>
+                        <h1>서울</h1> <!-- 12/29 br 수정. -->
+                        <p>
+                            월요일,화요일,목요일,금요일,일요일 10:00-18:00<br>
+                            수요일, 토요일 야간개장 10:00-21:00
+                        </p>
+                        <div class="museum_button">
+                            <!-- 2차 점검 수정사항 a div로 감싸기  -->
+                            <a href="#">전시</a>
+                            <a href="#">필름앤비디오</a>
+                            <a href="#">다원예술</a>
+                            <a href="#">교육</a>
+                            <a href="#">이벤트</a>
+                        </div>
                     </div>
-                </div>
-                <div class="museum_img">
-                    <a href="#"><img src="./images/mainPage/img_place_gwacheon_off.jpg" alt="과천"></a>
-                    <h1>과천</h1>
-                    <p>화요일–일요일(월요일 휴관),<br>
-                        10:00-18:00 </p>
-                    <div class="museum_button">
-                        <a href="#">전시</a>
-                        <a href="#">교육</a>
-                        <a href="#">어린이미술관</a>
-                        <a href="#">이벤트</a>
+                    <div class="museum_img">
+                        <a href="#"><img src="./images/mainPage/img_place_gwacheon_off.jpg" alt="과천"></a>
+                        <h1>과천</h1>
+                        <p>화요일–일요일(월요일 휴관),<br>
+                            10:00-18:00 </p>
+                        <div class="museum_button">
+                            <a href="#">전시</a>
+                            <a href="#">교육</a>
+                            <a href="#">어린이미술관</a>
+                            <a href="#">이벤트</a>
+                        </div>
                     </div>
-                </div>
-                <div class="museum_img">
-                    <a href="#"><img src="./images/mainPage/img_place_deoksugung_off.jpg" alt="덕수궁"></a>
-                    <h1>덕수궁</h1>
-                    <p>화요일,목요일,금요일,일요일<br>
-                        (월요일 휴관), 10:00-18:00<br>
-                        수요일, 토요일 야간개장 10:00-<br>
-                        21:00</p>
-                    <div class="museum_button">
-                        <a href="#">전시</a>
+                    <div class="museum_img">
+                        <a href="#"><img src="./images/mainPage/img_place_deoksugung_off.jpg" alt="덕수궁"></a>
+                        <h1>덕수궁</h1>
+                        <p>화요일,목요일,금요일,일요일<br>
+                            (월요일 휴관), 10:00-18:00<br>
+                            수요일, 토요일 야간개장 10:00-<br>
+                            21:00</p>
+                        <div class="museum_button">
+                            <a href="#">전시</a>
+                        </div>
                     </div>
-                </div>
-                <div class="museum_img">
-                    <a href="#"><img src="./images/mainPage/img_place_cheongju_off.jpg" alt="청주"></a>
-                    <h1>청주</h1>
-                    <p>화요일–일요일(월요일 휴관),<br>
-                        10:00-18:00</p>
-                    <div class="museum_button">
-                        <a href="#">전시</a>
-                        <a href="#">이벤트</a>
+                    <div class="museum_img">
+                        <a href="#"><img src="./images/mainPage/img_place_cheongju_off.jpg" alt="청주"></a>
+                        <h1>청주</h1>
+                        <p>화요일–일요일(월요일 휴관),<br>
+                            10:00-18:00</p>
+                        <div class="museum_button">
+                            <a href="#">전시</a>
+                            <a href="#">이벤트</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <!--place_museum_img_click 끝----------->
             <!--place_museum 레인보우 이미지 시작. 경계선 2차점검 변경사항 클래스명 변경 - 완료.-------------->
-            <a href="#" class="member_bnr"><img src="#" alt="새로워진  국립현대미술관 멤버십 국립현대미술관의 친구.가족이 되어주세요"></a> 
+            <a href="#" class="member_bnr"><img src="#" alt="새로워진  국립현대미술관 멤버십 국립현대미술관의 친구.가족이 되어주세요"></a>
             <!-----------------------------------------------------경계선-------------------------------------------------------->
-            <div class="display_full_container"> <!-- 전시 전체를 묶는 가장 상위 div 1 --> 
+            <div class="display_full_container">
+                <!-- 전시 전체를 묶는 가장 상위 div 1 -->
                 <!-- 2차 점검 수정사항  여기 ul li로 만들고 사진이랑 글자들 전부 잡히게 a로 묶기. -->
-                <div class="display_btm_container"> <!-- 위에 display_container 이 클래스명이 있기에 btm 12/27 2번째 전시를 묶는 컨테이너 div 2 -->
+                <div class="display_btm_container">
+                    <!-- 위에 display_container 이 클래스명이 있기에 btm 12/27 2번째 전시를 묶는 컨테이너 div 2 -->
                     <!--  밑에는 전시 탭 해더  -->
                     <div class="display_bnr">
                         <h2>전시</h2>
@@ -299,84 +310,64 @@
                             </ul>
                         </div> <!-- middle_bnr_art_display_list  -->
                         <!-- 전시모두보기 같은거 밑에도 있으니까 class명 동일하게 주기 -->
-                        <a href="#" class="view_all">전시모두보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
+                        <a href="#" class="view_all">전시모두보기<img src="#" alt=""></a> <!-- 모두보기 alt 비워둠 12/29 -->
                     </div> <!-- middle_bnr_art_display 배너 전체 묶어주는 div -->
                     <!--  전시 탭 해더 끝. -->
                     <!--  -->
-                    <div class="display_image"> <!-- div a - > ul>li>a 로 변경  -->
-                        <ul class="display_img1">
-                            <li><a href="#"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></a></li>
-                            <li>서울</li>
-                            <li>
-                                <h2><a href="#">미술관을 말할 때 우리가 이야기하는 것들</a></h2>
-                            </li>
-                            <li><a href="#">
-                                    <p>2023-12-22~2024-04-06</p>
-                                </a></li>
-                        </ul>
-                        <ul class="display_img2">
-                            <li><a href="#"><img src="#" alt="특별수장고 국립현대미술관드로잉소장품"></a></li>
-                            <li>청주</li>
-                            <li>
-                                <h2><a href="#">특별수장고&lt;&lt;국립현대미술관드로잉소장품&gt;&gt;</a></h2>
-                            </li>
-                            <li><a href="#">
-                                    <p>2023-12-14~2024-07-31</p>
-                                </a></li>
-                        </ul>
-                        <ul class="display_img3">
-                            <li><a href="#"><img src="#" alt="특별수장고 국립현대미술관드로잉소장품"></a></li>
-                            <li>해외</li>
-                            <li>
-                                <h2><a href="#">특별수장고&lt;&lt;국립현대미술관드로잉소장품&gt;&gt;</a></h2>
-                            </li>
-                            <li><a href="#">
-                                    <p>2023-12-14~2024-07-31</p>
-                                </a></li>
-                        </ul>
-                        <ul class="display_img4">
-                            <li><a href="#"><img src="#" alt="한국의기하학적추상미술"></a></li>
-                            <li>과천</li>
-                            <li>
-                                <h2><a href="#">한국의기하학적추상미술</a></h2>
-                            </li>
-                            <li><a href="#">
-                                    <p>2023-11-16~2024-05-19</p>
-                                </a></li>
-                        </ul>
-                        <ul class="display_img5">
-                            <li><a href="#"><img src="#" alt="MMCA과천프로젝트2023:연결"></a></li>
-                            <li>과천</li>
-                            <li>
-                                <h2><a href="#">MMCA과천프로젝트2023:연결</a></h2>
-                            </li>
-                            <li><a href="#">
-                                    <p>2023-11-15~2024-10-20</p>
-                                </a></li>
-                        </ul>
-                        <ul class="display_img6">
-                            <li><a href="#"><img src="#" alt="국립현대미술관청주개발수장고:전뢰진조각·드로잉"></a></li>
-                            <li>청주</li>
-                            <li>
-                                <h2><a href="#">국립현대미술관청주개발수장고:전뢰진조각·드로잉</a></h2>
-                            </li>
-                            <li><a href="#">
-                                    <p>2023-11-07~2024-03-03</p>
-                                </a></li>
-                        </ul>
+                    <div class="display_image">
+                        <!-- div a - > ul>li>a 로 변경 - > a로 묶음 12/29  -->
+                        <!-- 클래스명 class="display_img1" - > display -->
+                        <a href="#" class="display">
+                            <p class="photo"><img src="#" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></p>
+                            <p class="category">서울</p>
+                            <h2>미술관을 말할 때 우리가 이야기하는 것들</h2>
+                            <p class="date">2023-12-22~2024-04-06</p>
+                        </a>
+                        <a href="#" class="display">
+                            <p class="photo"><img src="#" alt="특별수장고 국립현대미술관드로잉소장품"></p>
+                            <p class="category">청주</p>
+                            <h2>특별수장고&lt;&lt;국립현대미술관드로잉소장품&gt;&gt;</h2>
+                            <p class="date">2023-12-14~2024-07-31</p>
+                        </a>
+                        <a href="#" class="display">
+                            <p class="photo"><img src="#" alt="기록과 경이:한국현대사진"></p>
+                            <p class="category">해외</p>
+                            <h2>기록과 경이: 한국현대사진</h2>
+                            <p class="date">2023-11-18~2024-01-27</p>
+                        </a>
+                        <a href="#" class="display">
+                            <p class="photo"><img src="#" alt="한국의 기하학적 추상미술"></p>
+                            <p class="category">과천</p>
+                            <h2>한국의 기하학적 추상미술</h2>
+                            <p class="date">2023-11-16~2024-05-19</p>
+                            <button type="button"><img src="#" alt="오디오가이드">오디오가이드</button>
+                        </a>
+                        <a href="#" class="display">
+                            <p class="photo"><img src="#" alt="MMCA과천프로젝트2023:연결"></p>
+                            <p class="category">과천</p>
+                            <h2>MMCA과천프로젝트2023:연결</h2>
+                            <p class="date">2023-11-15~2024-10-20</p>
+                        </a>
+                        <a href="#" class="display">
+                            <p class="photo"><img src="#" alt="특별수장고 국립현대미술관드로잉소장품"></p>
+                            <p class="category">청주</p>
+                            <h2>국립현대미술관 청주 개방 수장고:전뢰진 조각·드로잉</h2>
+                            <p class="date">2023-11-07~2024-03-03</p>
+                        </a>
+                        <!-- div a - > ul>li>a 로 변경 - > a로 묶음 12/29  -->
                     </div><!-- div.img 끝 -->
                     <!-- 이전&다음  class, alt 명 수정 12/29-->
                     <a href="#" class="prev"><img src="#" alt="이전으로"></a>
                     <a href="#" class="next"><img src="#" alt="다음으로"></a>
-                    </div> <!-- 2번째 전시를 묶는 컨테이너 div 2  -->
-                    </div> <!-- 전시 전체를 묶는 가장 상위 div 1  -->
+                </div> <!-- 2번째 전시를 묶는 컨테이너 div 2  -->
+            </div> <!-- 전시 전체를 묶는 가장 상위 div 1  -->
             <!-- ----------------------------------------------------------------------------------------------- -->
             <!-- 소장품 시작. 여기 자세하게 구조 한번 더 점검하기 12/26  test.html에 ul li 한번 살펴보고 적용-->
             <div class="collection_full_container">
                 <div class="collection_container">
                     <div class="collection_head">
                         <h2>소장품</h2>
-                        <a href="#" class="view_all">소장품모두보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
+                        <a href="#" class="view_all">소장품모두보기<img src="#" alt=""></a>
                     </div>
                     <div class="collection_images">
                         <ul class="collection_img1">
@@ -429,21 +420,22 @@
                         <a href="#" class="view_all">디지털미술관 모두 보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
                     </div>
                     <div class="digital_videos">
-                        <ul class="digital_video1">
-                            <li><video src="#"></video></li>
-                            <li><p class="mmca_tv">MMCA TV</p></li>
+                        <!-- 12/29 ul>li에서 a로 수정. -->
+                        <a href="#">
+                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="sub_title">MMCA TV</p>
                             <h2>MMCA 라이브 X 장기하</h2>
-                        </ul>
-                        <ul class="digital_video2">
-                            <li><video src="#"></video></li>
-                            <li><p class="mmca_tv">MMCA TV</p></li>
+                        </a>
+                        <a href="#">
+                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="sub_title">MMCA TV</p>
                             <h2>큐레이터의 설명으로 보는 &lt;&lt;이신자,실로 그리다&gt;&gt;</h2>
-                        </ul>
-                        <ul class="digital_video3">
-                            <li><video src="#"></video></li>
-                            <li><p class="mmca_tv">MMCA TV</p></li>
+                        </a>
+                        <a href="#">
+                            <p class="photo"><img src="#" alt=""></p>
+                            <p class="sub_title">MMCA TV</p>
                             <h2>[오늘, 이 작품] 장욱진 | 밤과 노인 | 1990</h2>
-                        </ul>
+                        </a>
                     </div>
                 </div>
             </div> <!-- 디지털 미술관 끝 -->
@@ -452,7 +444,7 @@
                 <div class="news_container">
                     <div class="news_head">
                         <h1>MMCA뉴스레터</h1>
-                        <a href="#" class="view_all">MMCA 뉴스레터 모두보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
+                        <a href="#" class="view_all">MMCA 뉴스레터 모두보기<img src="#" alt=""></a>
                     </div>
                     <div class="news_images">
                         <ul class="news_img1">
@@ -460,7 +452,8 @@
                             <li>
                                 <p><a href="#">포커스</a></p> <!-- 클래스 줄까? 12/27 -->
                             </li>
-                            <li> <!-- 글자 회색. class 줄까 나중에 nth 처리를 해야할까? -->
+                            <li>
+                                <!-- 글자 회색. class 줄까 나중에 nth 처리를 해야할까? -->
                                 <p><a href="#">우리 존재의 첫 소리, 이름 &lt;&lt;창동레지던시 입주보고서 2023:나의 이름은...&gt;&gt</a></p>
                             </li>
                         </ul>
@@ -483,7 +476,8 @@
                             </li>
                         </ul>
                         <ul class="news_img4">
-                            <li><a href="#"><img src="#" alt="포커스 우리 존재의 첫 소리, 이름 <<창동레지던시 입주보고서 2023:나의 이름은...>>"></a></li>
+                            <li><a href="#"><img src="#" alt="포커스 우리 존재의 첫 소리, 이름 <<창동레지던시 입주보고서 2023:나의 이름은...>>"></a>
+                            </li>
                             <li>
                                 <p><a href="#">미술관플러스</a></p>
                             </li>
@@ -495,114 +489,126 @@
                 </div>
             </div> <!--  <div class="news_wrap"> 끝 -->
             <!-- MMCA 뉴스레터 끝 -->
+            <!-- MMCA 뉴스레터 하단 시작 ul>li 구조에서 div로 변경 12/29 -->
             <div class="find_wrap">
                 <div class="find_images">
-                    <ul>
-                        <li><img src="#" alt="미술은행"><a href="#"></a></img></li>
-                        <li><p class="find_font">미술은행</p></li> <!-- 폰트 사이즈 및 볼드 -->
-                        <li><a href="#" class="link">더 알아보기</a></li>
-                    </ul>
-                    <ul>
-                        <li><img src="#" alt="레지던시"><a href="#"></a></img></li>
-                        <li><p class="find_font">레지던시</p></li> <!-- 폰트 사이즈 및 볼드 -->
-                        <li><a href="#" class="link">더 알아보기</a></li>
-                    </ul>
-                    <ul>
-                        <li><img src="#" alt="도서와아카이브"><a href="#"></a></img></li>
-                        <li><p class="find_font">도서와 아카이브</p></li> <!-- 폰트 사이즈 및 볼드 -->
-                        <li><a href="#" class="link">더 알아보기</a></li>
-                    </ul>
-                    <ul>
-                        <li><img src="#" alt="어린이미술관"><a href="#"></a></img></li>
-                        <li><p class="find_font">어린이미술관</p></li> <!-- 폰트 사이즈 및 볼드 -->
-                        <li><a href="#" class="link">더 알아보기</a></li>
-                    </ul>
-                </div>
-            </div>
+                     <!-- 아이템1 div class="news_btm" 미술은행 시작 -->
+                    <div class="news_btm">
+                        <a href="#"><img src="#" alt="미술은행"></a>
+                        <div class="btm">
+                            <h3>미술은행</h3>
+                            <a href="#" class="more">더 알아보기</a>
+                        </div>
+                    </div>
+                    <!-- 아이템2 div class="news_btm" 레지던시 시작 -->
+                    <div class="news_btm">
+                        <a href="#"><img src="#" alt="레지던시"></a>
+                        <div class="btm">
+                            <h3>레지던시</h3>
+                            <a href="#" class="more">더 알아보기</a>
+                        </div>
+                    </div>
+                    <!-- 아이템3 div class="news_btm" 도서와아카이브 시작 -->
+                    <div class="news_btm">
+                        <a href="#"><img src="#" alt="도서와아카이브"></a>
+                        <div class="btm">
+                            <h3>도서와아카이브</h3>
+                            <a href="#" class="more">더 알아보기</a>
+                        </div>
+                    </div>
+                    <!-- 아이템4 div class="news_btm" 어린이미술관 시작 -->
+                    <div class="news_btm">
+                        <a href="#"><img src="#" alt="어린이미술관"></a>
+                        <div class="btm">
+                            <h3>어린이미술관</h3>
+                            <a href="#" class="more">더 알아보기</a>
+                        </div>
+                    </div>
+                    <!-- 아이템 div class="news_btm" 끝 -->
+                </div> <!-- 상위 <div class="find_images"> 끝 -->
+            </div> <!-- 최상위 <div class="find_wrap"> 끝 -->
+
             <!-- 새소식 시작 -->
             <div class="news_wrap">
                 <div class="news_head">
                     <h1>새소식</h1>
-                    <a href="#" class="view_all">새소식 모두 보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
                     <ul class="news_content">
                         <li><a href="#">국립현대미술관 소장작품 권리자 불명 저작물 공고</a></li>
                         <li><a href="#">국립현대미술관 청주 미술품수장센터 라키비움 운영 일시중단</a></li>
                         <li><a href="#">국립현대미술관 공휴일(12.25.)및 신정(24.1.1-1.2)휴관 안내</a></li>
                     </ul>
+                    <!-- alt 오른쪽 괄호보기 수정 - > "" 및 위치 변경 12/29 -->
+                    <a href="#" class="view_all">새소식 모두 보기<img src="#" alt=""></a>
                 </div>
             </div>
-            </main> <!-- 구독신청 전 새소식까지 main -->
-            <footer>
-                <!-- MMCA 뉴스레터 구독신청부터 footer -->
-                <div class="footer_wrap">
-                    <div class="footer_content">
-                        <div class="left_content">
-                            <h3>MMCA 뉴스레터 구독 신청</h3>
-                            <!-- Subscription 구독하기 -->
-                            <!-- <button 구독하기 - > a로 변경 12/29-->
-                            <a href="#">구독하기</a>
-                            <ul class="left_list">
-                                <li><a href="#">뉴스레터</a></li>
-                                <li><a href="#">소식지</a></li>
-                                <li><a href="#">멤버십</a></li>
-                                <li><a href="#">온라인숍</a></li>
+        </main> <!-- 구독신청 전 새소식까지 main -->
+        <footer>
+            <!-- MMCA 뉴스레터 구독신청부터 footer -->
+            <div class="footer_wrap">
+                <div class="footer_content">
+                    <div class="left_content">
+                        <h3>MMCA 뉴스레터 구독 신청</h3>
+                        <!-- Subscription 구독하기 -->
+                        <!-- < button 구독하기 - > a로 변경 12/29-->
+                        <a href="#">구독하기</a>
+                        <ul class="left_list">
+                            <li><a href="#">뉴스레터</a></li>
+                            <li><a href="#">소식지</a></li>
+                            <li><a href="#">멤버십</a></li>
+                            <li><a href="#">온라인숍</a></li>
+                        </ul>
+                    </div> <!-- "left_content" -->
+                    <div class="right_content">
+                        <div class="right_menus">
+                            <!-- 12/29 <div class="menu1">삭제 - > ul에 클래스 부여 -->
+                            <ul class="menu1">
+                                <li><a href="#">인스타그램</a></li>
+                                <li><a href="#">유튜브</a></li>
+                                <li><a href="#">페이스북</a></li>
+                                <li><a href="#">트위터</a></li>
+                                <li><a href="#">네이버</a></li>
+                                <li><a href="#">네이버포스트</a></li>
                             </ul>
-                        </div> <!-- "left_content" -->
-                        <div class="right_content">
-                            <div class="right_menus">
-                                <div class="menu1">
-                                    <ul>
-                                        <li><a href="#">인스타그램</a></li>
-                                        <li><a href="#">유튜브</a></li>
-                                        <li><a href="#">페이스북</a></li>
-                                        <li><a href="#">트위터</a></li>
-                                        <li><a href="#">네이버</a></li>
-                                        <li><a href="#">네이버포스트</a></li>
-                                    </ul>
-                                </div>
-                                <div class="menu2">
-                                    <ul>
-                                        <li><a href="#">개인정보처리방침</a></li>
-                                        <li><a href="#">이용약관</a></li>
-                                        <li><a href="#">저작권정책</a></li>
-                                        <li><a href="#">국민신문고</a></li>
-                                        <li><a href="#">정보공개</a></li>
-                                        <li><a href="#">클린신고센터</a></li>
-                                    </ul>
-                                </div>
-                                <div class="menu3">
-                                    <ul>
-                                        <li><a href="#">미술관 소개</a></li>
-                                        <li><a href="#">새소식</a></li>
-                                        <li><a href="#">채용</a></li>
-                                        <li><a href="#">보도자료</a></li>
-                                        <li><a href="#">후원</a></li>
-                                        <li><a href="#">자원봉사</a></li>
-                                        <li><a href="#">시설대관.복제신청</a></li>
-                                        <li><a href="#">자주 묻는 질문</a></li>
-                                        <li><a href="#">사이트맵</a></li>
-                                        <li><a href="#">국립현대미술관 문화재단</a></li>
-                                    </ul>
-                                </div>
-                            </div> <!--  <div class="right_menus"> -->
-                        </div> <!--  <div class="right_content"> -->
-                    </div> <!-- footer_content -->
-                </div> <!-- footer_wrap 최상위 -->
-                <div class="end_btm">
-                    <address>
-                        대표자: 김성희, 사업자등록번호: 138‒83‒00313<br>
-                        대표전화: (서울) <a href="tel:02‒3701‒9500">02‒3701‒9500</a>,<br>
-                        (과천) <a href="tel:02‒2188‒6000">02‒2188‒6000</a>,<br>
-                        (덕수궁) <a href="tel:02‒2022‒0600">02‒2022‒0600</a>,<br>
-                        (청주) <a href="tel:043‒261‒1400">043‒261‒1400</a><br>
-                        © 2021 National Museum of Modern and Contemporary Art, Korea
-                    </address>
-                    <div class="log">
-                        <img src="#" alt="국립현대미술관로고">
-                    </div>
-                    <a href="#"><img src="#" alt="과학기술정보통신부 WEB 접근성 "></a>
+                            <ul class="menu2">
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">저작권정책</a></li>
+                                <li><a href="#">국민신문고</a></li>
+                                <li><a href="#">정보공개</a></li>
+                                <li><a href="#">클린신고센터</a></li>
+                            </ul>
+                            <ul class="menu3">
+                                <li><a href="#">미술관 소개</a></li>
+                                <li><a href="#">새소식</a></li>
+                                <li><a href="#">채용</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">후원</a></li>
+                                <li><a href="#">자원봉사</a></li>
+                                <li><a href="#">시설대관.복제신청</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">사이트맵</a></li>
+                                <li><a href="#">국립현대미술관 문화재단</a></li>
+                            </ul>
+                        </div> <!--  <div class="right_menus"> -->
+                    </div> <!--  <div class="right_content"> -->
+                </div> <!-- footer_content -->
+            </div> <!-- footer_wrap 최상위 -->
+            <div class="end_btm">
+                <address>
+                    대표자: 김성희, 사업자등록번호: 138‒83‒00313<br>
+                    대표전화: (서울) <a href="tel:02‒3701‒9500">02‒3701‒9500</a>,<br>
+                    (과천) <a href="tel:02‒2188‒6000">02‒2188‒6000</a>,<br>
+                    (덕수궁) <a href="tel:02‒2022‒0600">02‒2022‒0600</a>,<br>
+                    (청주) <a href="tel:043‒261‒1400">043‒261‒1400</a><br>
+                    © 2021 National Museum of Modern and Contemporary Art, Korea
+                </address>
+                <div class="log">
+                    <img src="#" alt="국립현대미술관로고">
                 </div>
-            </footer>
-            </div> <!--   <div class="wrap"> main 최상위 전부 묶는 컨테이너 끝 -->
-            </body>
-            </html>
+                <a href="#"><img src="#" alt="과학기술정보통신부 WEB 접근성 "></a>
+            </div>
+        </footer>
+    </div> <!--   <div class="wrap"> main 최상위 전부 묶는 컨테이너 끝 -->
+</body>
+
+</html>
