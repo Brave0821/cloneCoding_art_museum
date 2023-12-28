@@ -12,7 +12,27 @@
 </head>
 <!-- https://www.mmca.go.kr/  -->
 <!-- 팝업은 body 위로 관람예약 및 회원가입(로그인) 서비스 일시중단 안내 -->
-<body>
+<div class="popup">
+<h1>국립현대미술관 신정(24.1.1-1.2)휴관안내</h1>
+<textarea name="popup_content" id="popup_content" cols="30" rows="10">
+    신정(24년1월1일)연휴<br>
+    º 1월1일(월):4관(서울,과천,덕수궁,청주)휴관<br>
+    º 1월2일(화):3관(서울,과천,청주)정상개관<br>
+    ※ 덕수궁 휴궁으로 휴관
+    <a href="#" class="link">더 알아보기</a>
+    <!-- link 클래스 준 이유 밑에도 더 알아보기가 있기 때문에 -->
+    </textarea>
+    </div>
+    <div class="popup_btm">
+        <!-- 라벨 for과 인풋 id와 같은 변수명으로 선언하기 -->
+        <label for="left_popup">
+            <input type="checkbox" id="left_popup" name="left_popup">
+            <span>오늘 그만보기</span>
+        </label>
+        <a href="#" class="close_button"><img src="#" alt="닫기"></a> 
+    </div>
+    
+    <body>
     <!-- 스마트검색 위치 스마트 검색 눌렀을때 open -> div
     숨어있는(display non) div가 열린다는 개념 -->
     <div class="smart_search">
@@ -481,22 +501,22 @@
                     <ul>
                         <li><img src="#" alt="미술은행"><a href="#"></a></img></li>
                         <li><p class="find_font">미술은행</p></li> <!-- 폰트 사이즈 및 볼드 -->
-                        <li><a href="#">더 알아보기</a></li>
+                        <li><a href="#" class="link">더 알아보기</a></li>
                     </ul>
                     <ul>
                         <li><img src="#" alt="레지던시"><a href="#"></a></img></li>
                         <li><p class="find_font">레지던시</p></li> <!-- 폰트 사이즈 및 볼드 -->
-                        <li><a href="#">더 알아보기</a></li>
+                        <li><a href="#" class="link">더 알아보기</a></li>
                     </ul>
                     <ul>
                         <li><img src="#" alt="도서와아카이브"><a href="#"></a></img></li>
                         <li><p class="find_font">도서와 아카이브</p></li> <!-- 폰트 사이즈 및 볼드 -->
-                        <li><a href="#">더 알아보기</a></li>
+                        <li><a href="#" class="link">더 알아보기</a></li>
                     </ul>
                     <ul>
                         <li><img src="#" alt="어린이미술관"><a href="#"></a></img></li>
                         <li><p class="find_font">어린이미술관</p></li> <!-- 폰트 사이즈 및 볼드 -->
-                        <li><a href="#">더 알아보기</a></li>
+                        <li><a href="#" class="link">더 알아보기</a></li>
                     </ul>
                 </div>
             </div>
