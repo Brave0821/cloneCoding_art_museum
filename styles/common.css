@@ -5,7 +5,8 @@
     background-color:yellow;
     max-width: 1200px; margin: 0 auto;
     display: flex;
-    flex-flow: row nowrap; flex-flow: row nowrap;
+    flex-flow: row nowrap; 
+
 
 } /* 최고 최최상위 컨테이너 */
 .wrap header { background-color: seagreen;
@@ -14,6 +15,7 @@
     display: flex;
     flex-flow: row nowrap;
     text-align: end;
+    justify-content: end;
 }
 /* 메인로고  */
 .wrap header .header_first_top h1 {}
@@ -22,6 +24,8 @@
 /* header 오른쪽 메뉴(회원가입,로그인,옵션) 시작. */
 .wrap header .header_first_top .first_top_right {
     background-color: tomato;
+    justify-content: right;
+    justify-content: end;
     
     
 }
