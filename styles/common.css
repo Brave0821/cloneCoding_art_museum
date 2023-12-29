@@ -1,1 +1,63 @@
-/* 공통부분 css 1.head 2.footer */
+/* <공통부분> css 1.head 2.footer */
+
+/* 메인페이지 header 시작. */
+.wrap {} /* 최고 최최상위 컨테이너 */
+.wrap header {} 
+.wrap header .header_first_top {}
+/* 메인로고  */
+.wrap header .header_first_top h1 {}
+.wrap header .header_first_top h1 a {}
+.wrap header .header_first_top h1 a img {}
+/* header 오른쪽 메뉴(회원가입,로그인,옵션) 시작. */
+.wrap header .header_first_top .first_top_right {}
+.wrap header .header_first_top .first_top_right .mmca_join {} /* 회원가입 */
+.wrap header .header_first_top .first_top_right a {} /* 로그인 */
+.wrap header .header_first_top .first_top_right #top_lang_option {} /* 옵션바 */ 
+.wrap header .header_first_top .first_top_right .lang_btn {}  /* GO버튼 */
+/* header_first_top 로고 및 로그인 회원가입 옵션 GO 버튼 끝  */
+/* nav 메뉴바 시작. */
+.wrap header nav {}
+.wrap header nav .gnb {}
+.wrap header nav .gnb li {}
+.wrap header nav .gnb li a {} /* 관람참여 및 전시교육 소장품 등등  */
+/* a 탭 눌렀을떄 list 부분 */
+.wrap header nav .gnb .lnb {}
+.wrap header nav .gnb .lnb ul {}
+/* list에 서울 과천 덕수궁 등등 */
+.wrap header nav .gnb .lnb ul li {}
+.wrap header nav .gnb .lnb ul li a {} /* 서울 과천 등등  */
+.wrap header nav .search_btn {} /* 검색 돋보기 */
+.wrap header nav .search_btn img {} /* 검색 돋보기 이미지 */
+.wrap header nav .close_button {} /* 닫기 버튼. */
+/* 검색 돋보기 눌렀을때 나오는 다른 페이지. */
+.wrap header .search_click {}
+.wrap header .search_click form {}
+.wrap header .search_click form #user_search {}
+.wrap header .search_click form .search_button {}
+/* header, nav 등등 해드부분 끝   */
+/* ------------------------------------------header 끝 ----------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------footer 시작 --------------------------------------------------- */
+/* footer 시작. */ /* common.css로 이동완료 */
+.wrap footer {}
+.wrap footer .footer_wrap {}
+.wrap footer .footer_wrap .footer_content {}
+.wrap footer .footer_wrap .footer_content .left_content {}
+.wrap footer .footer_wrap .footer_content .left_content h3 {} /* 뉴스레터 구독 신청 */
+.wrap footer .footer_wrap .footer_content .left_content a {} /* 구독하기 */
+.wrap footer .footer_wrap .footer_content .left_content .left_list {} /* 뉴스레터, 소식지, 멤버십, 온라인숍 등*/
+.wrap footer .footer_wrap .footer_content .left_content .left_list li {}
+.wrap footer .footer_wrap .footer_content .left_content .left_list li a {} 
+.wrap footer .footer_wrap .footer_content .right_content {}  
+.wrap footer .footer_wrap .footer_content .right_content .right_menus {}  
+.wrap footer .footer_wrap .footer_content .right_content .right_menus .menu {} /* 메뉴  */ 
+.wrap footer .footer_wrap .footer_content .right_content .right_menus .menu .menu_bord {} /*개인정보처리방침  */
+/* footer address 시작! :D */
+.wrap footer .end_btm {} 
+.wrap footer .end_btm address {} 
+.wrap footer .end_btm address a {} 
+.wrap footer .end_btm .log {} 
+.wrap footer .end_btm .log img {} 
+.wrap footer .end_btm a {} 
+.wrap footer .end_btm a img {} 
+/* address 끝 */
