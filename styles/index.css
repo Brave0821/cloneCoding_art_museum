@@ -2,7 +2,7 @@
 
 /* font : 스포카 한 산스 네오 05 bold, notodans kr 05 bold */
 /* popup부분 */
-.popup {}
+.popup {display:none} /* 팝업 가려둠 12/29 */
 .popup h1 {}
 /* popup 내용 시작. */
 .popup .popup_contents {}
@@ -18,7 +18,7 @@
 /* 팝업은 head와 body사이에 위치. */
 
 /* 무지개 스마트서치 시작. */
-.smart_search {}
+.smart_search {display: none;}
 .smart_search a {}
 .smart_search a img {}
 /* 무지개 스마트서치 끝. */
@@ -28,7 +28,7 @@
 /* common.css로 이동시킴  공통부분  */
 /* -----------------------header 끝 main 시작 ------------------------- */
 /* main1. 국립현대미술관 관람 예약(reservation) 바로가기 부분 */
-.wrap main {}
+.wrap main {display: none;}
 .wrap main .reservation_container {}
 .wrap main .reservation_container .go_container {}
 .wrap main .reservation_container .go_container .left {}

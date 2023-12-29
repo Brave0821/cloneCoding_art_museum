@@ -1,15 +1,30 @@
 /* <공통부분> css 1.head 2.footer */
 
 /* 메인페이지 header 시작. */
-.wrap {} /* 최고 최최상위 컨테이너 */
-.wrap header {} 
-.wrap header .header_first_top {}
+.wrap {
+    background-color:yellow;
+    max-width: 1200px; margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap; flex-flow: row nowrap;
+
+} /* 최고 최최상위 컨테이너 */
+.wrap header { background-color: seagreen;
+} 
+.wrap header .header_first_top {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: end;
+}
 /* 메인로고  */
 .wrap header .header_first_top h1 {}
 .wrap header .header_first_top h1 a {}
 .wrap header .header_first_top h1 a img {}
 /* header 오른쪽 메뉴(회원가입,로그인,옵션) 시작. */
-.wrap header .header_first_top .first_top_right {}
+.wrap header .header_first_top .first_top_right {
+    background-color: tomato;
+    
+    
+}
 .wrap header .header_first_top .first_top_right .mmca_join {} /* 회원가입 */
 .wrap header .header_first_top .first_top_right a {} /* 로그인 */
 .wrap header .header_first_top .first_top_right #top_lang_option {} /* 옵션바 */ 
@@ -19,9 +34,9 @@
 .wrap header nav {}
 .wrap header nav .gnb {}
 .wrap header nav .gnb li {}
-.wrap header nav .gnb li a {} /* 관람참여 및 전시교육 소장품 등등  */
+.wrap header nav .gnb li a {background-color: yellowgreen;} /* 관람참여 및 전시교육 소장품 등등  */
 /* a 탭 눌렀을떄 list 부분 */
-.wrap header nav .gnb .lnb {}
+.wrap header nav .gnb .lnb {display:none}
 .wrap header nav .gnb .lnb ul {}
 /* list에 서울 과천 덕수궁 등등 */
 .wrap header nav .gnb .lnb ul li {}
@@ -39,7 +54,7 @@
 /* -------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------footer 시작 --------------------------------------------------- */
 /* footer 시작. */ /* common.css로 이동완료 */
-.wrap footer {}
+.wrap footer {display: none;}
 .wrap footer .footer_wrap {}
 .wrap footer .footer_wrap .footer_content {}
 .wrap footer .footer_wrap .footer_content .left_content {}
@@ -53,7 +68,7 @@
 .wrap footer .footer_wrap .footer_content .right_content .right_menus .menu {} /* 메뉴  */ 
 .wrap footer .footer_wrap .footer_content .right_content .right_menus .menu .menu_bord {} /*개인정보처리방침  */
 /* footer address 시작! :D */
-.wrap footer .end_btm {} 
+.wrap footer .end_btm {display: none;} 
 .wrap footer .end_btm address {} 
 .wrap footer .end_btm address a {} 
 .wrap footer .end_btm .log {} 
