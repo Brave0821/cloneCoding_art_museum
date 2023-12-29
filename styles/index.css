@@ -57,7 +57,8 @@
 .wrap header .search_click form {}
 .wrap header .search_click form #user_search {}
 .wrap header .search_click form .search_button {}
-/* header, nav 등등 해드부분 끝  */
+/* header, nav 등등 해드부분 끝   */
+/* common.css로 이동시킬 것 !!!!! 공통부분  */
 /* -----------------------header 끝 main 시작 ------------------------- */
 /* main1. 국립현대미술관 관람 예약(reservation) 바로가기 부분 */
 .wrap main {}
@@ -236,7 +237,19 @@
 .wrap main .news_wrap .news_head .news_content li a {}
 .wrap main .news_wrap .news_head .view_all {} /* 새소식 모두보기 */
 /* -----------------------------------------main 끝--------------------------------------------------- */
-/* footer 시작. */
+/* footer 시작. */ /* common.css로 이동시킬 것 !!!! */
 .wrap footer {}
 .wrap footer .footer_wrap {}
 .wrap footer .footer_wrap .footer_content {}
+.wrap footer .footer_wrap .footer_content .left_content {}
+.wrap footer .footer_wrap .footer_content .left_content h3 {} /* 뉴스레터 구독 신청 */
+.wrap footer .footer_wrap .footer_content .left_content a {} /* 구독하기 */
+.wrap footer .footer_wrap .footer_content .left_content .left_list {} /* 뉴스레터, 소식지, 멤버십, 온라인숍 등*/
+.wrap footer .footer_wrap .footer_content .left_content .left_list li {}
+.wrap footer .footer_wrap .footer_content .left_content .left_list li a {} 
+.wrap footer .footer_wrap .footer_content .right_content {}  
+.wrap footer .footer_wrap .footer_content .right_content .right_menus {}  
+.wrap footer .footer_wrap .footer_content .right_content .right_menus .menu {} /* 메뉴  */ 
+.wrap footer .footer_wrap .footer_content .right_content .right_menus .menu .menu_bord {} /*개인정보처리방침  */
+/* footer address 시작! :D */
+.wrap footer .end_btm {} 
