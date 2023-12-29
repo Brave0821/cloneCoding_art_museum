@@ -7,8 +7,9 @@
     <meta name="keywords" content="">
     <title>국립현대미술관</title>
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 <!-- https://www.mmca.go.kr/  -->
 <!-- 팝업은 body 위로 관람예약 및 회원가입(로그인) 서비스 일시중단 안내 -->
@@ -59,23 +60,6 @@
                     <button type="button" class="lang_btn">GO</button>
                 </div> <!-- 로고 오른쪽 회원가입. -->
             </div> <!-- 상단 해드 끝 -->
-
-            <!-- 오른쪽 회원가입 등 div a로할지 ul li로 할지 고민중. move2  -->
-            <!-- <div class="right_top">
-                <ul>
-                    <li class="mmca_join"><a href="#">MMCA회원가입</a></li>
-                    <li class="mmca_login"><a href="#">로그인</a></li>
-                    <li class="mmca_lang_option">
-                        <select name="lang_option" id="lang_option">
-                            <option value="/">한국어 <img src="./images/1.mainPage/icon_select_arrow.png" alt=""></option>
-                            <option value="en">ENG</option>
-                            <option value="ch">中文</option>
-                            <option value="jp">日本語</option>
-                        </select>
-                        <button type="button" class="go_btn" onclick="">Go</button>
-                    </li>
-                </ul>
-            </div> -->
             <nav>
                 <ul class="gnb">
                     <!-- 12/29 gnb class추가 -->
@@ -236,7 +220,7 @@
                     <!-- 12/29  <museum_contents> "museum_img" 묶는 div 추가 -->
                     <div class="museum_img">
                         <!-- "museum_img" class 명 줄이기. 12/27 3차-->
-                        <a href="./images/mainPage/img_place_seoul1_off.jpg"><img src="#" alt="서울"></a>
+                        <a href="#"><img src="./images/mainPage/img_place_seoul1_off.jpg" alt="서울"></a>
                         <h1>서울</h1> <!-- 12/29 br 수정. -->
                         <p>
                             월요일,화요일,목요일,금요일,일요일 10:00-18:00<br>
@@ -407,8 +391,8 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="preview"><img src="#" alt="왼쪽버튼"></a>
-                    <a href="#" class="next"><img src="#" alt="오른쪽 버튼"></a>
+                    <a href="#" class="prev"><img src="#" alt="이전으로"></a> 
+                    <a href="#" class="next"><img src="#" alt="다음으로"></a>
                 </div>
             </div> <!-- "collection_full_container" 끝 -->
             <!-- ----------------------------------------------------------------------------------------------------------- -->
@@ -417,7 +401,7 @@
                 <div class="digital_container">
                     <div class="digital_head">
                         <h1>디지털미술관</h1>
-                        <a href="#" class="view_all">디지털미술관 모두 보기<img src="#" alt="오른쪽 괄호 아이콘"></a>
+                        <a href="#" class="view_all">디지털미술관 모두 보기<img src="#" alt=""></a>
                     </div>
                     <div class="digital_videos">
                         <!-- 12/29 ul>li에서 a로 수정. -->
@@ -447,7 +431,8 @@
                         <a href="#" class="view_all">MMCA 뉴스레터 모두보기<img src="#" alt=""></a>
                     </div>
                     <div class="news_images">
-                        <ul class="news_img1">
+                        <!-- 홈페이지 확인결과 img들 크기가 동일. img로 클래스명 통일해도 괜찮을듯 12/29 -->
+                        <ul class="news_img">
                             <li><a href="#"><img src="#" alt="우리 존재의 첫 소리, 이름 <<창동레지던시 입주보고서 2023:나의 이름은...>>"></a></li>
                             <li>
                                 <p><a href="#">포커스</a></p> <!-- 클래스 줄까? 12/27 -->
@@ -457,7 +442,7 @@
                                 <p><a href="#">우리 존재의 첫 소리, 이름 &lt;&lt;창동레지던시 입주보고서 2023:나의 이름은...&gt;&gt</a></p>
                             </li>
                         </ul>
-                        <ul class="news_img2">
+                        <ul class="news_img">
                             <li><a href="#"><img src="#" alt="미래를 향한 대화 &lt;&lt;미지의 전망들:동시대 미술과 제도&gt;&gt"></a></li>
                             <li>
                                 <p><a href="#">미술관 플러스</a></p>
@@ -466,7 +451,7 @@
                                 <p><a href="#">미래를 향한 대화 &lt;&lt;미지의 전망들:동시대 미술과 제도&gt;&gt</a></p>
                             </li>
                         </ul>
-                        <ul class="news_img3">
+                        <ul class="news_img">
                             <li><a href="#"><img src="#" alt="아듀2023! 뮤클리와 함께 올 한해를 돌아보다"></a></li>
                             <li>
                                 <p><a href="#">미술관플러스</a></p>
@@ -475,7 +460,7 @@
                                 <p><a href="#">아듀2023! 뮤클리와 함께 올 한해를 돌아보다</a></p>
                             </li>
                         </ul>
-                        <ul class="news_img4">
+                        <ul class="news_img">
                             <li><a href="#"><img src="#" alt="포커스 우리 존재의 첫 소리, 이름 <<창동레지던시 입주보고서 2023:나의 이름은...>>"></a>
                             </li>
                             <li>
@@ -492,7 +477,7 @@
             <!-- MMCA 뉴스레터 하단 시작 ul>li 구조에서 div로 변경 12/29 -->
             <div class="find_wrap">
                 <div class="find_images">
-                     <!-- 아이템1 div class="news_btm" 미술은행 시작 -->
+                    <!-- 아이템1 div class="news_btm" 미술은행 시작 -->
                     <div class="news_btm">
                         <a href="#"><img src="#" alt="미술은행"></a>
                         <div class="btm">
