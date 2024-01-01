@@ -6,6 +6,8 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>국립현대미술관</title>
+    <link rel="shortcut icon" href="./images/mainPage/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/mainPage/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
@@ -13,6 +15,7 @@
 </head>
 <!-- https://www.mmca.go.kr/  -->
 <!-- 팝업은 body 위로 관람예약 및 회원가입(로그인) 서비스 일시중단 안내 -->
+<!-- http://www.mmcafoundation.or.kr/page/about/logo 파비콘 다운. -->
 <div class="popup">
     <h1>국립현대미술관 신정(24.1.1-1.2)휴관안내</h1>
     <div class="popup_contents">
@@ -34,7 +37,6 @@
         <a href="#" class="close_button"><img src="#" alt="닫기"></a>
     </div>
 </div> <!-- popup 12/29 popup_btm - > popup 안으로 넣고 & textarea 교체 -->
-
 <body>
     <!-- 스마트검색 위치 스마트 검색 눌렀을때 open -> div
     숨어있는(display non) div가 열린다는 개념 -->
@@ -45,8 +47,9 @@
     <div class="wrap">
         <!-- main 컨데이너  -->
         <header>
+
             <div class="header_first_top">
-                <h1><a href="./index.html"><img src="#" alt="국립현대미술관"></a></h1> <!-- 로고 -->
+                <h1><a href="./index.html"><img src="./images/mainPage/bg_logo_full.png" alt="국립현대미술관"></a></h1> <!-- 로고 -->
                 <!-- 상단 오른쪽 메뉴 -->
                 <div class="first_top_right">
                     <a href="./join.html" class="mmca_join">MMCA회원가입</a>
@@ -64,9 +67,7 @@
                 <ul class="gnb">
                     <!-- 12/29 gnb class추가 -->
                     <li>
-                        <a href="#">관람·참여</a>
-                        <!-- div로 한번 더 묶고 ul 클래스를 빼는게 좋을까? 12/22 - > 
-                            div>ul>li 구조로 바꿈(완) -->
+                        <a href="#">관람·참여 </a>
                         <div class="lnb">
                             <ul>
                                 <!-- top_bnr_art_view 관람 참여 탭 -->
@@ -83,6 +84,8 @@
                                 <li><a href="#">미술은행</a></li>
                             </ul>
                         </div>
+                        <!-- div로 한번 더 묶고 ul 클래스를 빼는게 좋을까? 12/22 - > 
+                            div>ul>li 구조로 바꿈(완) -->
                     </li>
                     <li>
                         <a href="#">전시</a>
@@ -199,7 +202,7 @@
                     <!-- 눌리는거 버튼만 눌리게 나머지 a 전부 뺴기. -->
                     <div class="images">
                         <!-- 12/27 3차 이미지 인라인이니까 div로 한번 더 묶음 -->
-                        <img src="#" alt="[과천] 한국의 기하학적 추상미술">
+                        <img src="./images/mainPage/display_container.jpg" alt="[과천] 한국의 기하학적 추상미술">
                     </div>
                     <div class="display_container">
                         <div class="left">
@@ -391,7 +394,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="prev"><img src="#" alt="이전으로"></a> 
+                    <a href="#" class="prev"><img src="#" alt="이전으로"></a>
                     <a href="#" class="next"><img src="#" alt="다음으로"></a>
                 </div>
             </div> <!-- "collection_full_container" 끝 -->
@@ -555,7 +558,8 @@
                                 <li><a href="#">네이버포스트</a></li>
                             </ul>
                             <ul class="menu">
-                                <li><a href="#" class="menu_bord">개인정보처리방침</a></li> <!-- 여기 nth를 줄지 아니면 class를 줄지? 12/29 -->
+                                <li><a href="#" class="menu_bord">개인정보처리방침</a></li>
+                                <!-- 여기 nth를 줄지 아니면 class를 줄지? 12/29 -->
                                 <li><a href="#">이용약관</a></li>
                                 <li><a href="#">저작권정책</a></li>
                                 <li><a href="#">국민신문고</a></li>
