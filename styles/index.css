@@ -143,21 +143,24 @@
 /* [과천] 한국의 기하학적 추상미술 끝. */
 /* --------------------------------------------------------------------------------------------------- */
 /* 미술관 부분 시작.! */
+/* 100 / 4 해서 전체 공간 나누기 01/04 */
 .wrap main .place_museum_wrap {
    background-color:aquamarine;
-   padding: 40px 30px;
    border-bottom: 1px solid #000;
 }
 .wrap main .place_museum_wrap h2 {
     font-weight: bold;
     /* padding: 30px 0px 0px 25px; */
     font-size: 26px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 } /* 미술관 */
 .wrap main .place_museum_wrap .museum_contents {
     display: flex;
     flex-flow: row nowrap;
-    padding: 40px 30px;
+    padding: 40px 0px;
+    justify-content: space-between;
+    background: lime;
+
     /* padding: 5px; */
     /* padding: 40px 30px; */
     
@@ -165,18 +168,17 @@
 .wrap main .place_museum_wrap .museum_contents .museum_img {
     /* margin: 70px; */
     /* padding:0px 0px 0px 0px; */
-    margin: 0px 60px 0px 0px;
+    width: calc(100% / 4 - 30px / 4);
 }
 .wrap main .place_museum_wrap .museum_contents .museum_img a {}
 .wrap main .place_museum_wrap .museum_contents .museum_img a img {
-    margin-top: 30px;
-    width: 282px; height: 188px;
+    /* margin-top:30px; */
+    width: 100%
 }
 .wrap main .place_museum_wrap .museum_contents .museum_img h1 {
     font-size: 24px;
     font-weight: bold;
     margin-top: 10px;
-
 } /* 서울, 과천 등등  */
 .wrap main .place_museum_wrap .museum_contents .museum_img p {
     margin-top: 30px;
@@ -269,7 +271,7 @@
 .wrap main .display_full_container .display_btm_container .display_image .display .category {
     font-size: 15px;
     font-weight: bold;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 } /* P CLASS */
 .wrap main .display_full_container .display_btm_container .display_image .display h2 {
     font-size: 28px;
