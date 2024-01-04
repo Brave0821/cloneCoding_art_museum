@@ -280,12 +280,24 @@
     font-size: 15px;
     color:#949494;
     margin-bottom: 10px;
-} /* 2023-12-22~2024-04-06 */ 
+} /* 2023-12-22~2024-04-06 */
+.wrap main .display_full_container .display_btm_container .display_image .display img {
+    width: 25px; 
+} /* 해드폰 아이콘 이미지 */
+
+.wrap main .display_full_container .display_btm_container .display_image .display img a {}
+
 /* 이전으로 & 다음으로 방향  */
-.wrap main .display_full_container .display_btm_container .prev {}
-.wrap main .display_full_container .display_btm_container .prev img {}
+.wrap main .display_full_container .display_btm_container .prev {
+    width: 45px;
+}
+.wrap main .display_full_container .display_btm_container .prev img {
+    
+}
 /* 다음으로 */
-.wrap main .display_full_container .display_btm_container .next {}
+.wrap main .display_full_container .display_btm_container .next  {
+    width: 45px;
+}
 .wrap main .display_full_container .display_btm_container .next img {}
 /* 이전으로 & 다음으로 방향 끝  */
 /* ---------------------------------------------------------------------------------------------------------------------- */
