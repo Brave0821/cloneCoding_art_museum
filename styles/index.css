@@ -218,39 +218,69 @@
 .wrap main .display_full_container .display_btm_container .display_bnr {
     display: flex;
     flex-flow: row nowrap;
-    display: inline;
+    justify-content:space-between
 } /* 전시 탭 해더  전체 서울 등등  */ 
 .wrap main .display_full_container .display_btm_container .display_bnr h2 {
     font-size: 26px;
     font-weight: bold;
+    margin-bottom: 25px;
+    /* margin-right: 100px; */
+
 }   
 .wrap main .display_full_container .display_btm_container .display_bnr .display_bnr_list {
 
     
 } /* 목록 리스트 */   
-.wrap main .display_full_container .display_btm_container .display_bnr .display_bnr_list ul {}    
-.wrap main .display_full_container .display_btm_container .display_bnr .display_bnr_list ul li {}    
-.wrap main .display_full_container .display_btm_container .display_bnr .display_bnr_list ul li a {} /* 전체 ~ 서울 ~ 과천 ~ */    
+.wrap main .display_full_container .display_btm_container .display_bnr .display_bnr_list ul {
+    display: flex;
+    flex-flow: row nowrap;
+
+}    
+.wrap main .display_full_container .display_btm_container .display_bnr .display_bnr_list ul li {
+    margin-right: 20px;
+}    
+.wrap main .display_full_container .display_btm_container .display_bnr .display_bnr_list ul li a {
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    /* display: inline; */
+   
+} /* 전체 ~ 서울 ~ 과천 ~ */    
 /* 전시 모두보기  */
-.wrap main .display_full_container .display_btm_container .display_bnr .view_all {}
-.wrap main .display_full_container .display_btm_container .display_bnr .view_all img {}
+.wrap main .display_full_container .display_btm_container .display_bnr .view_all {
+    font-size: 15px;
+    /* 아이콘 넣기 */
+}
+.wrap main .display_full_container .display_btm_container .display_bnr .view_all img {
+}
 /* display_image 시작 이미지 큰거 :D */
 .wrap main .display_full_container .display_btm_container .display_image {
     display: flex;
     flex-flow: row nowrap;
 } /* 이미지 전체를 묶는 DIV */
-.wrap main .display_full_container .display_btm_container .display_image .display {} /* 이미지를 묶는 A */
+.wrap main .display_full_container .display_btm_container .display_image .display {
+} /* 이미지를 묶는 A */
 .wrap main .display_full_container .display_btm_container .display_image .display .photo {} /* P CLASS */
-.wrap main .display_full_container .display_btm_container .display_image .display .photo img {
-    width: 400px;
+.wrap main .display_full_container .display_btm_container .display_image .display .photo > img {
+    width: 400px; 
+    /* border-bottom:1px solid #000; */
 } /* P CLASS */
 /* ex) 서울 미술관을 말할 때 우리가 이야기하는 것들 */
 .wrap main .display_full_container .display_btm_container .display_image .display .category {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+} /* P CLASS */
+.wrap main .display_full_container .display_btm_container .display_image .display h2 {
     font-size: 28px;
     font-weight: bold;
-} /* P CLASS */
-.wrap main .display_full_container .display_btm_container .display_image .display .photo h2 {} /* 미술관을 말할 때 우리가 ~  */ 
-.wrap main .display_full_container .display_btm_container .display_image .display .photo .date {} /* 2023-12-22~2024-04-06 */ 
+    margin-bottom: 10px;
+} /* 미술관을 말할 때 우리가 ~  */ 
+.wrap main .display_full_container .display_btm_container .display_image .display .date {
+    font-size: 15px;
+    color:#949494;
+    margin-bottom: 10px;
+} /* 2023-12-22~2024-04-06 */ 
 /* 이전으로 & 다음으로 방향  */
 .wrap main .display_full_container .display_btm_container .prev {}
 .wrap main .display_full_container .display_btm_container .prev img {}
@@ -260,7 +290,9 @@
 /* 이전으로 & 다음으로 방향 끝  */
 /* ---------------------------------------------------------------------------------------------------------------------- */
 /* 소장품 시작 */
-.wrap main .collection_full_container {display: none;}
+.wrap main .collection_full_container {
+    background-color: turquoise;
+}
 .wrap main .collection_full_container .collection_container {}
 .wrap main .collection_full_container .collection_container .collection_head {} /* 소장품 해드 */
 .wrap main .collection_full_container .collection_container .collection_head h2 {} /* 소장품 해드 */
