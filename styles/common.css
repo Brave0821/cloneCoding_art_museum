@@ -7,13 +7,14 @@
     max-width: 1668px;
     /* padding-right: 30px; padding-left: 30px; */
     margin: 0 auto;
+    /* font-family: 'Black Han Sans', sans-serif; */
     
 } /* 최고 최최상위 컨테이너 */
 
 .wrap header { 
     /* background-color: ;     */
     width: 100%; padding-top: 40px;
-    padding: 40px 30px;
+    /* padding: 40px 30px; */
     border-bottom: 1px solid #000;
     /* position: fixed; left: 0; top: 0; width: 100%; z-index: 9999; height: 50px; */
     /* 밑으로 내렸을 때 로고 와 nav 메뉴만 보인다. */
@@ -34,7 +35,7 @@
 /* background-color: bisque; */
 display: inline-block;
 /* margin-right: 450px; */
-margin: 0px 0px 25px;
+/* margin: 0px 0px 25px; */
 margin-bottom: 30px;
 }
 .wrap header .header_first_top h1 a {}
@@ -56,6 +57,7 @@ margin-bottom: 30px;
     padding: 20px 0.5px 20px 0.5px;
     width: 80px; height: 80px;
     font-weight: bold; 
+    margin-right: 15px;
 
     /* css 둥근 원 버튼 만들기 방법찾기 1/02 */
 } /* 회원가입 */
@@ -66,6 +68,9 @@ margin-bottom: 30px;
     border: 1px solid #000;
     border-radius: 50px;
     padding: 5px;
+    padding: 5px 15px 5px 15px;
+    background-color: #fff;
+    font-weight: bold;
 }  /* GO버튼 */
 /* header_first_top 로고 및 로그인 회원가입 옵션 GO 버튼 끝  */
 /* nav 메뉴바 시작. */
@@ -95,7 +100,7 @@ https://m.blog.naver.com/sonjjy/60196952929
 .wrap header nav .gnb li a {
 }
 .wrap header nav .gnb > li > a {
-    /* background-color: yellowgreen; */
+    background-color: yellowgreen;
     font-size: 24px;
     font-weight: bold;
         
@@ -121,7 +126,6 @@ https://m.blog.naver.com/sonjjy/60196952929
 .wrap header nav .gnb .lnb ul li {
     margin-right: 10px; 
     /* 탭 눌렀을때 목록들 간격이 넓어진다. */
-   
 }
 .wrap header nav .gnb .lnb ul li  a {
     font-size: 24px;
