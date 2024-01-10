@@ -506,7 +506,11 @@
 /* MMCA 뉴스레터 시작. */
 .wrap main .news_wrap {} /* MMCA 뉴스레터 · 최상위 컨테이너 */
 .wrap main .news_wrap .news_container {}
-.wrap main .news_wrap .news_container .news_head {} /* 해드 배너 */
+.wrap main .news_wrap .news_container .news_head {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+} /* 해드 배너 */
 .wrap main .news_wrap .news_container .news_head h1 {} /* 해드 배너 */
 .wrap main .news_wrap .news_container .news_head .view_all {} /* 모두보기 */
 .wrap main .news_wrap .news_container .news_head .img {}
@@ -521,7 +525,7 @@
 /* img1 ~ 4로 있었다면 4개 더 늘어야했지만 홈페이지 확인 결과 동일 사이즈 확인. */
 /* MMCA 뉴스레터 끝------------------------------------------------------------------------------- */
 /* MMCA 뉴스레터 하단 시작 */
-.wrap main .find_wrap {} /* 최상위 wrap */
+.wrap main .find_wrap {display: none;} /* 최상위 wrap */
 .wrap main .find_wrap .find_images {} /* 상위 wrap */
 .wrap main .find_wrap .find_images .news_btm {} 
 .wrap main .find_wrap .find_images .news_btm a {} 
@@ -530,7 +534,7 @@
 .wrap main .find_wrap .find_images .news_btm .btm h3 {} /* 미술은행 */
 .wrap main .find_wrap .find_images .news_btm .btm .more {} /* 더 알아보기 */
 /* MMCA 뉴스레터 하단 아이템들 전부 똑같기에 끝. */
-.wrap main .news_wrap {display: none;}
+.wrap main .news_wrap {}
 .wrap main .news_wrap .news_head {}
 .wrap main .news_wrap .news_head h1 {}
 .wrap main .news_wrap .news_head .news_content {} /* ul class  */
