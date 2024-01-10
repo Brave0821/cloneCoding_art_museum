@@ -62,7 +62,10 @@ margin-bottom: 30px;
     /* css 둥근 원 버튼 만들기 방법찾기 1/02 */
 } /* 회원가입 */
 .wrap header .header_first_top .first_top_right a {font-size: 15px;} /* 로그인 */
-.wrap header .header_first_top .first_top_right #top_lang_option {font-size: 15px;} /* 옵션바 */ 
+.wrap header .header_first_top .first_top_right #top_lang_option {
+    font-size: 15px;
+
+} /* 옵션바 */ 
 .wrap header .header_first_top .first_top_right .lang_btn {
     font-size: 15px;
     border: 1px solid #000;
@@ -79,11 +82,18 @@ margin-bottom: 30px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-
+    /* border-bottom: 1px solid #000; */
 }
+
+.wrap header nav .gnb >li > a .lnb >ul > li > a {
+    /* border-bottom: 1px solid #000; */
+}
+
 .wrap header nav .gnb {
     /* background-color: aquamarine; */
     display: flex;
+
+    
 }
 
 .wrap header nav .gnb > li {
@@ -98,11 +108,13 @@ hover 관련 글
 https://m.blog.naver.com/sonjjy/60196952929
 */
 .wrap header nav .gnb li a {
+
 }
 .wrap header nav .gnb > li > a {
     background-color: yellowgreen;
     font-size: 24px;
     font-weight: bold;
+    margin: 10px;
         
     } /* 관람참여 및 전시교육 소장품 등등  */
     
@@ -112,25 +124,41 @@ https://m.blog.naver.com/sonjjy/60196952929
     } */ 
 .wrap header nav .gnb .lnb {
     display: none;
-    background: skyblue;
+    /* background: skyblue; */
     position: absolute; /* 주니까 밑에 국립현대미술관 관람 예약 바로가기가 밑으로 안내려간다.
-    그리고 호버 줬을때도 움직이지 않는다. 01/04 */
+    그리고 호버 줬을때도 움직이지 않는다. 01/04 */    
+
 }
+
+/* .wrap header nav .gnb > li > a .lnb ul:nth-child(1) {
+    display: block;
+} */
+
 .wrap header nav .gnb .lnb1 {
     display: block;
+    
 }
 .wrap header nav .gnb .lnb > ul {
     display: flex; /* 여기다 주니까 탭 했을 때 아래 목록이 나온다. 01/04 */
+    background: #fff;
+    border-bottom: 1px solid #000;
+  /*   border-bottom: 1px solid #000; */
 } /* display:none 후보2 */
 /* list에 서울 과천 덕수궁 등등 */
 .wrap header nav .gnb .lnb ul li {
     margin-right: 10px; 
+    margin-top: 20px; /* 240110 탭 눌렀을 때 내려간거 */
     /* 탭 눌렀을때 목록들 간격이 넓어진다. */
+    margin: 10px;
+    
+    
 }
 .wrap header nav .gnb .lnb ul li  a {
     font-size: 24px;
     font-weight: bold;
-    border-bottom: 1px solid #000;
+    
+    
+    
 } /* 서울 과천 등등  */
 .wrap header nav .search_btn {
     /* background-color:burlywood; */

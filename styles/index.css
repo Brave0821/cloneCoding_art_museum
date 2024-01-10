@@ -42,7 +42,7 @@
     background-color: teal;
     display: flex;
     flex-flow: row nowrap;
-    padding: 40px;
+    padding-top: 20px;
     border-bottom: 1px solid #000;
     justify-content: space-between;
     
@@ -58,6 +58,7 @@
 }
 .wrap main .reservation_container .go_container .left p {
     font-size: 15px;
+    font-weight: bold;
 }
 /* left 끝 right 시작 */
 .wrap main .reservation_container .go_container .right {
@@ -524,10 +525,10 @@
 .wrap main .news_wrap .news_container .news_images {
     display: flex;
 } /* 뉴스 이미지들  */
-.wrap main .news_wrap .news_container .news_images .news_img { width: calc(100% / 4 - 30px / 4);}
+.wrap main .news_wrap .news_container .news_images .news_img {width: calc(100% / 4 - 30px / 4);}
 .wrap main .news_wrap .news_container .news_images .news_img li {}
 .wrap main .news_wrap .news_container .news_images .news_img li a {
-    width: 100%;
+    /* width: 100%; */
 }
 .wrap main .news_wrap .news_container .news_images .news_img li a img {
 
