@@ -229,7 +229,7 @@
 
 } /* 전시 전체를 묶는 최상위 컨테이너 */
 .wrap main .display_full_container .display_btm_container {
-    margin-top: 20px;
+    margin-top: 40px;
     position: relative;
 } 
 .wrap main .display_full_container .display_btm_container .display_bnr {
@@ -282,6 +282,19 @@
     width: 400px; 
     /* border-bottom:1px solid #000; */
 } /* P CLASS */
+.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img1{border-bottom:1px solid #000;}
+.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img2{
+}
+.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img3{}
+.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img4{}
+.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img5{}
+.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img6{}
+
+/* .wrap main .display_full_container .display_btm_container .display_image .display .photo > img:nth-child(1){
+    border-bottom: 1px solid #000;
+} */
+
+
 /* ex) 서울 미술관을 말할 때 우리가 이야기하는 것들 */
 .wrap main .display_full_container .display_btm_container .display_image .display .category {
     font-size: 15px;
