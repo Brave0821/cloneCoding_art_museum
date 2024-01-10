@@ -505,21 +505,33 @@
 /* 디지털 미술관 끝  */
 /* MMCA 뉴스레터 시작. */
 .wrap main .news_wrap {} /* MMCA 뉴스레터 · 최상위 컨테이너 */
-.wrap main .news_wrap .news_container {}
+.wrap main .news_wrap .news_container {
+    
+}
 .wrap main .news_wrap .news_container .news_head {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 } /* 해드 배너 */
-.wrap main .news_wrap .news_container .news_head h1 {} /* 해드 배너 */
+.wrap main .news_wrap .news_container .news_head h1 {
+    font-size: 28px;
+} /* 해드 배너 */
 .wrap main .news_wrap .news_container .news_head .view_all {} /* 모두보기 */
-.wrap main .news_wrap .news_container .news_head .img {}
+.wrap main .news_wrap .news_container .news_head .img {
+    
+}
 /* 뉴스 해드 끝 */
-.wrap main .news_wrap .news_container .news_images {} /* 뉴스 이미지들  */
-.wrap main .news_wrap .news_container .news_images .news_img {}
+.wrap main .news_wrap .news_container .news_images {
+    display: flex;
+} /* 뉴스 이미지들  */
+.wrap main .news_wrap .news_container .news_images .news_img { width: calc(100% / 4 - 30px / 4);}
 .wrap main .news_wrap .news_container .news_images .news_img li {}
-.wrap main .news_wrap .news_container .news_images .news_img li a {}
-.wrap main .news_wrap .news_container .news_images .news_img li a img {}
+.wrap main .news_wrap .news_container .news_images .news_img li a {
+    width: 100%;
+}
+.wrap main .news_wrap .news_container .news_images .news_img li a img {
+
+}
 .wrap main .news_wrap .news_container .news_images .news_img li p {}
 .wrap main .news_wrap .news_container .news_images .news_img li p a {}
 /* img1 ~ 4로 있었다면 4개 더 늘어야했지만 홈페이지 확인 결과 동일 사이즈 확인. */
