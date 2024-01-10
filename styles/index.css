@@ -116,6 +116,7 @@
 } /* [과천] 한국의 기하학적 추상미술 이미지 묶은 div */
 .wrap main .display_top_wrap .display_top_container .images img {
     width: 100%; /* 0109 여기 이미지도 ? 1600px */
+    object-fit: cover;
     
 }
 /* [과천] 이미지 아래 글 버튼 시작. */
@@ -226,7 +227,8 @@
 /* -------------------------------------멤버십 이미지 (전 레인보우 이미지) 부분 끝-------------------------------------------------- */
 /* <전시> 시작!  */
 .wrap main .display_full_container {
-
+    background-color: thistle;
+    border-bottom:1px solid #000;
 } /* 전시 전체를 묶는 최상위 컨테이너 */
 .wrap main .display_full_container .display_btm_container {
     margin-top: 40px;
@@ -269,6 +271,7 @@
     /* 아이콘 넣기 */
 }
 .wrap main .display_full_container .display_btm_container .display_bnr .view_all img {
+    margin-left: 7px;
 }
 /* display_image 시작 이미지 큰거 :D */
 .wrap main .display_full_container .display_btm_container .display_image {
@@ -282,13 +285,22 @@
     width: 400px; 
     /* border-bottom:1px solid #000; */
 } /* P CLASS */
-.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img1{border-bottom:1px solid #000;}
+.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img1{/* border-bottom:1px solid #000; */}
 .wrap main .display_full_container .display_btm_container .display_image .display .photo > .img2{
+    /* border-bottom:1px solid #000; */
 }
-.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img3{}
-.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img4{}
-.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img5{}
-.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img6{}
+.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img3{
+    /* border-bottom:1px solid #000; */
+}
+.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img4{
+   /*  border-bottom:1px solid #000; */
+}
+.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img5{
+    /* border-bottom:1px solid #000; */
+}
+.wrap main .display_full_container .display_btm_container .display_image .display .photo > .img6{
+   /*  border-bottom:1px solid #000; */
+}
 
 /* .wrap main .display_full_container .display_btm_container .display_image .display .photo > img:nth-child(1){
     border-bottom: 1px solid #000;
@@ -341,27 +353,34 @@
 /* ---------------------------------------------------------------------------------------------------------------------- */
 /* 소장품 시작 */
 .wrap main .collection_full_container {
-    background-color: turquoise;
+   /*  background-color: turquoise; */
     
 }
 .wrap main .collection_full_container .collection_container {
     background: violet;
-    
+    position: relative; /* 이전 다음으로 버튼. */
     
 }
 
 .wrap main .collection_full_container .collection_container .collection_head { 
     display: flex; justify-content: space-between;
     margin-top: 10px;
+    
 } /* 소장품 해드 */
 .wrap main .collection_full_container .collection_container .collection_head h2 {
     margin-top: 10px;
-} /* 소장품 해드 */
-.wrap main .collection_full_container .collection_container .collection_head .view_all {} /* 소장품 모두보기 */
-.wrap main .collection_full_container .collection_container .collection_head .view_all img {
+    font-size: 26px;
+    font-weight: bold;
     
+    
+} /* 소장품 해드 */
+.wrap main .collection_full_container .collection_container .collection_head .view_all {
+    font-size: 15px;
+    margin-top: 40px;
+} /* 소장품 모두보기 */
+.wrap main .collection_full_container .collection_container .collection_head .view_all img {
+    margin-left: 7px;
 } 
-
 
 
 /*  소장품 공통 img 0108 */
@@ -372,7 +391,9 @@
     justify-content: space-between;
     background: lime;
     width: calc(100% / 4 - 30px / 4);
-       /* width: calc(100% / 4 - 30px / 4); */
+    
+    
+    /* width: calc(100% / 4 - 30px / 4); */
 
 }
 
@@ -382,11 +403,21 @@
 
 }
 
+.wrap main .collection_full_container .collection_container .collection_images .collection_img li h2 > a {
+    font-size: 28px;
+    background-color: skyblue;
+
+} 
+.wrap main .collection_full_container .collection_container .collection_images .collection_img li p > a {
+    font-size: 15px;
+    color: #949494;
+}
+
 
 /* 소장품 해드 끝  */
 .wrap main .collection_full_container .collection_container .collection_images {} /* 소장품 */
 .wrap main .collection_full_container .collection_container .collection_images .collection_img1 {
-    width: 400px;
+   /*  width: 400px; */
 } /* img 각각 이미지 크기가 다름. */
 .wrap main .collection_full_container .collection_container .collection_images .collection_img1 li {}
 .wrap main .collection_full_container .collection_container .collection_images .collection_img1 li a {} 
@@ -397,7 +428,7 @@
 .wrap main .collection_full_container .collection_container .collection_images .collection_img1 li p a {} /* 1910년대-1920년대 */
 /* 이미지 1 끝 */
 .wrap main .collection_full_container .collection_container .collection_images .collection_img2 {
-    width: 400px;
+    /* width: 400px; */
 } /* img 각각 이미지 크기가 다름. */
 .wrap main .collection_full_container .collection_container .collection_images .collection_img2 li {}
 .wrap main .collection_full_container .collection_container .collection_images .collection_img2 li a {} 
@@ -417,7 +448,7 @@
 .wrap main .collection_full_container .collection_container .collection_images .collection_img3 li p a {} /* 1910년대-1920년대 */
 /* 이미지 3 끝 */
 .wrap main .collection_full_container .collection_container .collection_images .collection_img4 {
-    width: 400px;
+   /*  width: 400px; */
 } /* img 각각 이미지 크기가 다름. */
 .wrap main .collection_full_container .collection_container .collection_images .collection_img4 li {}
 .wrap main .collection_full_container .collection_container .collection_images .collection_img4 li a {} 
@@ -428,30 +459,52 @@
 .wrap main .collection_full_container .collection_container .collection_images .collection_img4 li p a {} /* 1910년대-1920년대 */
 /* 이미지 4 끝 */
 /* 이전으로 & 다음으로 */
-.wrap main .collection_full_container .collection_container .prev {}
+.wrap main .collection_full_container .collection_container .prev  i[class^=fa] {
+    font-size: 45px; 
+    position: absolute; left: 0px; top: 285px;
+}
 .wrap main .collection_full_container .collection_container .prev img {}
-.wrap main .collection_full_container .collection_container .next {}
+.wrap main .collection_full_container .collection_container .next i[class^=fa] {
+    font-size: 45px;
+    position: absolute; right: 0px; top: 285px;
+}
 .wrap main .collection_full_container .collection_container .next img {}
 /* 이전으로 & 다음으로 끝 */
 /* ----------------------------------------------------------------------------------------------------------------------------------- */
 /* 디지털 미술관 시작. */
-.wrap main .digital_wrap {display: none;} /* 디지털 미술관 최상위 컨테이너 */
-.wrap main .digital_wrap .digital_container {}
-.wrap main .digital_wrap .digital_container .digital_head {} /* 디지털 미술관 해드 */
-.wrap main .digital_wrap .digital_container .digital_head h1 {} /* 디지털 미술관. */
+.wrap main .digital_wrap {
+    background-color: chocolate;
+} /* 디지털 미술관 최상위 컨테이너 */
+.wrap main .digital_wrap .digital_container {
+   
+}
+.wrap main .digital_wrap .digital_container .digital_head {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+} /* 디지털 미술관 해드 */
+.wrap main .digital_wrap .digital_container .digital_head h1 {
+    font-size: 28px;
+} /* 디지털 미술관. */
 .wrap main .digital_wrap .digital_container .digital_head .view_all {} /* 모두보기  */
 .wrap main .digital_wrap .digital_container .digital_head .view_all img {}
 /* 해드 끝  */
-.wrap main .digital_wrap .digital_container .digital_videos {}
+.wrap main .digital_wrap .digital_container .digital_videos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
 .wrap main .digital_wrap .digital_container .digital_videos a {} /* 비디오 묶음 */
 .wrap main .digital_wrap .digital_container .digital_videos a .photo {} /* p 클래스  */
-.wrap main .digital_wrap .digital_container .digital_videos a .photo img {} 
+.wrap main .digital_wrap .digital_container .digital_videos a .photo img {
+    width: 400px;
+} 
 .wrap main .digital_wrap .digital_container .digital_videos a .sub_title {} /* p 클래스 MMCA TV */
 .wrap main .digital_wrap .digital_container .digital_videos a h2 {} /* 라이브 x 장기하 등등 */
 /* -------------------------------------------------------------------------------------------- */
 /* 디지털 미술관 끝  */
 /* MMCA 뉴스레터 시작. */
-.wrap main .news_wrap {display: none;} /* MMCA 뉴스레터 · 최상위 컨테이너 */
+.wrap main .news_wrap {} /* MMCA 뉴스레터 · 최상위 컨테이너 */
 .wrap main .news_wrap .news_container {}
 .wrap main .news_wrap .news_container .news_head {} /* 해드 배너 */
 .wrap main .news_wrap .news_container .news_head h1 {} /* 해드 배너 */
@@ -468,7 +521,7 @@
 /* img1 ~ 4로 있었다면 4개 더 늘어야했지만 홈페이지 확인 결과 동일 사이즈 확인. */
 /* MMCA 뉴스레터 끝------------------------------------------------------------------------------- */
 /* MMCA 뉴스레터 하단 시작 */
-.wrap main .find_wrap {display: none;} /* 최상위 wrap */
+.wrap main .find_wrap {} /* 최상위 wrap */
 .wrap main .find_wrap .find_images {} /* 상위 wrap */
 .wrap main .find_wrap .find_images .news_btm {} 
 .wrap main .find_wrap .find_images .news_btm a {} 

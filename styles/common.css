@@ -8,7 +8,7 @@
     /* padding-right: 30px; padding-left: 30px; */
     margin: 0 auto;
     /* font-family: 'Black Han Sans', sans-serif; */
-    
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 } /* 최고 최최상위 컨테이너 */
 
 .wrap header { 
@@ -154,7 +154,8 @@ https://m.blog.naver.com/sonjjy/60196952929
 /* -------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------footer 시작 --------------------------------------------------- */
 /* footer 시작. */ /* common.css로 이동완료 */
-.wrap footer {display: none;}
+.wrap footer {display: none;
+}
 .wrap footer .footer_wrap {}
 .wrap footer .footer_wrap .footer_content {}
 .wrap footer .footer_wrap .footer_content .left_content {}
