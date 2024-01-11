@@ -119,11 +119,12 @@ https://m.blog.naver.com/sonjjy/60196952929
     } /* 관람참여 및 전시교육 소장품 등등  */
     
     /* a 탭 눌렀을떄 list 부분 */  
-/*     .lnb{
+   /*   .lnb{
         display: none;
-    } */ 
+    } */
+     /* 0112 2. 여기도 풀면 탭 움직임.  */
 .wrap header nav .gnb li .lnb { 
-   /*  display: none; */ /*li 추가 0111  */
+    /* display: none; */  /*li 추가 0112  1.  풀면 탭 움직임.*/
     /* background: skyblue; */
     position: absolute; /* 주니까 밑에 국립현대미술관 관람 예약 바로가기가 밑으로 안내려간다.
     그리고 호버 줬을때도 움직이지 않는다. 01/04 */    
@@ -134,16 +135,17 @@ https://m.blog.naver.com/sonjjy/60196952929
     border-right: 0;
 }
 
-.wrap header nav .gnb li:first-child .lnb {display: block;} /* 0112 */
+/* .wrap header nav .gnb li:first-child .lnb {display: block;} */ /* 0112 */
 
-/*  .wrap header nav .gnb > li > a .lnb ul:nth-child(1) {
+ /*  .wrap header nav .gnb > li > a .lnb ul:nth-child(1) {
     display: block;
-}  */
+}  
+ */
 
-/* .wrap header nav .gnb .lnb { 
+ /* .wrap header nav .gnb .lnb { 
     display: block;
     
-} */
+}  */
 /* 0111 lnb1 붙인거 빼기.  0112 선택자 빼기*/
 
 .wrap header nav .gnb .lnb > ul {
