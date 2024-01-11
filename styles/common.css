@@ -122,19 +122,18 @@ https://m.blog.naver.com/sonjjy/60196952929
 /*     .lnb{
         display: none;
     } */ 
-.wrap header nav .gnb .lnb {
-    display: none;
+.wrap header nav .gnb li .lnb { 
+    display: none; /*li 추가 0111  */
     /* background: skyblue; */
     position: absolute; /* 주니까 밑에 국립현대미술관 관람 예약 바로가기가 밑으로 안내려간다.
     그리고 호버 줬을때도 움직이지 않는다. 01/04 */    
-
 }
 
 /* .wrap header nav .gnb > li > a .lnb ul:nth-child(1) {
     display: block;
 } */
 
-.wrap header nav .gnb .lnb1 {
+.wrap header nav .gnb .lnb { /* 0111 lnb1 붙인거 빼기. */
     display: block;
     
 }
@@ -151,13 +150,10 @@ https://m.blog.naver.com/sonjjy/60196952929
     /* 탭 눌렀을때 목록들 간격이 넓어진다. */
     margin: 10px;
     
-    
 }
 .wrap header nav .gnb .lnb ul li  a {
     font-size: 24px;
     font-weight: bold;
-    
-    
     
 } /* 서울 과천 등등  */
 .wrap header nav .search_btn {
