@@ -92,8 +92,6 @@ margin-bottom: 30px;
 .wrap header nav .gnb {
     /* background-color: aquamarine; */
     display: flex;
-
-    
 }
 
 .wrap header nav .gnb > li {
@@ -101,7 +99,7 @@ margin-bottom: 30px;
 }
 
 .wrap header nav .gnb li:hover .lnb{
-    display: block;
+    /* display: block; */ /* 0116 */
 }
 /* https://www.w3schools.com/howto/howto_css_display_element_hover.asp
 hover 관련 글
@@ -115,7 +113,6 @@ https://m.blog.naver.com/sonjjy/60196952929
     font-size: 24px;
     font-weight: bold;
     margin: 10px;
-        
     } /* 관람참여 및 전시교육 소장품 등등  */
     
     /* a 탭 눌렀을떄 list 부분 */  
@@ -123,24 +120,31 @@ https://m.blog.naver.com/sonjjy/60196952929
         display: none;
     } */ 
 .wrap header nav .gnb li .lnb { 
-    display: none; /*li 추가 0111  */
+    display: none; /*li 추가 0116  */
     /* background: skyblue; */
+    /* border: 2px solid #000; */ /* 0116 */
+    width: 100%;
     position: absolute; /* 주니까 밑에 국립현대미술관 관람 예약 바로가기가 밑으로 안내려간다.
-    그리고 호버 줬을때도 움직이지 않는다. 01/04 */    
+    그리고 호버 줬을때도 움직이지 않는다. 01/04 */
+   /*  border-left: 0;
+    border-right: 0; */
 }
+.wrap header nav .gnb li:first-child .lnb {display: block;}
+/* 0116 추가 고정됨*/
 
 /* .wrap header nav .gnb > li > a .lnb ul:nth-child(1) {
-    display: block;
+    display: block; 
 } */
 
-.wrap header nav .gnb .lnb { /* 0111 lnb1 붙인거 빼기. */
+/* .wrap header nav .gnb .lnb {   
     display: block;
     
-}
+} */
+/* 0111 lnb1 붙인거 빼기. 0116 숨김*/
 .wrap header nav .gnb .lnb > ul {
     display: flex; /* 여기다 주니까 탭 했을 때 아래 목록이 나온다. 01/04 */
     background: #fff;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #000; /* 0116 */
   /*   border-bottom: 1px solid #000; */
 } /* display:none 후보2 */
 /* list에 서울 과천 덕수궁 등등 */
