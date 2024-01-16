@@ -313,6 +313,7 @@
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
+    width: 70%; line-height: 1.3;
 } /* 미술관을 말할 때 우리가 ~  */ 
 .wrap main .display_full_container .display_btm_container .display_image .display .date {
     font-size: 15px;
@@ -546,7 +547,7 @@
 .wrap main .news_wrap .news_container .news_images .news_img li a img {
 
 }
-.wrap main .news_wrap .news_container .news_images .news_img li > p > a:nth-child(1) {color: #949494;}
+.wrap main .news_wrap .news_container .news_images .news_img li:nth-child(3) > p > a {color: #949494;} /* 0117 글자 회색 나누기 성공 */
 .wrap main .news_wrap .news_container .news_images .news_img li p a {
     
 }
@@ -567,18 +568,24 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     background: #949494;
+    margin-bottom: 50px;
+    /*  margin-bottom: 50px; 추가 0117 */
     /* padding: 40px 0px 0px 40px; */
 
 } /* 최상위 wrap */
 .wrap main .find_wrap .find_images {
     display: flex;
-    
+    justify-content: space-between;
+    /* 0117 - space-between; 추가 */
     
     
 } /* 상위 wrap */
 .wrap main .find_wrap .find_images .news_btm {
     /* width: calc(100% / 4 - 10px / 4); */
-    width: calc(100% / 4);
+    /* width: calc(100% / 4); */
+    width: calc((100% / 4)- 20px);
+    border: 1px solid black;
+    /* 0117  clac border 추가*/
 } 
 .wrap main .find_wrap .find_images .news_btm a {
     
