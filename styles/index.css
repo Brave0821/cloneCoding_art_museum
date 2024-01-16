@@ -171,10 +171,8 @@
     padding: 40px 0px;
     justify-content: space-between;
     background: lime;
-
     /* padding: 5px; */
     /* padding: 40px 30px; */
-    
 } /* 이미지  */
 .wrap main .place_museum_wrap .museum_contents .museum_img {
     /* margin: 70px; */
@@ -472,7 +470,7 @@
 /* ----------------------------------------------------------------------------------------------------------------------------------- */
 /* 디지털 미술관 시작. */
 .wrap main .digital_wrap {
-    background-color:blue;
+    background-color:skyblue;
 
 } /* 디지털 미술관 최상위 컨테이너 */
 .wrap main .digital_wrap .digital_container {
@@ -491,12 +489,17 @@
 .wrap main .digital_wrap .digital_container .digital_videos {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* padding: 40px 0px; */
+    background-color: aqua;
+
 }
-.wrap main .digital_wrap .digital_container .digital_videos a {} /* 비디오 묶음 */
+.wrap main .digital_wrap .digital_container .digital_videos a {
+    width: calc(100% / 3 - 50px / 3);
+} /* 비디오 묶음 */
 .wrap main .digital_wrap .digital_container .digital_videos a .photo {} /* p 클래스  */
 .wrap main .digital_wrap .digital_container .digital_videos a .photo img {
-    width: 400px;
+    /* width: 400px; */ width: 100%;
 } 
 .wrap main .digital_wrap .digital_container .digital_videos a .sub_title {} /* p 클래스 MMCA TV */
 .wrap main .digital_wrap .digital_container .digital_videos a h2 {} /* 라이브 x 장기하 등등 */
@@ -505,7 +508,7 @@
 /* MMCA 뉴스레터 시작. */
 .wrap main .news_wrap {} /* MMCA 뉴스레터 · 최상위 컨테이너 */
 .wrap main .news_wrap .news_container {
-    
+    position: relative;
 }
 .wrap main .news_wrap .news_container .news_head {
     display: flex;
@@ -531,21 +534,66 @@
 .wrap main .news_wrap .news_container .news_images .news_img li a img {
 
 }
-.wrap main .news_wrap .news_container .news_images .news_img li p {}
-.wrap main .news_wrap .news_container .news_images .news_img li p a {}
+.wrap main .news_wrap .news_container .news_images .news_img li > p > a:nth-child(1) {color: #949494;}
+.wrap main .news_wrap .news_container .news_images .news_img li p a {
+    
+}
+
+.wrap main .news_wrap .news_container .prev i[class^=fa]{
+    font-size: 45px; 
+    position: absolute; left: 0px; top: 210px;
+}
+
+.wrap main .news_wrap .news_container .next i[class^=fa]{
+    font-size: 45px; 
+    position: absolute; right: 0px; top: 210px;
+}
 /* img1 ~ 4로 있었다면 4개 더 늘어야했지만 홈페이지 확인 결과 동일 사이즈 확인. */
 /* MMCA 뉴스레터 끝------------------------------------------------------------------------------- */
-/* MMCA 뉴스레터 하단 시작 */
-.wrap main .find_wrap {display: none;} /* 최상위 wrap */
-.wrap main .find_wrap .find_images {} /* 상위 wrap */
-.wrap main .find_wrap .find_images .news_btm {} 
-.wrap main .find_wrap .find_images .news_btm a {} 
-.wrap main .find_wrap .find_images .news_btm a img {} /* ex 미술은행 이미지 */ 
-.wrap main .find_wrap .find_images .news_btm .btm {}
-.wrap main .find_wrap .find_images .news_btm .btm h3 {} /* 미술은행 */
-.wrap main .find_wrap .find_images .news_btm .btm .more {} /* 더 알아보기 */
+/* MMCA 뉴스레터 하단 시작 0116 추가*/
+.wrap main .find_wrap {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background: #949494;
+    /* padding: 40px 0px 0px 40px; */
+
+} /* 최상위 wrap */
+.wrap main .find_wrap .find_images {
+    display: flex;
+    
+    
+    
+} /* 상위 wrap */
+.wrap main .find_wrap .find_images .news_btm {
+    /* width: calc(100% / 4 - 10px / 4); */
+    width: calc(100% / 4);
+} 
+.wrap main .find_wrap .find_images .news_btm a {
+    
+} 
+.wrap main .find_wrap .find_images .news_btm a img {
+    /* width: 400px; */ width: 100%;
+/*     width: 100%; background: white; */
+  /*   padding-right: 10px; */
+  padding: 10px;
+} /* ex 미술은행 이미지 */ 
+.wrap main .find_wrap .find_images .news_btm .btm {
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+}
+.wrap main .find_wrap .find_images .news_btm .btm h3 {
+    display: inline-block;
+    font-size: 24px;
+
+
+} /* 미술은행 */
+.wrap main .find_wrap .find_images .news_btm .btm .more {
+    text-align: end;
+    margin-bottom: 20px;
+} /* 더 알아보기 */
 /* MMCA 뉴스레터 하단 아이템들 전부 똑같기에 끝. */
-.wrap main .news_wrap {}
+.wrap main .news_wrap {border-top: 1px solid; #000}
 .wrap main .news_wrap .news_head {}
 .wrap main .news_wrap .news_head h1 {}
 .wrap main .news_wrap .news_head .news_content {} /* ul class  */
