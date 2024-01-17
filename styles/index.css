@@ -127,9 +127,10 @@
 }
 .wrap main .display_top_wrap .display_top_container .display_container .left {}
 .wrap main .display_top_wrap .display_top_container .display_container .left h1 {
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
+    background: seagreen;
 }
 .wrap main .display_top_wrap .display_top_container .display_container .left p {
     font-size: 15px;
@@ -163,11 +164,13 @@
     /* padding: 30px 0px 0px 25px; */
     font-size: 26px;
     /* margin-bottom: 20px; */
+    margin-top: 20px; /* 미술관 위 아래0117 */
+    margin-bottom: 15px;
 } /* 미술관 */
 .wrap main .place_museum_wrap .museum_contents {
     display: flex;
     flex-flow: row nowrap;
-    padding: 40px 0px;
+/*     padding: 40px 0px; */ /* 미술관 위 아래  */
     justify-content: space-between;
     background: lime;
     /* padding: 5px; */
@@ -359,56 +362,64 @@
     */   
     /* display: inline-block; */
     background: turquoise;
-    display: flex;
-    flex-flow: row nowrap;
-
-  
+    
 }
 .wrap main .collection_full_container .collection_container {
-    background: violet;
+    /* background: violet; */
     position: relative; /* 이전 다음으로 버튼. */
     width: 100%;
-   
-    
+
 }
 
 .wrap main .collection_full_container .collection_container .collection_head { 
-    display: flex; justify-content: space-between;
     margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
     
 } /* 소장품 해드 */
 .wrap main .collection_full_container .collection_container .collection_head h2 {
     margin-top: 10px;
     font-size: 26px;
     font-weight: bold;
-    
+    margin-top:40px; /* 디지털 미술관 위 아래 간격 */
+    margin-bottom: 40px;
     
 } /* 소장품 해드 */
 
 .wrap main .collection_full_container .collection_container .collection_head .view_all {
     font-size: 15px;
     margin-top: 40px;
+    
+    
+    
 } /* 소장품 모두보기 */
 .wrap main .collection_full_container .collection_container .collection_head .view_all img {
     margin-left: 7px;
+
 }  /* 소장품 모두보기 > */
 
 
 /*  소장품 공통 img 0108 */
 .wrap main .collection_full_container .collection_container .collection_images { /* collection_images 전체를 묶는 div */
-    width: calc(100% / 4 - 30px / 4);
-    
+
+    background-color: tomato;
+    display: flex;
+       justify-content: space-between;
     
     /* width: calc(100% / 4 - 30px / 4); */
 
 }
 
 .wrap main .collection_full_container .collection_container .collection_images .collection_img { /* ul */
-    
+    width: calc((100% / 4) - 10px);
 }
+/*   width: calc((100% / 4)- 20px); */
+/* 소장품0117 */
 
 .wrap main .collection_full_container .collection_container .collection_images .collection_img > li a img {
     width:100%;
+    padding: 10px;
+    justify-content: space-between;
     background: turquoise;
 
 } /* 이미지 태그 추가 0116 */
@@ -471,12 +482,12 @@
 /* 이전으로 & 다음으로 */
 .wrap main .collection_full_container .collection_container .prev  i[class^=fa] {
     font-size: 45px; 
-    position: absolute; left: 0px; top: 285px;
+    position: absolute; left: 0px; top: 310px;
 }
 .wrap main .collection_full_container .collection_container .prev img {}
 .wrap main .collection_full_container .collection_container .next i[class^=fa] {
     font-size: 45px;
-    position: absolute; right: 0px; top: 285px;
+    position: absolute; right: 0px; top: 310px;
 }
 .wrap main .collection_full_container .collection_container .next img {}
 /* 이전으로 & 다음으로 끝 */
@@ -487,14 +498,18 @@
 
 } /* 디지털 미술관 최상위 컨테이너 */
 .wrap main .digital_wrap .digital_container {
+    
 }
 .wrap main .digital_wrap .digital_container .digital_head {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin-top:40px; /* 디지털 미술관 위 아래 간격 */
+    margin-bottom: 40px;
 } /* 디지털 미술관 해드 */
 .wrap main .digital_wrap .digital_container .digital_head h1 {
     font-size: 28px;
+
 } /* 디지털 미술관. */
 .wrap main .digital_wrap .digital_container .digital_head .view_all {} /* 모두보기  */
 .wrap main .digital_wrap .digital_container .digital_head .view_all img {}
@@ -509,13 +524,22 @@
 }
 .wrap main .digital_wrap .digital_container .digital_videos a {
     width: calc(100% / 3 - 50px / 3);
+    background-color: royalblue;
+    margin-bottom: 70px;
 } /* 비디오 묶음 */
-.wrap main .digital_wrap .digital_container .digital_videos a .photo {} /* p 클래스  */
+.wrap main .digital_wrap .digital_container .digital_videos a .photo {
+    
+} /* p 클래스  */
 .wrap main .digital_wrap .digital_container .digital_videos a .photo img {
     /* width: 400px; */ width: 100%;
+    
 } 
-.wrap main .digital_wrap .digital_container .digital_videos a .sub_title {} /* p 클래스 MMCA TV */
-.wrap main .digital_wrap .digital_container .digital_videos a h2 {} /* 라이브 x 장기하 등등 */
+.wrap main .digital_wrap .digital_container .digital_videos a .sub_title {
+    
+} /* p 클래스 MMCA TV */
+.wrap main .digital_wrap .digital_container .digital_videos a h2 {
+    font-size: 28px;
+} /* 라이브 x 장기하 등등 */
 /* -------------------------------------------------------------------------------------------- */
 /* 디지털 미술관 끝  */
 /* MMCA 뉴스레터 시작. */
@@ -527,6 +551,8 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    background: seagreen;
+    margin-top: 30px; /* 뉴스레터 위 아래0117 */
 } /* 해드 배너 */
 .wrap main .news_wrap .news_container .news_head h1 {
     font-size: 28px;
@@ -537,7 +563,10 @@
 }
 /* 뉴스 해드 끝 */
 .wrap main .news_wrap .news_container .news_images {
+    background: seagreen;
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
 } /* 뉴스 이미지들  */
 .wrap main .news_wrap .news_container .news_images .news_img {width: calc(100% / 4 - 30px / 4);}
 .wrap main .news_wrap .news_container .news_images .news_img li {}
@@ -545,11 +574,16 @@
     /* width: 100%; */
 }
 .wrap main .news_wrap .news_container .news_images .news_img li a img {
-
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
 }
-.wrap main .news_wrap .news_container .news_images .news_img li:nth-child(3) > p > a {color: #949494;} /* 0117 글자 회색 나누기 성공 */
+.wrap main .news_wrap .news_container .news_images .news_img li:nth-child(3) > p > a {
+    color: #949494;
+    margin-bottom: 30px;
+} /* 0117 글자 회색 나누기 성공 */
+.wrap main .news_wrap .news_container .news_images .news_img li:nth-child(2) > p > a {}
 .wrap main .news_wrap .news_container .news_images .news_img li p a {
-    
 }
 
 .wrap main .news_wrap .news_container .prev i[class^=fa]{
@@ -584,7 +618,7 @@
     /* width: calc(100% / 4 - 10px / 4); */
     /* width: calc(100% / 4); */
     width: calc((100% / 4)- 20px);
-    border: 1px solid black;
+ /*    border: 1px solid black; */
     /* 0117  clac border 추가*/
 } 
 .wrap main .find_wrap .find_images .news_btm a {
@@ -612,12 +646,32 @@ padding: 10px;
     margin-bottom: 20px;
 } /* 더 알아보기 */
 /* MMCA 뉴스레터 하단 아이템들 전부 똑같기에 끝. */
-.wrap main .news_wrap {border-top: 1px solid #000} 
-.wrap main .news_wrap .news_head {}
-.wrap main .news_wrap .news_head h1 {}
-.wrap main .news_wrap .news_head .news_content {} /* ul class  */
-.wrap main .news_wrap .news_head .news_content li {} /* 내용 */
-.wrap main .news_wrap .news_head .news_content li a {}
+.wrap main .news_wrap {border-top: 1px solid #000;
+
+} 
+.wrap main .news_wrap .news_head {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background: springgreen;
+    margin-bottom: 50px;
+
+}
+.wrap main .news_wrap .news_head h1 {
+    font-size: 24px;
+}
+.wrap main .news_wrap .news_head .news_content {
+    background: slateblue;
+    margin-right: 375px;
+} /* ul class  */
+.wrap main .news_wrap .news_head .news_content li {
+    background: turquoise;
+    margin-bottom: 10px;
+    
+} /* 내용 */
+.wrap main .news_wrap .news_head .news_content li a {
+    font-size: 28px;
+}
 .wrap main .news_wrap .news_head .view_all {} /* 새소식 모두보기 */
 /* -----------------------------------------main 끝--------------------------------------------------- */
 /* footer 시작. */ /* common.css로 이동 */
