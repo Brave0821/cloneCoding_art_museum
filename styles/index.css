@@ -404,7 +404,7 @@
 
     background-color: tomato;
     display: flex;
-       justify-content: space-between;
+    justify-content: space-between;
     
     /* width: calc(100% / 4 - 30px / 4); */
 
@@ -418,7 +418,7 @@
 
 .wrap main .collection_full_container .collection_container .collection_images .collection_img > li a img {
     width:100%;
-    padding: 10px;
+   /*  padding: 10px; */
     justify-content: space-between;
     background: turquoise;
 
