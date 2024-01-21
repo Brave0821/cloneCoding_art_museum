@@ -81,6 +81,7 @@
     padding: 13px 2.8px 13px 2.8px;
     margin: 10px;
     letter-spacing: -1.5px;
+    margin-right: 1px;
 }
 .wrap main .reservation_container .go_container .right a:nth-child(2) {
     background-color: #fff;
@@ -158,6 +159,7 @@
 .wrap main .place_museum_wrap {
     background-color:aquamarine;
     border-bottom: 1px solid #000;
+    margin-top: 30px; 
 }
 .wrap main .place_museum_wrap h2 {
     font-weight: bold;
@@ -165,7 +167,7 @@
     font-size: 26px;
     /* margin-bottom: 20px; */
     margin-top: 20px; /* 미술관 위 아래0117 */
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 } /* 미술관 */
 .wrap main .place_museum_wrap .museum_contents {
     display: flex;
@@ -207,6 +209,7 @@
     display: inline-block;
     /* margin-bottom: 50px; */
     font-size: 15px;
+    margin-bottom: 80px;
 } /* a들 전시, 필름앤비디오 등등 */
 /* -------------------------------------미술관 부분 끝-------------------------------------------------- */
 /* 멤버십 이미지 (전 레인보우 이미지 시작) */
@@ -218,8 +221,7 @@
 }
 .wrap main .member_bnr img {
     width: 100%; /*1600px; - > 100%으로 변경 0108 */  
-    margin-top :10px;
-    margin-bottom :10px;
+    margin-top :50px; margin-bottom :50px;
     border-bottom: 1px solid #000;
     
     
@@ -277,6 +279,7 @@
 .wrap main .display_full_container .display_btm_container .display_image {
     display: flex;
     flex-flow: row nowrap;
+    margin-bottom: 80px;
 } /* 이미지 전체를 묶는 DIV */
 .wrap main .display_full_container .display_btm_container .display_image .display {
 } /* 이미지를 묶는 A */
@@ -321,7 +324,7 @@
 .wrap main .display_full_container .display_btm_container .display_image .display .date {
     font-size: 15px;
     color:#949494;
-    margin-bottom: 10px;
+
 } /* 2023-12-22~2024-04-06 */
 .wrap main .display_full_container .display_btm_container .display_image .display img {
     width: 25px; 
@@ -362,6 +365,8 @@
     */   
     /* display: inline-block; */
     background: turquoise;
+    border-bottom: 1px solid #000;
+    padding-bottom: 100px;
     
 }
 .wrap main .collection_full_container .collection_container {
@@ -382,7 +387,7 @@
     font-size: 26px;
     font-weight: bold;
     margin-top:40px; /* 디지털 미술관 위 아래 간격 */
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     
 } /* 소장품 해드 */
 
@@ -420,13 +425,15 @@
     width:100%;
    /*  padding: 10px; */
     justify-content: space-between;
-    background: turquoise;
+    background: rgb(96, 235, 221);
+    margin-bottom: 20px;
 
 } /* 이미지 태그 추가 0116 */
 
 .wrap main .collection_full_container .collection_container .collection_images .collection_img > li h2 a {
     font-size: 28px;
     background-color: skyblue;
+   
 
 } 
 .wrap main .collection_full_container .collection_container .collection_images .collection_img li p > a {
@@ -505,7 +512,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     margin-top:40px; /* 디지털 미술관 위 아래 간격 */
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 } /* 디지털 미술관 해드 */
 .wrap main .digital_wrap .digital_container .digital_head h1 {
     font-size: 28px;
@@ -525,7 +532,7 @@
 .wrap main .digital_wrap .digital_container .digital_videos a {
     width: calc(100% / 3 - 50px / 3);
     background-color: royalblue;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 } /* 비디오 묶음 */
 .wrap main .digital_wrap .digital_container .digital_videos a .photo {
     
@@ -566,9 +573,12 @@
     background: seagreen;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
+    
 } /* 뉴스 이미지들  */
-.wrap main .news_wrap .news_container .news_images .news_img {width: calc(100% / 4 - 30px / 4);}
+.wrap main .news_wrap .news_container .news_images .news_img {
+    width: calc(100% / 4 - 30px / 4);
+}
 .wrap main .news_wrap .news_container .news_images .news_img li {}
 .wrap main .news_wrap .news_container .news_images .news_img li a {
     /* width: 100%; */
@@ -599,10 +609,13 @@
 /* MMCA 뉴스레터 끝------------------------------------------------------------------------------- */
 /* MMCA 뉴스레터 하단 시작 0116 추가*/
 .wrap main .find_wrap {
+    /* border: 1px solid #000; */
+    padding-top: 30px;
     flex-flow: row nowrap;
     justify-content: space-between;
     background: #949494;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    border-top: 1px solid #000;
     /*  margin-bottom: 50px; 추가 0117 */
     /* padding: 40px 0px 0px 40px; */
 
@@ -620,6 +633,7 @@
     width: calc((100% / 4)- 20px);
  /*    border: 1px solid black; */
     /* 0117  clac border 추가*/
+    
 } 
 .wrap main .find_wrap .find_images .news_btm a {
     
@@ -633,28 +647,31 @@ padding: 10px;
 .wrap main .find_wrap .find_images .news_btm .btm {
     display: flex; 
     justify-content: space-between;
-    width: 100%;
+    width: 100%; 
+    margin-top: 20px;
+    
 }
 .wrap main .find_wrap .find_images .news_btm .btm h3 {
     display: inline-block;
     font-size: 24px;
-
-
+    margin-left: 7px;
 } /* 미술은행 */
 .wrap main .find_wrap .find_images .news_btm .btm .more {
     text-align: end;
     margin-bottom: 20px;
+    padding-bottom: 60px;
+    margin-right: 6px;
+    border-bottom: 1px solid #000;
 } /* 더 알아보기 */
 /* MMCA 뉴스레터 하단 아이템들 전부 똑같기에 끝. */
 .wrap main .news_wrap {border-top: 1px solid #000;
-
 } 
 .wrap main .news_wrap .news_head {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    padding-top: 20px;
     background: springgreen;
-    margin-bottom: 50px;
+    margin-bottom: 25px; margin-top: 30px;
 
 }
 .wrap main .news_wrap .news_head h1 {
