@@ -1,0 +1,118 @@
+.wrap {
+    background:#f9f9f9; 
+    /* 전체 뒷 배경 */
+}
+.wrap .login_title_wrap  {
+    background: #ccc;
+    border: 1px  solid #ccc ;
+}
+.wrap .login_title_wrap main {
+    
+}
+.wrap .login_title_wrap .login_title_container{}
+.wrap .login_title_wrap .login_title_container .login_container_center {
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.wrap .login_title_wrap .login_title_container .login_title{}
+.wrap .login_title_wrap .login_title_container .login_title .login_title_left > h1{
+    background: tan;
+    font-size: 28px;
+    border-top:1px solid #000; border-bottom:1px solid #000 ;
+    padding-top: 30px; padding-bottom: 30px;
+} /* h1 로그인 */
+
+.wrap .login_title_wrap .login_title_container .login_title .login_title_right {}
+/* 로그인 밑 긴 글 */
+
+
+
+.wrap .login_title_wrap .login_title_container .login_span {
+    background: turquoise;
+    text-align: center;
+    margin-top: 30px;
+    
+   /*  padding-bottom: 30px; */
+}
+.wrap .login_title_wrap .login_title_container .login_span h1 {
+    margin-bottom: 20px;
+}
+.wrap .login_title_wrap .login_title_container .login_span span {
+    background:seagreen; font-size: 15px;
+} /* span 전체 */
+.wrap .login_title_wrap .login_title_container .login_span .span_red {
+    color:#ff0000 ; 
+} /* span 1 붉은색*/
+.wrap .login_title_wrap .login_title_container .login_span .span_blue {
+    color:#0000ff ; 
+} /* span 2 파란색*/
+/* ----------------------------------------------------------------------------------------------------- */
+/* 로그인  */
+/* 로그인 해더 부분 --------------------------------------------------------------------------------------- */
+.wrap .login_title_wrap .login_title_container #loginFrm {
+    margin-top: 30px;
+    background:#f9f9f9;
+    position: relative; top: -10.5px;
+    border: 1px  solid #ccc ; /* 111 */
+    border-radius: 5px;
+    border-bottom: 16px; padding: 25px 27px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+} /* 로그인 form */
+.wrap .login_title_wrap .login_title_container #loginFrm fieldset {} 
+.wrap .login_title_wrap .login_title_container #loginFrm fieldset .login_input {
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+    /* box-shadow: 0px 2px 10px rgba(0,0,0,0.1); */
+    display: flex; flex-flow: column nowrap; background:slateblue;
+    text-align: center;
+} /* 아이디 비밀번호 input창 */ 
+
+
+
+/* .wrap .login_title_wrap .login_title_container #loginFrm fieldset .login_input span:nth-child(0)::before{
+    background-position-x:-88px;
+    background: sandybrown;
+}
+#login_wrap main #loginFrm fieldset .login_container .id_login .id_pw_input span:nth-child(1)::before{
+    background-position-x:-122px ;
+} */
+
+.wrap .login_title_wrap .login_title_container #loginFrm fieldset .login_input span {
+    padding: 13px 16px; 
+    padding-right: 0;
+    width: 50%;
+    text-align: center;
+} /* 아이디 비빌번호 2개 묶음 스팬 */  
+
+.wrap .login_title_wrap .login_title_container #loginFrm fieldset .login_input span:first-child{
+    border: 1px solid #000;
+    width: 448px; 
+}
+.wrap .login_title_wrap .login_title_container #loginFrm fieldset .login_input span:last-child{
+    border: 1px solid #000;
+    width: 448px; 
+}
+
+
+.wrap .login_title_wrap .login_title_container #loginFrm fieldset .login_input span #user_id {
+    background: sandybrown;
+    width: 448px; height: 40px;
+    
+}
+.wrap .login_title_wrap .login_title_container #loginFrm fieldset .login_input span #user_pw {
+    background: royalblue;
+    width: 448px; height: 40px;
+
+}
+
+.wrap .login_title_wrap .login_title_container #loginFrm fieldset .id_email_save{} /* 로그인 체크박스*/
+.wrap .login_title_wrap .login_title_container #loginFrm fieldset .id_email_save #id_email_y{} /* 로그인 체크박스 */
+/* 로그인 버튼 시작  */
+.wrap .login_title_wrap .login_title_container #loginFrm fieldset .login_btn_container {} /* 로그인 버튼 묶는 div */ 
+.wrap .login_title_wrap .login_title_container #loginFrm fieldset .login_btn_container #login_btn{
+    
+} /* 로그인 버튼 */
+/* 아이디 비밀번호 찾기 회원가입 */
+.wrap .login_title_wrap .login_title_container .search_join {}
+.wrap .login_title_wrap .login_title_container .search_join a {}

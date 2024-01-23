@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="keywords" content="">
- <meta name="description" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
     <title>로그인 &lt; 국립현대미술관</title>
     <link href='http:spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,7 @@
     <link rel="icon" href="./images/mainPage/favicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/login.css">
     <link rel="stylesheet" href="./styles/common.css">
     <!-- <link rel="stylesheet" href="./common.css"> -->
     <link rel="stylesheet" href="./styles/responsive.css">
@@ -23,7 +24,8 @@
     <div class="wrap">
         <header>
             <div class="header_first_top">
-                <h1><a href="./index.html"><img src="./images/mainPage/bg_logo_full.png" alt="국립현대미술관"></a></h1> <!-- 로고 -->
+                <h1><a href="./index.html"><img src="./images/mainPage/bg_logo_full.png" alt="국립현대미술관"></a></h1>
+                <!-- 로고 -->
                 <!-- 상단 오른쪽 메뉴 -->
                 <div class="first_top_right">
                     <a href="./join.html" class="mmca_join">MMCA<br>회원가입</a>
@@ -134,7 +136,8 @@
                 </ul>
                 <!--최상단. ul 끝  -->
                 <!-- nav 옆 돋보기 12/25 생성 -->
-                <button type="button" class="search_btn"><img src="./images/mainPage/btn_totalsearch.png" alt="검색"></button>
+                <button type="button" class="search_btn"><img src="./images/mainPage/btn_totalsearch.png"
+                        alt="검색"></button>
                 <!--    <div class="search_click">에서 여기로 이동. 12/29 -->
                 <a href="#" class="close_button"><img src="#" alt="닫기"></a> <!-- 29 이동 완료 -->
             </nav>
@@ -149,8 +152,52 @@
                 </form> <!-- form 경계 수정 12/29 -->
             </div>
         </header>
-
-
+        <!-- 로그인 main 시작  -->
+        <div class="login_title_wrap">
+        <main>
+                <div class="login_title_container">
+                    <div class="login_title">
+                        <div class="login_title_left">
+                            <h1>로그인 <!-- /* common 0123 로그인 작업 떄문에 잠시 none 해둠 */ --> </h1>
+                        </div>
+                        <div class="login_title_right">
+                        </div>
+                    </div>
+                
+                    <div class="login_span">
+                        <h1>국립현대미술관 홈페이지를 방문해주셔서 감사합니다.<br>
+                            로그인하시면 홈페이지를 보다 편리하게 이용하실 수 있습니다.</h1>
+                        <span class="span_red">※회원가입시 휴대폰 본인인증을 하지 않은 가입회원(22년 1월 이전)의 경우<br>
+                            본인인증을 한 후 이용해주시기 바랍니다.</span><br>
+                        <span class="span_blue">(나의 페이지 > 개인정보 수정 > 휴대폰 본인인증)</span>
+                    </div>
+                    <div class="login_container_center"> <!-- 로그인 밑 중앙으로 정렬을 위한 div -->
+                    <form action="#" method="post" id="loginFrm">
+                        <fieldset>
+                            <legend class="skip">id pw 로그인 진행중</legend>
+                            <div class="login_input">
+                                <span><input type="text" placeholder="아이디(이메일주소)를 입력해주세요." id="user_id"></span>
+                                <span><input type="password" placeholder="비밀번호를 입력하세요." id="user_pw"></span>
+                            </div>
+                            <div class="id_email_save">
+                                <input type="checkbox" name="id_email_y" id="id_email_y">
+                                <label for="login_state_y">로그인 상태 유지</label>
+                            </div>
+                            <!--  로그인 상태유지 == 아이디 이메일 저장  -->
+                            <div class="login_btn_container">
+                                <button type="button" id="login_btn">로그인</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="search_join">
+                        <a href="#">아이디(이메일찾기)</a>
+                        <a href="#">비밀번호찾기</a>
+                        <a href="#">회원가입</a>
+                    </div>
+                </div> <!-- 로그인 센터 -->
+                </div>
+            </main>
+            </div>
         <footer>
             <!-- MMCA 뉴스레터 구독신청부터 footer -->
             <div class="footer_wrap">
@@ -220,4 +267,5 @@
         </footer>
     </div> <!-- 최상위 wrap -->
 </body>
+
 </html>
