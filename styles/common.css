@@ -294,12 +294,14 @@ https://m.blog.naver.com/sonjjy/60196952929
     
 } 
 .wrap footer .end_btm {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+
 }
 .wrap footer .end_btm address {
-    position: relative;
     margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+
 } 
 .wrap footer .end_btm address a {} 
 .wrap footer .end_btm .log {
@@ -309,12 +311,17 @@ https://m.blog.naver.com/sonjjy/60196952929
    /*  padding-right: 1200px;
     padding-top: 180px;
  */
- position: absolute;
 /*  bottom: -5170px; left: 1px; */
  background: violet;
+/*  margin-left: 10px; */
 
 } /* 로고 */
-.wrap footer .end_btm a {} 
-.wrap footer .end_btm a img {margin-top: 30px;} /* 웹접근성 */ 
+.wrap footer .end_btm .web_logo #web_logo_footer {
+    position: absolute; top:0px ; right:0px ;
+    background: #000; margin-top: 30px;
+} 
+.wrap footer .end_btm #web_logo img {margin-top: 30px;
+    background: violet;
+} /* 웹접근성 */ 
 /* address 끝 */
 

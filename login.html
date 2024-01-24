@@ -160,13 +160,12 @@
                 <div class="login_title_container">
                     <div class="login_title">
                         <div class="login_title_left">
-                            <h1>로그인
-                                <!-- /* common 0123 로그인 작업 떄문에 잠시 none 해둠 */ -->
-                            </h1>
+                            <h1>로그인 <!-- /* common 0123 로그인 작업 떄문에 잠시 none 해둠 */ --> </h1>
                         </div>
                         <div class="login_title_right">
                         </div>
                     </div>
+
                     <div class="login_span">
                         <h1>국립현대미술관 홈페이지를 방문해주셔서 감사합니다.<br>
                             로그인하시면 홈페이지를 보다 편리하게 이용하실 수 있습니다.</h1>
@@ -174,8 +173,7 @@
                             본인인증을 한 후 이용해주시기 바랍니다.</span><br>
                         <span class="span_blue">(나의 페이지 > 개인정보 수정 > 휴대폰 본인인증)</span>
                     </div>
-                    <div class="login_container_center">
-                        <!-- 로그인 밑 중앙으로 정렬을 위한 div -->
+                    <div class="login_container_center"> <!-- 로그인 밑 중앙으로 정렬을 위한 div -->
                         <form action="#" method="post" id="loginFrm">
                             <fieldset>
                                 <legend class="skip">id pw 로그인 진행중</legend>
@@ -183,11 +181,11 @@
                                     <span><input type="text" placeholder="아이디(이메일주소)를 입력해주세요." id="user_id"></span>
                                     <span><input type="password" placeholder="비밀번호를 입력하세요." id="user_pw"></span>
                                 </div>
-                                <!--  로그인 상태유지 == 아이디 이메일 저장  -->
                                 <div class="id_email_save">
                                     <input type="checkbox" name="id_email_y" id="id_email_y">
-                                    <label for="login_state_y">아이디(이메일) 저장</label>
+                                    <label for="login_state_y" class="login_state_y">아이디(이메일)저장</label>
                                 </div>
+                                <!--  로그인 상태유지 == 아이디 이메일 저장  -->
                                 <div class="login_btn_container">
                                     <button type="button" id="login_btn">로그인</button>
                                 </div>
@@ -266,7 +264,9 @@
                 <div class="log">
                     <img src="./images/mainPage/bg_logo_full_btm.png" alt="국립현대미술관로고">
                 </div>
-                <a href="#"><img src="./images/mainPage/mark1.png" alt="과학기술정보통신부 WEB 접근성 "></a>
+                <div class="web_log">
+                    <a href="#" id="web_logo_footer"><img src="./images/mainPage/mark1.png" alt="과학기술정보통신부 WEB 접근성 "></a>
+                </div>
             </div>
         </footer>
     </div> <!-- 최상위 wrap -->
