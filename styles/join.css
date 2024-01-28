@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 .join_wrap {}
 .join_wrap main {}
 .join_wrap main .join_container {}
@@ -17,37 +10,112 @@
     border: 2px solid #000;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between; */
+    width: 100%;
     
 }
 .join_wrap main .join_container .join_section .join_progress_bar {
-    width: 100%; height: 17vh;    border: 1px solid #000; 
+    /* width: 1600px; height: 17vh; */
+    height: 25vh;    border: 1px solid #d3d3d3; 
+    /* margin: 30px 30px 90px -10px; */
+    /* padding: 0px 20px 0px -20px; */
+    background: teal;
+    margin: 0px 20px;
+    padding: 50px;
     
-    /* padding: 100px; */ 
+       
 }
 
 .join_wrap main .join_container .join_section .join_progress_bar ul {
     display: flex; flex-flow: row;
-    justify-content: center; padding:80px; 
+    justify-content: center; padding:30px; 
     
 }
 .join_wrap main .join_container .join_section .join_progress_bar ul li {
     border-top: 1px solid #000;
     padding-right: 190px;
+    font-size: 15px;
+    font-weight: bold;
 }
 .join_wrap main .join_container .join_section .join_progress_bar ul li p {
     font-size: 15px;
-    padding-top: 50px; 
+    padding-top: 30px; 
     margin-bottom: 50px;
      
 }
 
 .join_wrap main .join_container .welcome_section{
     background: violet;
+    margin-bottom: 130px;
+    margin-top: 70px;
+    
 }
 .join_wrap main .join_container .welcome_section strong {}
 .join_wrap main .join_container .welcome_section p {}
-.join_wrap main .join_container .welcome_section .join_age {}
+.join_wrap main .join_container .welcome_section .join_age {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background: slateblue;
+    margin: 60px 0px 90px 0px;
+    padding: 30px;
+    
+ }
 
+ .join_wrap main .join_container .welcome_section .join_age .join_age_left{
+
+    background:salmon; 
+ }
+ .join_wrap main .join_container .welcome_section .join_age .join_age_left .join_age_left_img {
+    width: 70px; 
+    background: yellow;
+ }
+ .join_wrap main .join_container .welcome_section .join_age .join_age_left img{
+   
+ }
+ /* 만 14세 이상 버튼 */
+ .join_wrap main .join_container .welcome_section .join_age .join_age_left .above_btn {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 15px 50px 15px 50px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 30px;
+/*     -webkit-text-stroke: 1px rgba(0.3, 0.3, 0.3, 0.3); */
+    
+ }
+ .join_wrap main .join_container .welcome_section .join_age .join_age_right {
+    background: sienna;
+    /* display: flex; flex-flow: row nowrap;  */
+ }
+ .join_wrap main .join_container .welcome_section .join_age .join_age_right .join_age_right_img {
+    background: turquoise;
+    width: 70px; 
+ } 
+ .join_wrap main .join_container .welcome_section .join_age .join_age_right img {
+    
+ }
+ /* 14세 미만 버튼 */
+ .join_wrap main .join_container .welcome_section .join_age .join_age_right .below_btn {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 15px 50px 15px 50px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 30px;
+   
+ }
+
+ .join_wrap main .join_container .welcome_section .grey_font {
+    color: #949494; font-size: 14px;
+    background: saddlebrown;
+
+
+ }
+ 
 /* 버튼 css  */
 /* 
    background-color: #fff;

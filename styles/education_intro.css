@@ -1,0 +1,57 @@
+.wrap .education_intro_wrap {}
+.wrap .education_intro_wrap main {}
+.wrap .education_intro_wrap main .education_intro_title {
+    border-bottom: 1px solid #000;
+    margin-bottom: 30px;
+}
+.wrap .education_intro_wrap main .education_intro_title h1 {
+    font-size: 40px; margin-top: 30px; margin-bottom: 20px;
+}
+.wrap .education_intro_wrap main .education_intro_title p {
+    font-size: 15px; margin-bottom: 30px;
+}
+
+.wrap .education_intro_wrap main .program_title {margin-bottom: 40px;}
+.wrap .education_intro_wrap main .program_title h1 {
+    font-size: 28px; margin-top: 40px; margin-bottom: 20px;
+}
+.wrap .education_intro_wrap main .program_title p {
+    font-size: 15px;
+}
+/* 아이템 메인 */
+.wrap .education_intro_wrap main .education_Programs {
+    
+}
+.wrap .education_intro_wrap main .education_Programs ul {
+    display: flex; 
+}
+.wrap .education_intro_wrap main .education_Programs ul li {}
+.wrap .education_intro_wrap main .education_Programs ul li .program_container {
+    display: flex; background: violet;  flex-flow: column nowrap;
+}
+.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_img {}
+.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_img img {}
+.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info  {
+    background: slategray;
+}
+.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content {
+    background: skyblue; display: flex; 
+   
+}
+.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .program_item {}
+.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .program_item p {}
+.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .program_item span {}
+/* 버튼 */
+.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .education_btn {
+   
+}
+.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .education_btn .btn {
+    background: teal;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 10px 25px 10px 25px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}

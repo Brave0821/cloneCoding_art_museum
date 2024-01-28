@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <title>로그인 &lt; 국립현대미술관</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="keywords" content="">
+ <meta name="description" content="">
+    <title>현재전시 &lt; 전시 &lt; 국립현대미술관</title>
     <link href='http:spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,17 +15,16 @@
     <link rel="icon" href="./images/mainPage/favicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/login.css">
     <link rel="stylesheet" href="./styles/common.css">
     <!-- <link rel="stylesheet" href="./common.css"> -->
+    <link rel="stylesheet" href="./styles/now_display.css">
     <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 <body>
     <div class="wrap">
         <header>
             <div class="header_first_top">
-                <h1><a href="./index.html"><img src="./images/mainPage/bg_logo_full.png" alt="국립현대미술관"></a></h1>
-                <!-- 로고 -->
+                <h1><a href="./index.html"><img src="./images/mainPage/bg_logo_full.png" alt="국립현대미술관"></a></h1> <!-- 로고 -->
                 <!-- 상단 오른쪽 메뉴 -->
                 <div class="first_top_right">
                     <a href="./join.html" class="mmca_join">MMCA<br>회원가입</a>
@@ -136,13 +135,13 @@
                 </ul>
                 <!--최상단. ul 끝  -->
                 <!-- nav 옆 돋보기 12/25 생성 -->
-                <button type="button" class="search_btn"><img src="./images/mainPage/btn_totalsearch.png"
-                        alt="검색"></button>
+                <button type="button" class="search_btn"><img src="./images/mainPage/btn_totalsearch.png" alt="검색"></button>
                 <!--    <div class="search_click">에서 여기로 이동. 12/29 -->
                 <a href="#" class="close_button"><img src="#" alt="닫기"></a> <!-- 29 이동 완료 -->
             </nav>
             <!--  nav bnr_museum  끝 
-            onClick="location.href='JOIN.html'" -->
+            onClick="location.href='JOIN.html'"
+            -->
             <!-- 12/25 돋보기 눌렀을때 별도로 열리는 페이지  -->
             <div class="search_click">
                 <form action="#" method="post">
@@ -151,50 +150,134 @@
                 </form> <!-- form 경계 수정 12/29 -->
             </div>
         </header>
-        <!-- 로그인 main 시작  -->
-        <div class="login_title_wrap">
-            <main>
-                <div class="login_title_container">
-                    <div class="login_title">
-                        <div class="login_title_left">
-                            <h1>로그인 <!-- /* common 0123 로그인 작업 떄문에 잠시 none 해둠 */ --> </h1>
-                        </div>
-                        <div class="login_title_right">
-                        </div>
+        <div class="now_display_wrap">
+        <main>
+            <div class="display_container">
+                <div class="display_title">
+                    <h1>현재 전시</h1>
+                    <div class="now_dis_search">
+                        <input type="search" name="now_search_bar" id="now_search_bar" placeholder="작품명 또는 작가명을 검색해주세요.">
+                        <a href="#" class="now_search_btn">검색</a>
                     </div>
-                    <div class="login_span">
-                        <h1>국립현대미술관 홈페이지를 방문해주셔서 감사합니다.<br>
-                            로그인하시면 홈페이지를 보다 편리하게 이용하실 수 있습니다.</h1>
-                        <span class="span_red">※회원가입시 휴대폰 본인인증을 하지 않은 가입회원(22년 1월 이전)의 경우<br>
-                            본인인증을 한 후 이용해주시기 바랍니다.</span><br>
-                        <span class="span_blue">(나의 페이지 > 개인정보 수정 > 휴대폰 본인인증)</span>
-                    </div>
-                    <div class="login_container_center"> <!-- 로그인 밑 중앙으로 정렬을 위한 div -->
-                        <form action="#" method="post" id="loginFrm">
-                            <fieldset>
-                                <legend class="skip">id pw 로그인 진행중</legend>
-                                <div class="login_input">
-                                    <span><input type="text" placeholder="아이디(이메일주소)를 입력해주세요." id="user_id"></span>
-                                    <span><input type="password" placeholder="비밀번호를 입력하세요." id="user_pw"></span>
-                                </div>
-                                <div class="id_email_save">
-                                    <input type="checkbox" name="id_email_y" id="id_email_y">
-                                    <label for="login_state_y" class="login_state_y">아이디(이메일)저장</label>
-                                </div>
-                                <!--  로그인 상태유지 == 아이디 이메일 저장  -->
-                                <div class="login_btn_container">
-                                    <button type="button" id="login_btn">로그인</button>
-                                </div>
-                            </fieldset>
-                        </form>
-                        <div class="search_join">
-                            <a href="#">아이디(이메일찾기)</a>
-                            <a href="#">비밀번호찾기</a>
-                            <a href="#">회원가입</a>
-                        </div>
-                    </div> <!-- 로그인 센터 -->
                 </div>
-            </main>
+                <div class="now_display_bnr">
+                    <div class="now_display_bnr_list">
+                        <ul>
+                            <li><a href="#" class="all">전체</a></li>
+                            <li><a href="#">서울</a></li>
+                            <li><a href="#">과천</a></li>
+                            <li><a href="#">덕수궁</a></li>
+                            <li><a href="#">청주</a></li>
+                            <li><a href="#">어린이미술관</a></li>
+                        </ul>
+                    </div> 
+                    <div class="now_display_alist">
+                        <ul class="now_all_a">
+                            <li><a href="#" class="all_btn">전체</a></li>
+                            <li><a href="#">전시</a></li>
+                            <li><a href="#">필름앤비디오</a></li>
+                            <li><a href="#">다원예술</a></li>
+                            <li><a href="#">해외전시</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="now_display_images_top">
+                    <ul>
+                        <li>
+                            <a href="#" class="display">
+                            <p class="photo"><img class="img" src="./images/now_display_images/display1.png" alt="서울 미술관을 말할 때 우리가 이야기하는 것들"></p>
+                            <p class="category">서울</p>
+                            <h2>미술관을 말할 때 우리가 이야기하는 것들</h2>
+                            <p class="date">2023-12-22~2024-04-06</p>
+                            <img src="#" alt=""><a href="#" class="headphone"></a></img>
+                            <!-- <a href=""><i class="fa-solid fa-headphones"></i></a> -->
+                            <!-- 여기 아이콘 넣었는데 화면 상 위쪽으로 이동 01/04 -->
+                        </a>
+                    </li>
+                        <li>
+                            <a href="#" class="display">
+                                <p class="photo"><img class="img" src="./images/now_display_images/display2.png" alt="특별수장고 국립현대미술관드로잉소장품"></p>
+                                <p class="category">청주</p>
+                                <h2>특별수장고&lt;&lt;국립현대미술관드로잉소장품&gt;&gt;</h2>
+                                <p class="date">2023-12-14~2024-07-31</p>
+                                <!-- <a href=""><i class="fa-solid fa-headphones"></i></a> -->
+                                <img src="#" alt="" class="headphone"><a href="#"></a></img>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="display">
+                                <p class="photo"><img class="img" src="./images/now_display_images/display3.png" alt="한국의 기하학적 추상미술"></p>
+                                <p class="category">과천</p>
+                                <h2>한국의 기하학적 추상미술</h2>
+                                <p class="date">2023-11-16~2024-05-19</p>
+                                <!-- <a href=""><i class="fa-solid fa-headphones"></i></a> -->
+                                <img src="./images/mainPage/headphone_n.png" class="headphone" alt="오디오가이드"><a href="#">오디오가이드</a></img>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="display">
+                                <p class="photo"><img class="img" src="./images/now_display_images/display4.png" alt="MMCA과천프로젝트2023:연결"></p>
+                                <p class="category">과천</p>
+                                <h2>MMCA과천프로젝트2023:연결</h2>
+                                <p class="date">2023-11-15~2024-10-20</p>
+                                <!-- <a href=""><i class="fa-solid fa-headphones"></i></a> -->
+                                <img src="#" alt="" class="headphone"><a href="#"></a></img>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 한페이지에 8개 보여주는데 2~3페이지도 있는데 
+                    ul>li 추가로 밑에 생성해두고 hide 개념인가?
+                    -->
+                </div>
+                <div class="now_display_images_btm">
+                    <ul>
+                    <li>
+                        <a href="#" class="display">
+                            <p class="photo"><img class="img" src="./images/now_display_images/display5.png" alt="특별수장고 국립현대미술관드로잉소장품"></p>
+                            <p class="category">서울</p>
+                            <h2>국립현대미술관 청주 개방 수장고:전뢰진 조각·드로잉</h2>
+                            <p class="date">2023-11-07~2024-03-03</p>
+                            <!-- <a href=""><i class="fa-solid fa-headphones"></i></a> -->
+                            <img src="#" alt=""><a href="#" class="headphone"></a></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="display">
+                            <p class="photo"><img class="img" src="./images/now_display_images/display6.png" alt="프로젝트 해시태그 2023"></p>
+                            <p class="category">서울</p>
+                            <h2>프로젝트 해시태그 2023</h2>
+                            <p class="date">2023-11-03~2024-04-07</p>
+                            <!-- <a href=""><i class="fa-solid fa-headphones"></i></a> -->
+                            <img src="#" alt=""><a href="#" class="headphone"></a></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="display">
+                            <p class="photo"><img class="img" src="./images/now_display_images/display7.png" alt="미술관 길목 프로젝트: 정세인"></p>
+                            <p class="category">청주</p>
+                            <h2>미술관 길목 프로젝트: 정세인</h2>
+                            <p class="date">2023-10-31~2024-10-31</p>
+                            <!-- <a href=""><i class="fa-solid fa-headphones"></i></a> -->
+                            <img src="#" alt=""><a href="#" class="headphone"></a></img>
+                    </li>
+                    <li>
+                        <a href="#" class="display">
+                            <p class="photo"><img class="img" src="./images/now_display_images/display8.png" alt="생의 찬미"></p>
+                            <p class="category">해외</p>
+                            <h2>생의 찬미</h2>
+                            <p class="date">2023-10-28~2024-03-03</p>
+                            <!-- <a href=""><i class="fa-solid fa-headphones"></i></a> -->
+                            <img src="#" alt=""><a href="#" class="headphone"></a></img>
+                    </li>
+                </ul>
+                </div>
+                <div class="page_num">
+                    <a href="#" class="num_bold">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
+            </div>
+        </main>        
         </div>
         <footer>
             <!-- MMCA 뉴스레터 구독신청부터 footer -->
@@ -265,7 +348,6 @@
                 </div>
             </div>
         </footer>
-    </div> <!-- 최상위 wrap -->
+    </div>
 </body>
-
 </html>

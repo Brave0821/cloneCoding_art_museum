@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>로그인 &lt; 국립현대미술관</title>
+    <title>미술관교육소개 &lt; 교육 &lt; 국립현대미술관</title>
     <link href='http:spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +16,12 @@
     <link rel="icon" href="./images/mainPage/favicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/login.css">
     <link rel="stylesheet" href="./styles/common.css">
     <!-- <link rel="stylesheet" href="./common.css"> -->
+    <link rel="stylesheet" href="./styles/education_intro.css">
     <link rel="stylesheet" href="./styles/responsive.css">
 </head>
+
 <body>
     <div class="wrap">
         <header>
@@ -142,7 +144,8 @@
                 <a href="#" class="close_button"><img src="#" alt="닫기"></a> <!-- 29 이동 완료 -->
             </nav>
             <!--  nav bnr_museum  끝 
-            onClick="location.href='JOIN.html'" -->
+            onClick="location.href='JOIN.html'"
+            -->
             <!-- 12/25 돋보기 눌렀을때 별도로 열리는 페이지  -->
             <div class="search_click">
                 <form action="#" method="post">
@@ -151,48 +154,127 @@
                 </form> <!-- form 경계 수정 12/29 -->
             </div>
         </header>
-        <!-- 로그인 main 시작  -->
-        <div class="login_title_wrap">
+        <div class="education_intro_wrap">
             <main>
-                <div class="login_title_container">
-                    <div class="login_title">
-                        <div class="login_title_left">
-                            <h1>로그인 <!-- /* common 0123 로그인 작업 떄문에 잠시 none 해둠 */ --> </h1>
-                        </div>
-                        <div class="login_title_right">
-                        </div>
-                    </div>
-                    <div class="login_span">
-                        <h1>국립현대미술관 홈페이지를 방문해주셔서 감사합니다.<br>
-                            로그인하시면 홈페이지를 보다 편리하게 이용하실 수 있습니다.</h1>
-                        <span class="span_red">※회원가입시 휴대폰 본인인증을 하지 않은 가입회원(22년 1월 이전)의 경우<br>
-                            본인인증을 한 후 이용해주시기 바랍니다.</span><br>
-                        <span class="span_blue">(나의 페이지 > 개인정보 수정 > 휴대폰 본인인증)</span>
-                    </div>
-                    <div class="login_container_center"> <!-- 로그인 밑 중앙으로 정렬을 위한 div -->
-                        <form action="#" method="post" id="loginFrm">
-                            <fieldset>
-                                <legend class="skip">id pw 로그인 진행중</legend>
-                                <div class="login_input">
-                                    <span><input type="text" placeholder="아이디(이메일주소)를 입력해주세요." id="user_id"></span>
-                                    <span><input type="password" placeholder="비밀번호를 입력하세요." id="user_pw"></span>
+                <div class="education_intro_title">
+                    <h1>미술관 교육소개</h1>
+                    <p>국립현대미술관은 현대예술의 역동성과 실험성, 그리고 일상에서 예술의 가치를 발견할 수 있는 미술관교육을 운영합니다. 유아부터 성인에 이르기까지 다양한 문화적 배경의 참여자가
+                        함께하는 교육프로그램은 관람객 스스로 의미 있는 학습을 통해 현대미술을 경험하고
+                        예술로 사회와 소통하는 교육, 누구나 참여하고 누릴 수 있는 모두를 위한 열린 미술관을 지향합니다.</p>
+                </div>
+                <div class="program_title">
+                    <h1>주요 프로그램</h1>
+                    <p>어린이·가족 대상 교육, 청소년·교사 대상 교육, 성인 대상 교육, 전문인 대상 교육, 문화 접근성 교육, 작품 감상 프로그램</p>
+                </div>
+                <div class="education_Programs">
+                    <ul>
+                        <li>
+                            <div class="program_container">
+                                <div class="program_img">
+                                    <img src="./images/education_intro_inages/img_edu_introduce_01.jpg" alt="">
                                 </div>
-                                <div class="id_email_save">
-                                    <input type="checkbox" name="id_email_y" id="id_email_y">
-                                    <label for="login_state_y" class="login_state_y">아이디(이메일)저장</label>
+                                <div class="program_info">
+                                    <div class="program_content">
+                                        <div class="program_item">
+                                            <p>어린이 미술관</p>
+                                            <span>
+                                                국립현대미술관 과천에 있는 어린이미술관은 국내 대표 어린이미술관으로서 어린이와 가족을 위한 체험 전시와 다양한 교육프로그램을
+                                                개발ㆍ운영하고 있습니다.
+                                                <br>
+                                                더불어 과천 야외 공간에서 예술ㆍ자연ㆍ 놀이를 주제로 한 예술놀이 공간과 연계 프로그램을 운영합니다.
+                                                <br>
+                                                미래 세대가 현대미술의 의미를 탐색하며 다채로운 예술교육을 경험하도록 지원하며 어린이·가족을 위한 '참여하는 미술관, 열린
+                                                미술관'을 만들어 가고자 합니다.
+                                            </span>
+                                        </div>
+                                        <div class="education_btn">
+                                            <a href="#" class="btn">어린이 미술관</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!--  로그인 상태유지 == 아이디 이메일 저장  -->
-                                <div class="login_btn_container">
-                                    <button type="button" id="login_btn">로그인</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="program_container">
+                                <div class="program_img">
+                                    <img src="./images/education_intro_inages/img_edu_introduce_02.jpg" alt="">
                                 </div>
-                            </fieldset>
-                        </form>
-                        <div class="search_join">
-                            <a href="#">아이디(이메일찾기)</a>
-                            <a href="#">비밀번호찾기</a>
-                            <a href="#">회원가입</a>
-                        </div>
-                    </div> <!-- 로그인 센터 -->
+                                <div class="program_info">
+                                    <div class="program_content">
+                                        <div class="program_item">
+                                            <p>어린이</p>
+                                            <span>
+                                                예술을 통해 성장하는 미래세대를 위한 어린이프로그램은 미술관 모든 장소에서의 창의적 미술관교육 활동으로 어린이는 물론 온 가족이 함께하는 미술관 경험의 확장을 위해 노력하고 있습니다.
+                                            </span>
+                                        </div>
+                                        <div class="education_btn">
+                                            <a href="#" class="btn">프로그램 안내</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="program_container">
+                                <div class="program_img">
+                                    <img src="./images/education_intro_inages/img_edu_introduce_03.jpg" alt="">
+                                </div>
+                                <div class="program_info">
+                                    <div class="program_content">
+                                        <div class="program_item">
+                                            <p>청소년</p>
+                                            <span>
+                                                미래 세대에게 현대미술에 대한 이해와 예술의 가치를 확장하기 위해 공교육 과정과 연계뿐만 아니라 예술과 함께 성장하는 미래 융복합 인재 양성에 기여하고자 합니다.
+                                            </span>
+                                        </div>
+                                        <div class="education_btn">
+                                            <a href="#" class="btn">프로그램 안내</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="program_container">
+                                <div class="program_img">
+                                    <img src="./images/education_intro_inages/img_edu_introduce_04.jpg" alt="">
+                                </div>
+                                <div class="program_info">
+                                    <div class="program_content">
+                                        <div class="program_item">
+                                            <p>교사</p>
+                                            <span>
+                                                미술관과 공교육 현장과의 밀접한 연계를 통해 교사의 문화예술 감수성 증대 및 교육 매개자로서 역량을 강화하여 공교육 내 미술관교육 확장을 위해 노력하고 있습니다.
+                                            </span>
+                                        </div>
+                                        <div class="education_btn">
+                                            <a href="#" class="btn">프로그램 안내</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="program_container">
+                                <div class="program_img">
+                                    <img src="./images/education_intro_inages/img_edu_introduce_05.jpg" alt="">
+                                </div>
+                                <div class="program_info">
+                                    <div class="program_content">
+                                        <div class="program_item">
+                                            <p>성인</p>
+                                            <span>
+                                                전시, 소장품, 미술문화에 대한 이해와 문화 향유권 확대를 목적으로 강연, 세미나, 워크숍 등 다양한 프로그램 구성을 통해 관람객의 적극적인 참여를 이끌어 내고 있습니다.
+                                            </span>
+                                        </div>
+                                        <div class="education_btn">
+                                            <a href="#" class="btn">프로그램 안내</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </main>
         </div>
@@ -265,7 +347,7 @@
                 </div>
             </div>
         </footer>
-    </div> <!-- 최상위 wrap -->
+    </div>
 </body>
 
 </html>
