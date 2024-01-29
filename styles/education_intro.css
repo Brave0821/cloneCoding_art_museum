@@ -27,8 +27,17 @@
 }
 .wrap .education_intro_wrap main .education_Programs ul li {}
 .wrap .education_intro_wrap main .education_Programs ul li .program_container {
-    display: flex; background: violet;  flex-flow: column nowrap;
+    display: flex; background: violet;  flex-flow: row nowrap;
+
 }
+/* 실험 div로 묶어서 2개씩 그래서 플렉스 줘서 내리기 */
+.wrap .education_intro_wrap main .education_Programs ul .top_program {display: flex; flex-flow: row nowrap; background: turquoise;} 
+.wrap .education_intro_wrap main .education_Programs ul .top_program li {} 
+.wrap .education_intro_wrap main .education_Programs ul .middle_program {display: flex;  flex-flow: column nowrap; background: sandybrown;} 
+
+
+
+
 .wrap .education_intro_wrap main .education_Programs ul li .program_container .program_img {}
 .wrap .education_intro_wrap main .education_Programs ul li .program_container .program_img img {}
 .wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info  {
