@@ -23,44 +23,70 @@
     
 }
 .wrap .education_intro_wrap main .education_Programs ul {
-    display: flex; 
+
 }
 .wrap .education_intro_wrap main .education_Programs ul li {}
 .wrap .education_intro_wrap main .education_Programs ul li .program_container {
-    display: flex; background: violet;  flex-flow: row nowrap;
-
+    display: flex;
 }
 /* 실험 div로 묶어서 2개씩 그래서 플렉스 줘서 내리기 */
-.wrap .education_intro_wrap main .education_Programs ul .top_program {display: flex; flex-flow: row nowrap; background: turquoise;} 
+/* div를 2개 씩 나눠서 밑으로 내리는건 성공 0130*/
+.wrap .education_intro_wrap main .education_Programs ul .top_program {
+    display: flex; flex-flow: row nowrap; background: turquoise;
+    margin-bottom: 60px;
+} 
 .wrap .education_intro_wrap main .education_Programs ul .top_program li {} 
-.wrap .education_intro_wrap main .education_Programs ul .middle_program {display: flex;  flex-flow: column nowrap; background: sandybrown;} 
+/* div를 2개 씩 나눠서 밑으로 내리는건 성공 0130 */
+.wrap .education_intro_wrap main .education_Programs ul .middle_program {
+    display: flex; flex-flow: row nowrap; background: tomato;
+    margin-bottom: 60px;
+} 
 
 
 
 
-.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_img {}
+.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_img {
+    margin-right: 30px;
+}
 .wrap .education_intro_wrap main .education_Programs ul li .program_container .program_img img {}
 .wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info  {
     background: slategray;
 }
 .wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content {
-    background: skyblue; display: flex; 
+ 
    
 }
-.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .program_item {}
-.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .program_item p {}
-.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .program_item span {}
+
+.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info{}  
+
+.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .program_item {
+     margin-bottom: 100px; 
+   
+}
+
+/* 청소년 어른 어린이 등등  */
+.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .program_item p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .program_item span {
+    font-size: 15px;
+  
+}
 /* 버튼 */
 .wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .education_btn {
    
 }
+/* 버튼 a  */
 .wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .education_btn .btn {
     background: teal;
     background-color: #fff;
     border: 1px solid #000;
     border-radius: 50px;
     font-weight: bold;
-    padding: 10px 25px 10px 25px;
+    padding: 12px 20px 12px 20px;
     font-size: 15px;
-    letter-spacing: 1px;
+    letter-spacing: -0.5px;
+    display: inline-block;
+    
 }
