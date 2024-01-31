@@ -29,7 +29,7 @@
 /* -----------------------header 끝 main 시작 ------------------------- */
 /* main1. 국립현대미술관 관람 예약(reservation) 바로가기 부분 */
 .wrap main {
-    background-color: steelblue;
+/*     background-color: steelblue; */
     /* width: 100%; padding-top: 40px;
     padding: 40px 30px; */
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
@@ -39,7 +39,7 @@
     background-color:#fff
 }
 .wrap main .reservation_container .go_container {
-    background-color: teal;
+    /* background-color: teal; */
     display: flex;
     flex-flow: row nowrap;
     padding-top: 20px;
@@ -104,7 +104,7 @@
     background-color: #fff;
     border-bottom:1px solid #000 ;
     /* padding: 40px 30px; */
-    background-color: yellowgreen;
+  /*   background-color: yellowgreen; */
     
 }
 .wrap main .display_top_wrap .display_top_container {
@@ -131,7 +131,7 @@
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
-    background: seagreen;
+   /*  background: seagreen; */
 }
 .wrap main .display_top_wrap .display_top_container .display_container .left p {
     font-size: 15px;
@@ -157,7 +157,7 @@
 /* 미술관 부분 시작.! */
 /* 100 / 4 해서 전체 공간 나누기 01/04 */
 .wrap main .place_museum_wrap {
-    background-color:aquamarine;
+    /* background-color:aquamarine; */
     border-bottom: 1px solid #000;
     margin-top: 30px; 
 }
@@ -174,7 +174,7 @@
     flex-flow: row nowrap;
 /*     padding: 40px 0px; */ /* 미술관 위 아래  */
     justify-content: space-between;
-    background: lime;
+/*     background: lime; */
     /* padding: 5px; */
     /* padding: 40px 30px; */
 } /* 이미지  */
@@ -217,7 +217,7 @@
     border-bottom:1px solid #000 ;
     /* padding: 40px 30px; */
    /* background-color: #fff; */
-    background-color: tomato;
+    /* background-color: tomato; */
 }
 .wrap main .member_bnr img {
     width: 100%; /*1600px; - > 100%으로 변경 0108 */  
@@ -228,7 +228,7 @@
 /* -------------------------------------멤버십 이미지 (전 레인보우 이미지) 부분 끝-------------------------------------------------- */
 /* <전시> 시작!  */
 .wrap main .display_full_container {
-    background-color: thistle;
+  /*   background-color: thistle; */
     border-bottom:1px solid #000;
 } /* 전시 전체를 묶는 최상위 컨테이너 */
 .wrap main .display_full_container .display_btm_container {
@@ -362,7 +362,7 @@
     background: lime;
     */   
     /* display: inline-block; */
-    background: turquoise;
+    /* background: turquoise; */
     border-bottom: 1px solid #000;
     padding-bottom: 100px;
     
@@ -405,7 +405,7 @@
 /*  소장품 공통 img 0108 */
 .wrap main .collection_full_container .collection_container .collection_images { /* collection_images 전체를 묶는 div */
 
-    background-color: tomato;
+   /*  background-color: tomato; */
     display: flex;
     justify-content: space-between;
     
@@ -423,14 +423,14 @@
     width:100%;
    /*  padding: 10px; */
     justify-content: space-between;
-    background: rgb(96, 235, 221);
+    /* background: rgb(96, 235, 221); */
     margin-bottom: 20px;
 
 } /* 이미지 태그 추가 0116 */
 
 .wrap main .collection_full_container .collection_container .collection_images .collection_img > li h2 a {
     font-size: 28px;
-    background-color: skyblue;
+ /*    background-color: skyblue; */
    
 
 } 
@@ -499,7 +499,7 @@
 /* ----------------------------------------------------------------------------------------------------------------------------------- */
 /* 디지털 미술관 시작. */
 .wrap main .digital_wrap {
-    background-color:skyblue;
+   /*  background-color:skyblue; */
 
 } /* 디지털 미술관 최상위 컨테이너 */
 .wrap main .digital_wrap .digital_container {
@@ -524,12 +524,12 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     /* padding: 40px 0px; */
-    background-color: aqua;
+   /*  background-color: aqua; */
 
 }
 .wrap main .digital_wrap .digital_container .digital_videos a {
     width: calc(100% / 3 - 50px / 3);
-    background-color: royalblue;
+    /* background-color: royalblue; */
     margin-bottom: 100px;
 } /* 비디오 묶음 */
 .wrap main .digital_wrap .digital_container .digital_videos a .photo {
@@ -556,7 +556,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    background: seagreen;
+   /*  background: seagreen; */
     margin-top: 30px; /* 뉴스레터 위 아래0117 */
 } /* 해드 배너 */
 .wrap main .news_wrap .news_container .news_head h1 {
@@ -568,7 +568,7 @@
 }
 /* 뉴스 해드 끝 */
 .wrap main .news_wrap .news_container .news_images {
-    background: seagreen;
+   /*  background: seagreen; */
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
@@ -611,7 +611,7 @@
     padding-top: 30px;
     flex-flow: row nowrap;
     justify-content: space-between;
-    background: #949494;
+   /*  background: #949494; */
     margin-bottom: 40px;
     border-top: 1px solid #000;
     /*  margin-bottom: 50px; 추가 0117 */
@@ -668,7 +668,7 @@ padding: 10px;
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-    background: springgreen;
+   /*  background: springgreen; */
     margin-bottom: 25px; margin-top: 30px;
 
 }
@@ -676,11 +676,11 @@ padding: 10px;
     font-size: 24px;
 }
 .wrap main .news_wrap .news_head .news_content {
-    background: slateblue;
+ /*    background: slateblue; */
     margin-right: 375px;
 } /* ul class  */
 .wrap main .news_wrap .news_head .news_content li {
-    background: turquoise;
+   /*  background: turquoise; */
     margin-bottom: 10px;
     
 } /* 내용 */
