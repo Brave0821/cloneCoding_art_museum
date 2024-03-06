@@ -239,7 +239,13 @@
     display: flex;
     flex-flow: row nowrap;
     margin-bottom: 80px;
+    /* 0307 실험 */
+  /*   visibility: hidden; */
 } /* 이미지 전체를 묶는 DIV */
+/* 0307 실험 */
+/* .display_image.active {
+    visibility: visible;
+} */
 .wrap main .display_full_container .display_btm_container .display_image .display {
 } /* 이미지를 묶는 A */
 .wrap main .display_full_container .display_btm_container .display_image .display .photo {} /* P CLASS */
@@ -302,6 +308,22 @@
 }
 /* 다음으로 */
 .wrap main .display_full_container .display_btm_container .next i[class^=fa] {
+    font-size: 45px;
+    position: absolute; right: 0px; top: -20px;
+    color: #000;
+}
+/* 서울 탭  */
+/* 이전으로 & 다음으로 방향  */
+.wrap main .display_full_container .display_btm_container .prev_seoul i[class^=fa] {
+    font-size: 45px; 
+    position: absolute; left: 0px; top: -20px;
+    color: #000;
+}
+.wrap main .display_full_container .display_btm_container .prev img {
+    
+}
+/* 다음으로 */
+.wrap main .display_full_container .display_btm_container .next_seoul i[class^=fa] {
     font-size: 45px;
     position: absolute; right: 0px; top: -20px;
     color: #000;
