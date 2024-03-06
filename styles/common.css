@@ -1,9 +1,11 @@
 /* <공통부분> css 1.head 2.footer */
 /* 메인페이지 header 시작. */
 .wrap {
-    max-width: 1668px;
+    /* max-width: 1668px; */
+    max-width: 1920px;
     margin: 0 auto;
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    padding: 0px 150px 0px 150px;
 } 
 .wrap header { 
     width: 100%; padding-top: 40px;

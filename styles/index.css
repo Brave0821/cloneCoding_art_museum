@@ -197,6 +197,7 @@
 .wrap main .display_full_container .display_btm_container {
     margin-top: 40px;
     position: relative;
+    overflow: hidden;
 } 
 .wrap main .display_full_container .display_btm_container .display_bnr {
     display: flex;
@@ -322,10 +323,12 @@
 .wrap main .collection_full_container {  
     border-bottom: 1px solid #000;
     padding-bottom: 100px;
+    overflow: hidden;
 }
 .wrap main .collection_full_container .collection_container {
     position: relative; /* 이전 다음으로 버튼. */
-    width: 100%;
+   /*  width: 100%; */
+   /* padding: 0px 80px 0px 80px; */
 }
 .wrap main .collection_full_container .collection_container .collection_head { 
     margin-top: 10px;
@@ -351,29 +354,35 @@
 
 /*  소장품 공통 img 0108 */
 .wrap main .collection_full_container .collection_container .collection_images {
-    display: flex;
-    justify-content: space-between;
+   /*  display: flex; */
+   
 }
 
 .wrap main .collection_full_container .collection_container .collection_images .collection_img { /* ul */
-    width: calc((100% / 4) - 50px);
+    width: calc((100% / 4) - 30px);
+/*     background: violet; */
+    margin-right: 0px;
 }
 /* 소장품0117 */
 
 .wrap main .collection_full_container .collection_container .collection_images .collection_img > li a img {
     /* width:100%; */
     width: 400px;
-    justify-content: space-between;
+/*     justify-content: space-between; */
     margin-bottom: 20px;
+    
+    
 
 } /* 이미지 태그 추가 0116 */
 
 .wrap main .collection_full_container .collection_container .collection_images .collection_img > li h2 a {
     font-size: 28px;
+    width: 400px;
 } 
 .wrap main .collection_full_container .collection_container .collection_images .collection_img li p > a {
     font-size: 15px;
     color: #949494;
+    width: 400px;
 }
 /* 소장품 해드 끝  */
 .wrap main .collection_full_container .collection_container .collection_images {} /* 소장품 */
@@ -424,14 +433,17 @@
     font-size: 45px; 
     position: absolute; left: 0px; top: 70px;
     color: #000;
+
 }
 .wrap main .collection_full_container .collection_container .prev img {}
 .wrap main .collection_full_container .collection_container .next i[class^=fa] {
     font-size: 45px;
     position: absolute; right: 0px; top: 70px;
     color: #000;
+
 }
 .wrap main .collection_full_container .collection_container .next img {}
+
 /* 이전으로 & 다음으로 끝 */
 /* ----------------------------------------------------------------------------------------------------------------------------------- */
 /* 디지털 미술관 시작. */
@@ -484,6 +496,7 @@
 .wrap main .news_wrap {} /* MMCA 뉴스레터 · 최상위 컨테이너 */
 .wrap main .news_wrap .news_container {
     position: relative;
+    overflow: hidden;
 }
 .wrap main .news_wrap .news_container .news_head {
     display: flex;
@@ -508,14 +521,18 @@
 } /* 뉴스 이미지들  */
 .wrap main .news_wrap .news_container .news_images .news_img {
     width: calc(100% / 4 - 30px / 4);
+
 }
-.wrap main .news_wrap .news_container .news_images .news_img li {}
+.wrap main .news_wrap .news_container .news_images .news_img li {
+}
 .wrap main .news_wrap .news_container .news_images .news_img li a {
 }
 .wrap main .news_wrap .news_container .news_images .news_img li a img {
-    width: 100%;
+ /*    width: 100%; */
+    width: 400px;
     padding: 5px;
     margin-bottom: 15px;
+
 }
 .wrap main .news_wrap .news_container .news_images .news_img li:nth-child(3) > p > a {
     color: #949494;
