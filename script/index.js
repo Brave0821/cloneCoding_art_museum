@@ -23,24 +23,24 @@ display_image5 = document.querySelector(".display_image5")
 display_image6 = document.querySelector(".display_image6")
 console.log(display_image1,display_image2)
 
- display_image2.style.display = "none" 
+ /* display_image2.style.display = "none"  */
 /* charging_tap[0].parentElement.classList.add("active") */
 
-display_tap_btn1.parentElement.classList.add("active")
+/* display_tap_btn1.parentElement.classList.add("active") */
 
 /* display_tap_btn1 - > 전체  */
-display_tap_btn1.addEventListener("click", () => {
-    display_image1.style.display = "block";
-    display_image2.style.display = "none";
-    console.log("성공?")
-});
+// display_tap_btn1.addEventListener("click", () => {
+//     display_image1.style.display = "block";
+//     display_image2.style.display = "none";
+//     console.log("성공?")
+// });
 
-/* display_tap_btn2 - 서울 */
-display_tap_btn2.addEventListener("click", () => {
-    display_image1.style.display = "none";
-    display_image2.style.display = "block"
-    console.log("성공?")
-}); 
+// /* display_tap_btn2 - 서울 */
+// display_tap_btn2.addEventListener("click", () => {
+//     display_image1.style.display = "none";
+//     display_image2.style.display = "block"
+//     console.log("성공?")
+// }); 
 
 
 // 전시 탭 버튼
@@ -85,8 +85,8 @@ const my_swiper_overall = new Swiper('.display_btm_container', {
         el:'.swiper-pagination'
     }, */
     navigation:{
-        nextEl:'.display_btm_container .swiper-button-next',
-        prevEl:'.display_btm_container .swiper-button-prev',
+        nextEl:'.new_display_wrap .swiper-button-next',
+        prevEl:'.new_display_wrap .swiper-button-prev',
     },
 /*    breakpoints:{
         1240: {
@@ -96,7 +96,7 @@ const my_swiper_overall = new Swiper('.display_btm_container', {
     
 })
 /* 전시 서울 */
-const my_swiper_Seoul = new Swiper('.display_seoul_container', { 
+const my_swiper_seoul = new Swiper('.display_seoul_container', { 
     /*     autoplay:{delay:5000}, */
         slidesPerView: 3, //슬라이드 한번에 1개씩 보이기
         /* spaceBetween:10, // 슬라이드 여백 */
@@ -106,8 +106,29 @@ const my_swiper_Seoul = new Swiper('.display_seoul_container', {
             el:'.swiper-pagination'
         }, */
         navigation:{
-            nextEl:'.display_seoul_container .swiper-button-next',
-            prevEl:'.display_seoul_container .swiper-button-prev',
+            nextEl:'.new_display_wrap .swiper-button-next',
+            prevEl:'.new_display_wrap .swiper-button-prev',
+        },
+    /*    breakpoints:{
+            1240: {
+                slidesPerView: 1.5,
+            },
+        }, */
+        
+    })
+/* 전시 서울 */
+const my_swiper_gwacheon = new Swiper('.display_gwacheon_container', { 
+    /*     autoplay:{delay:5000}, */
+        slidesPerView: 3, //슬라이드 한번에 1개씩 보이기
+        /* spaceBetween:10, // 슬라이드 여백 */
+        /* centeredSlides:true, */ // 슬라이드의 기준을 가운데부터 시작하도록 설정하기
+        loop:true,
+    /*     pagination:{
+            el:'.swiper-pagination'
+        }, */
+        navigation:{
+            nextEl:'.new_display_wrap .swiper-button-next',
+            prevEl:'.new_display_wrap .swiper-button-prev',
         },
     /*    breakpoints:{
             1240: {
