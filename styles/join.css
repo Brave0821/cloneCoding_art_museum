@@ -18,7 +18,7 @@
     height: 25vh;    border: 1px solid #d3d3d3; 
     /* margin: 30px 30px 90px -10px; */
     /* padding: 0px 20px 0px -20px; */
-    background: teal;
+    /* background: teal; */
     margin: 0px 20px;
     padding: 50px;
     
@@ -44,7 +44,7 @@
 }
 
 .join_wrap main .join_container .welcome_section{
-    background: violet;
+/*     background: violet; */
     margin-bottom: 130px;
     margin-top: 70px;
     
@@ -55,7 +55,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    background: slateblue;
+/*     background: slateblue; */
     margin: 60px 0px 90px 0px;
     padding: 30px;
     
@@ -63,11 +63,11 @@
 
  .join_wrap main .join_container .welcome_section .join_age .join_age_left{
 
-    background:salmon; 
+   /*  background:salmon;  */
  }
  .join_wrap main .join_container .welcome_section .join_age .join_age_left .join_age_left_img {
     width: 70px; 
-    background: yellow;
+   /*  background: yellow; */
  }
  .join_wrap main .join_container .welcome_section .join_age .join_age_left img{
    
@@ -86,11 +86,11 @@
     
  }
  .join_wrap main .join_container .welcome_section .join_age .join_age_right {
-    background: sienna;
+    /* background: sienna; */
     /* display: flex; flex-flow: row nowrap;  */
  }
  .join_wrap main .join_container .welcome_section .join_age .join_age_right .join_age_right_img {
-    background: turquoise;
+    /* background: turquoise; */
     width: 70px; 
  } 
  .join_wrap main .join_container .welcome_section .join_age .join_age_right img {
@@ -111,7 +111,7 @@
 
  .join_wrap main .join_container .welcome_section .grey_font {
     color: #949494; font-size: 14px;
-    background: saddlebrown;
+  /*   background: saddlebrown; */
 
 
  }

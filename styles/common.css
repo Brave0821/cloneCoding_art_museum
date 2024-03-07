@@ -9,7 +9,6 @@
     background: #fff;
 }
 .wrap {
-    /* max-width: 1668px; */
     min-width: 1920px;
     margin: 0 auto;
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
@@ -26,8 +25,8 @@
 }
 /* 메인로고  */
 .wrap header .header_first_top h1 {
-display: inline-block;
-margin-bottom: 30px;
+    display: inline-block;
+    margin-bottom: 30px;
 }
 .wrap header .header_first_top h1 a {}
 .wrap header .header_first_top h1 a img {}
@@ -90,18 +89,16 @@ margin-bottom: 30px;
 
 }
 .wrap header nav .gnb > li > a {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 24px; font-weight: bold;
     margin: 10px;
 } 
 .wrap header nav .gnb li .lnb { 
-    display: none;
-    width: 100%;
+    display: none; width: 100%;
     position: absolute;
     border-bottom: 1px solid #000;  /* 0122 */
     border-top: 1px solid #000; /* 0122 */
+    background: #fff;
 }
-
 /* 메뉴 클릭 시 뒷 배경 흰색 추가 0117 */
 .wrap header nav .gnb li .lnb::before {
     content: ""; display: block;
@@ -110,13 +107,12 @@ margin-bottom: 30px;
     position: absolute;
     display: none; /* 가려져있어서 일단 값 가림 0117 */
 } /* 여기 값들 확인해보기 */
-
-.wrap header nav .gnb li:first-child .lnb {display: block;}
-
+.wrap header nav .gnb li:first-child .lnb {
+    display: block;
+}
 /* 0111 lnb1 붙인거 빼기. 0116 숨김*/
 .wrap header nav .gnb .lnb > ul {
     display: flex; 
-    background: #fff; display: none;
     position: relative; 
 } 
 /* list에 서울 과천 덕수궁 등등 */
@@ -124,7 +120,7 @@ margin-bottom: 30px;
     margin-right: 10px; margin-top: 20px;
     margin: 10px;
 }
-.wrap header nav .gnb .lnb ul li  a {
+.wrap header nav .gnb .lnb ul li a {
     font-size: 24px;
     font-weight: bold;
     

@@ -186,7 +186,7 @@
 }
 .wrap main .member_bnr img {
     width: 100%; 
-    margin-top :50px; margin-bottom :50px;
+    margin: 20px 0;
 } 
 /* 멤버십 이미지 (전 레인보우 이미지 끝) */
 /* -------------------------------------멤버십 이미지 (전 레인보우 이미지) 부분 끝-------------------------------------------------- */
@@ -199,7 +199,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content:space-between;
-    padding-bottom: 40px;
+    padding: 40px 0 40px 0;
 } /* 전시 탭 해더  전체 서울 등등  */ 
 
 .wrap main .display_full_container .display_bnr h2 {
@@ -245,11 +245,10 @@
     display: flex;
     flex-flow: row nowrap;
     margin-bottom: 80px;
-    background: violet;
 }
 /* swiper-slide */
 .wrap main .display_full_container .new_display_wrap .display_btm_container .display_image .display{
-
+    transition: transform 0.3s ease;
 }
 .wrap main .display_full_container .new_display_wrap .display_btm_container .display_image .display .photo{
 
@@ -260,7 +259,6 @@
 }
 .wrap main .display_full_container .new_display_wrap .display_btm_container .display_image .display .photo > img {
     width: 400px; 
-    background-color: teal;
 } /* P CLASS */
 
 /* ex) 서울 미술관을 말할 때 우리가 이야기하는 것들 */
@@ -291,53 +289,17 @@
 /* 이전으로 & 다음으로  new_preve_next_wrap*/
 .wrap main .display_full_container .new_display_wrap .new_preve_next_wrap {}
 
-.wrap main .display_full_container .new_display_wrap .new_preve_next_wrap .prev i[class^=fa] {
+.wrap main .display_full_container .new_display_wrap .prev i[class^=fa] {
     font-size: 45px; 
     position: absolute; left: 0px; top: -20px;
     color: #000;
 }
-.wrap main .display_full_container .new_display_wrap .new_preve_next_wrap  .next i[class^=fa]{
+.wrap main .display_full_container .new_display_wrap .next i[class^=fa]{
     font-size: 45px;
     position: absolute; right: 0px; top: -20px;
     color: #000;
 }
-
-
-
-/* 이전으로 & 다음으로 방향  */
-.wrap main .display_full_container .display_btm_container .prev i[class^=fa] {
-/*     font-size: 45px; 
-    position: absolute; left: 0px; top: -20px;
-    color: #000; */
-}
-.wrap main .display_full_container .display_btm_container .prev img {
-    
-}
-/* 다음으로 */
-.wrap main .display_full_container .display_btm_container .next i[class^=fa] {
-/*     font-size: 45px;
-    position: absolute; right: 0px; top: -20px;
-    color: #000; */
-}
-/* 서울 탭  */
-/* 이전으로 & 다음으로 방향  */
-.wrap main .display_full_container .display_btm_container .prev_seoul i[class^=fa] {
-   /*  font-size: 45px; 
-    position: absolute; left: 0px; top: -20px;
-    color: #000; */
-}
-.wrap main .display_full_container .display_btm_container .prev img {
-    
-}
-/* 다음으로 */
-.wrap main .display_full_container .display_btm_container .next_seoul i[class^=fa] {
-  /*   font-size: 45px;
-    position: absolute; right: 0px; top: -20px;
-    color: #000; */
-}
-.wrap main .display_full_container .display_btm_container .next img {
-
-}
+.wrap main .display_full_container .display_btm_container .next img {}
 
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
     display: none;
