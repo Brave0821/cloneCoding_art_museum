@@ -1,15 +1,13 @@
 /* <공통부분> css 1.head 2.footer */
 /* 메인페이지 header 시작. */
 
-/* .wrap header.sticky {
+.wrap header.sticky {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000; 
     background: #fff;
 }
- */
-
 .wrap {
     /* max-width: 1668px; */
     max-width: 1920px;

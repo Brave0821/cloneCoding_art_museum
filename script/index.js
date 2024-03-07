@@ -1,9 +1,8 @@
+/* nav 스크롤 */
 window.addEventListener("scroll", function() {
-    var header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
+    var wrap_header_scroll = document.querySelector("header");
+    wrap_header_scroll.classList.toggle("sticky", window.scrollY > 0);
 });
-
-
 
 /* 전시 탭 변환 */
 /* 전체 */
@@ -22,34 +21,30 @@ display_image3 = document.querySelector(".display_image3")
 display_image4 = document.querySelector(".display_image4")
 display_image5 = document.querySelector(".display_image5")
 display_image6 = document.querySelector(".display_image6")
-console.log(display_image1)
+console.log(display_image1,display_image2)
 
  display_image2.style.display = "none" 
+/* charging_tap[0].parentElement.classList.add("active") */
 
-/* display_tap_btn2 - > 서울  */
-/* display_tap_btn1.addEventListener("click", () => {
+display_tap_btn1.parentElement.classList.add("active")
+
+/* display_tap_btn1 - > 전체  */
+display_tap_btn1.addEventListener("click", () => {
     display_image1.style.display = "block";
     display_image2.style.display = "none";
-    display_image3.style.display = "none";
-    display_image4.style.display = "none";
-    display_image5.style.display = "none";
-    display_image6.style.display = "none";
+    console.log("성공?")
 });
- */
 
 /* display_tap_btn2 - 서울 */
-/* display_tap_btn2.addEventListener("click", () => {
+display_tap_btn2.addEventListener("click", () => {
     display_image1.style.display = "none";
-    display_image2.style.display = "block";
-    display_image3.style.display = "none";
-    display_image4.style.display = "none";
-    display_image5.style.display = "none";
-    display_image6.style.display = "none";
-}); */
+    display_image2.style.display = "block"
+    console.log("성공?")
+}); 
 
 
 // 전시 탭 버튼
-const display_tap_btns = document.querySelectorAll(".display_bnr_list li a");
+/* const display_tap_btns = document.querySelectorAll(".display_bnr_list li a");
 
 // 모든 이미지 컨테이너
 const display_image_containers = document.querySelectorAll(".display_image");
@@ -65,7 +60,7 @@ display_tap_btns.forEach((btn, index) => {
         display_image_containers[index].style.display = "block";
     });
 });
-
+ */
 
 
 
