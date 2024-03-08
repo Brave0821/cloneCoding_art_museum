@@ -21,10 +21,30 @@ const digital_lnb = document.querySelector(".digital_lnb")
 const exhibition_lnb = document.querySelector(".exhibition_lnb")
 
 /* 같은게 아니니까 각  */
-title_tap_btn.forEach((t,i)=>{
+/* title_tap_btn.forEach((t,i)=>{
     
 })
+ */
+/* 실험! */
+const tabs = document.querySelectorAll('.gnb li');
 
+tabs.forEach(tab => {
+    tab.addEventListener('mousemove', () => {
+        // 모든 탭의 활성화 클래스를 제거합니다.
+        tabs.forEach(t => t.classList.remove('active'));
+        // 클릭된 탭에 활성화 클래스를 추가합니다.
+        tab.classList.add('active');
+        
+        // 모든 내용 영역을 숨깁니다.
+        document.querySelectorAll('.lnb').forEach(lnb => lnb.style.display = 'none');
+        
+        // 클릭된 탭의 내용 영역을 보여줍니다.
+        const lnb = tab.querySelector('.lnb');
+        if (lnb) {
+            lnb.style.display = 'block';
+        }
+    });
+});
 
 
 
