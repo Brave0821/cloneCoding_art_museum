@@ -39,6 +39,7 @@ display_tap_btn1.addEventListener("click", () => {
     display_image4.style.display = "none";
     display_image5.style.display = "none";
     display_image6.style.display = "none";
+    event.preventDefault();
     console.log("성공?")
 });
 
@@ -50,6 +51,7 @@ display_tap_btn2.addEventListener("click", () => {
     display_image4.style.display = "none"
     display_image5.style.display = "none"
     display_image6.style.display = "none"
+    event.preventDefault();
     console.log("성공?")
 }); 
 
@@ -61,6 +63,7 @@ display_tap_btn3.addEventListener("click", () => {
     display_image4.style.display = "none"
     display_image5.style.display = "none"
     display_image6.style.display = "none"
+    event.preventDefault();
     console.log("성공?")
 }); 
 
@@ -72,6 +75,7 @@ display_tap_btn4.addEventListener("click", () => {
     display_image4.style.display = "block"
     display_image5.style.display = "none"
     display_image6.style.display = "none"
+    event.preventDefault();
     console.log("성공?")
 }); 
 
@@ -83,6 +87,7 @@ display_tap_btn5.addEventListener("click", () => {
     display_image4.style.display = "none"
     display_image5.style.display = "block"
     display_image6.style.display = "none"
+    event.preventDefault();
     console.log("성공?")
 }); 
 
@@ -94,6 +99,7 @@ display_tap_btn6.addEventListener("click", () => {
     display_image4.style.display = "none"
     display_image5.style.display = "none"
     display_image6.style.display = "block"
+    event.preventDefault();
     console.log("성공?")
 }); 
 
