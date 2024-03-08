@@ -143,8 +143,8 @@ const my_swiper_overall = new Swiper('.display_btm_container', {
         el:'.swiper-pagination'
     }, */
     navigation:{
-        nextEl:'.new_display_wrap .swiper-button-next',
-        prevEl:'.new_display_wrap .swiper-button-prev',
+        nextEl:'.display_btm_container .swiper-button-next',
+        prevEl:'.display_btm_container .swiper-button-prev',
     },
 })
 
@@ -154,13 +154,13 @@ const my_swiper_seoul = new Swiper('.display_seoul_container', {
         slidesPerView: 4, //슬라이드 한번에 1개씩 보이기
         /* spaceBetween:10, // 슬라이드 여백 */
         /* centeredSlides:true, */ // 슬라이드의 기준을 가운데부터 시작하도록 설정하기
-        loop:true,
+        /* loop:true, */
     /*     pagination:{
             el:'.swiper-pagination'
         }, */
         navigation:{
-            nextEl:'.new_display_wrap .swiper-button-next',
-            prevEl:'.new_display_wrap .swiper-button-prev',
+            nextEl:'.display_seoul_container .swiper-button-next',
+            prevEl:'.display_seoul_container .swiper-button-prev',
         },       
     })
 
@@ -170,13 +170,13 @@ const my_swiper_gwacheon = new Swiper('.display_gwacheon_container', {
         slidesPerView: 3, //슬라이드 한번에 1개씩 보이기
         /* spaceBetween:10, // 슬라이드 여백 */
         /* centeredSlides:true, */ // 슬라이드의 기준을 가운데부터 시작하도록 설정하기
-        loop:true,
+        /* loop:true, */
     /*     pagination:{
             el:'.swiper-pagination'
         }, */
         navigation:{
-            nextEl:'.new_display_wrap .swiper-button-next',
-            prevEl:'.new_display_wrap .swiper-button-prev',
+            nextEl:'.display_gwacheon_container .swiper-button-next',
+            prevEl:'.display_gwacheon_container .swiper-button-prev',
         },
     })
 
@@ -191,8 +191,8 @@ const my_swiper_gwacheon = new Swiper('.display_gwacheon_container', {
                 el:'.swiper-pagination'
             }, */
             navigation:{
-                nextEl:'.new_display_wrap .swiper-button-next',
-                prevEl:'.new_display_wrap .swiper-button-prev',
+                nextEl:'.display_deoksugung_container .swiper-button-next',
+                prevEl:'.display_deoksugung_container .swiper-button-prev',
             },
         })
 
@@ -207,8 +207,8 @@ const my_swiper_gwacheon = new Swiper('.display_gwacheon_container', {
                 el:'.swiper-pagination'
             }, */
             navigation:{
-                nextEl:'.new_display_wrap .swiper-button-next',
-                prevEl:'.new_display_wrap .swiper-button-prev',
+                nextEl:'.display_cheongju_container .swiper-button-next',
+                prevEl:'.display_cheongju_container .swiper-button-prev',
             },
         })
 
@@ -223,8 +223,8 @@ const my_swiper_gwacheon = new Swiper('.display_gwacheon_container', {
                 el:'.swiper-pagination'
             }, */
             navigation:{
-                nextEl:'.new_display_wrap .swiper-button-next',
-                prevEl:'.new_display_wrap .swiper-button-prev',
+                nextEl:'.display_children_container .swiper-button-next',
+                prevEl:'.display_children_container .swiper-button-prev',
             },
         })
 

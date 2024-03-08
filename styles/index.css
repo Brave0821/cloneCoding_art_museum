@@ -25,6 +25,9 @@
 /* common.css로 이동시킴  공통부분  */
 /* -----------------------header 끝 main 시작 ------------------------- */
 /* main1. 국립현대미술관 관람 예약(reservation) 바로가기 부분 */
+body {
+    overflow-x: hidden; 
+}
 .wrap main {
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
