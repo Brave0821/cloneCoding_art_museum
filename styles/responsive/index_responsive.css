@@ -1,0 +1,21 @@
+@media screen and (max-width:1240px){
+
+    .wrap header .header_first_top {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        width: 1240px;
+    }
+    .wrap main .reservation_container {
+        background-color: #fff;
+        width: 1240px;
+    }
+    .wrap main .display_top_wrap .display_top_container .display_container {
+        width: 1240px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+
+}

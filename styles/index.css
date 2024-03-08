@@ -222,9 +222,15 @@ body {
 .wrap main .display_full_container .display_bnr .display_bnr_list ul li a {
     font-size: 28px;
     font-weight: bold;
-    border-bottom: 1px solid #000;
+    color: #949494;
+   
 } /* 전체 ~ 서울 ~ 과천 ~ */
 
+/* .wrap main .display_full_container .display_bnr .display_bnr_list ul li a:hover{
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+ */
 /* 전시 모두보기  */
 .wrap main .display_full_container .display_bnr .view_all {
     font-size: 15px;

@@ -4,9 +4,12 @@
 .wrap header.sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+   /*  left: 150px;  */
+    /* width: 100%;  */
     z-index: 1000; 
     background: #fff;
+ /*    margin-right: -70px; */
+    width: calc(100% - 275px);
 }
 .wrap {
     min-width: 1920px;
@@ -71,28 +74,28 @@
     position: relative; 
 }
 
-.wrap header nav .gnb >li > a .lnb >ul > li > a {
+.wrap header nav .gnb >li > a .lnb >ul > .li > a {
 }
 
 .wrap header nav .gnb {
     display: flex;
 }
 
-.wrap header nav .gnb > li {
+.wrap header nav .gnb > .li {
     margin-right:10px;
 }
 
-.wrap header nav .gnb li:hover .lnb{
+.wrap header nav .gnb .li:hover .lnb{
 }
 
-.wrap header nav .gnb li a {
+.wrap header nav .gnb .li .a {
 
 }
-.wrap header nav .gnb > li > a {
+.wrap header nav .gnb > .li > .a {
     font-size: 24px; font-weight: bold;
     margin: 10px;
 } 
-.wrap header nav .gnb li .lnb { 
+.wrap header nav .gnb .li .lnb { 
     display: none; width: 100%;
     position: absolute;
     border-bottom: 1px solid #000;  /* 0122 */
@@ -100,14 +103,14 @@
     background: #fff;
 }
 /* 메뉴 클릭 시 뒷 배경 흰색 추가 0117 */
-.wrap header nav .gnb li .lnb::before {
+.wrap header nav .gnb .li .lnb::before {
     content: ""; display: block;
     background: rgba(255, 255, 255, 0.5);
     width: 100%; height: 100vh;
     position: absolute;
     display: none; /* 가려져있어서 일단 값 가림 0117 */
 } /* 여기 값들 확인해보기 */
-.wrap header nav .gnb li:first-child .lnb {
+.wrap header nav .gnb .li:first-child .lnb {
     display: block;
 }
 /* 0111 lnb1 붙인거 빼기. 0116 숨김*/
@@ -116,11 +119,12 @@
     position: relative; 
 } 
 /* list에 서울 과천 덕수궁 등등 */
-.wrap header nav .gnb .lnb ul li {
+.wrap header nav .gnb .li .lnb ul li {
     margin-right: 10px; margin-top: 20px;
-    margin: 10px;
+    margin: 10px; 
+
 }
-.wrap header nav .gnb .lnb ul li a {
+.wrap header nav .gnb .li .lnb ul li a {
     font-size: 24px;
     font-weight: bold;
     
@@ -142,7 +146,7 @@
 /* ------------------------------------------footer 시작 --------------------------------------------------- */
 /* footer 시작. */ /* common.css로 이동완료 */
 .wrap footer {
-    border: 1px solid #000;
+    border-top: 1px solid #000;
 }
 .wrap footer .footer_wrap {}
 .wrap footer .footer_wrap .footer_content {

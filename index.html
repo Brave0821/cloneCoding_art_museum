@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
-
+<!-- 해더부분 수정된거 다른 페이지에서도 적용하기 즉 html; 선택자 변경된거 다른 페이지는 적용 x -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>국립현대미술관</title>
-    <link href='http:spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link href='https//:spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <!-- 부트스트랩 -->
+  <!--   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script> -->
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="./images/mainPage/favicon1.png" type="image/x-icon">
     <link rel="icon" href="./images/mainPage/favicon1.png" type="image/x-icon">
@@ -25,7 +31,7 @@
     <link rel="stylesheet" href="./styles/common.css">
     <!-- <link rel="stylesheet" href="./common.css"> -->
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/responsive/index_responsive.css">
 </head>
 <!-- https://www.mmca.go.kr/  -->
 <!-- 팝업은 body 위로 관람예약 및 회원가입(로그인) 서비스 일시중단 안내 -->
@@ -81,9 +87,9 @@
             <nav>
                 <ul class="gnb">
                     <!-- 12/29 gnb class추가 -->
-                    <li>
-                        <a href="#">관람·참여 </a>
-                        <div class="lnb">
+                    <li class="li active">
+                        <a href="#" class="a art_view_a">관람·참여 </a>
+                        <div class="lnb art_view_lnb">
                             <ul>
                                 <!-- top_bnr_art_view 관람 참여 탭 -->
                                 <li><a href="#">서울</a></li>
@@ -100,9 +106,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <a href="./now_display.html">전시</a>
-                        <div class="lnb">
+                    <li class="li active">
+                        <a href="./now_display.html" class="a display_a">전시</a>
+                        <div class="lnb display_lnb">
                             <ul>
                                 <!-- top_bnr_art_display 전시탭 -->
                                 <li><a href="./now_display.html">현재전시</a></li>
@@ -111,9 +117,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <a href="./education_intro.html">교육</a>
-                        <div class="lnb">
+                    <li class="li active">
+                        <a href="./education_intro.html" class="a education_a">교육</a>
+                        <div class="lnb education_lnb">
                             <ul>
                                 <!--top_bnr_art_education 교육탭 -->
                                 <li><a href="./education_intro.html">미술관교육소개</a></li>
@@ -126,9 +132,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <a href="#">소장품</a>
-                        <div class="lnb">
+                    <li class="li active">
+                        <a href="#" class="a collection_a">소장품</a>
+                        <div class="lnb collection_lnb">
                             <ul>
                                 <!-- top_bnr_art_collection 소장품 -->
                                 <li><a href="#">소장품검색</a></li>
@@ -137,9 +143,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <a href="#">미술연구</a>
-                        <div class="lnb">
+                    <li class="li active">
+                        <a href="#" class="a art_research_a">미술연구</a>
+                        <div class="lnb art_research_lnb">
                             <!-- research 연구 -->
                             <ul>
                                 <!-- top_bnr_art_research 미술연구 -->
@@ -149,9 +155,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <a href="#">디지털미술관</a>
-                        <div class="lnb">
+                    <li class="li active">
+                        <a href="#" class="a digital_a">디지털미술관</a>
+                        <div class="lnb digital_lnb">
                             <ul>
                                 <!-- top_bnr_art_digital 디지털미술관 -->
                                 <li><a href="#">메인</a></li>
@@ -161,9 +167,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <a href="#">서울관10축제</a>
-                        <div class="lnb">
+                    <li class="li active">
+                        <a href="#" class="a exhibition_a">서울관10축제</a>
+                        <div class="lnb exhibition_lnb">
                             <ul>
                                 <!-- exhibition 전시탭 -->
                                 <li><a href="#">행사소개</a></li>
@@ -177,9 +183,7 @@
                 <!--    <div class="search_click">에서 여기로 이동. 12/29 -->
                 <a href="#" class="close_button"><img src="#" alt="닫기"></a> <!-- 29 이동 완료 -->
             </nav>
-            <!--  nav bnr_museum  끝 
-            onClick="location.href='JOIN.html'"
-            -->
+            <!--  nav bnr_museum  끝 -->
             <!-- 12/25 돋보기 눌렀을때 별도로 열리는 페이지  -->
             <div class="search_click">
                 <form action="#" method="post">
@@ -298,12 +302,12 @@
                     <h2>전시</h2>
                     <div class="display_bnr_list">
                         <ul>
-                            <li><a href="#" class="display_tap_btn1">전체</a></li>
-                            <li><a href="#" class="display_tap_btn2">서울</a></li>
-                            <li><a href="#" class="display_tap_btn3">과천</a></li>
-                            <li><a href="#" class="display_tap_btn4">덕수궁</a></li>
-                            <li><a href="#" class="display_tap_btn5">청주</a></li>
-                            <li><a href="#" class="display_tap_btn6">어린이미술관</a></li>
+                            <li><a href="#" class="display_tap_btn1 display_tap">전체</a></li>
+                            <li><a href="#" class="display_tap_btn2 display_tap">서울</a></li>
+                            <li><a href="#" class="display_tap_btn3 display_tap">과천</a></li>
+                            <li><a href="#" class="display_tap_btn4 display_tap">덕수궁</a></li>
+                            <li><a href="#" class="display_tap_btn5 display_tap">청주</a></li>
+                            <li><a href="#" class="display_tap_btn6 display_tap">어린이미술관</a></li>
                         </ul>
                     </div>
                     <a href="#" class="view_all">전시모두보기<img src="./images/mainPage/view_all_img.png" alt=""></a>
@@ -407,6 +411,14 @@
                                 <p class="date">2023-11-16~2024-05-19</p>
                                 <img src="./images/mainPage/headphone_n.png" alt="오디오가이드"><a href="#">오디오가이드</a></img>
                             </a>
+                            <a href="#" class="display swiper-slide">
+                               <!--  <p class="photo"><img class="img4 display_img"
+                                        src="./images/mainPage/display_image2_display4.jpg" alt="한국의 기하학적 추상미술"></p>
+                                <p class="category">과천</p>
+                                <h2>한국의 기하학적 추상미술</h2>
+                                <p class="date">2023-11-16~2024-05-19</p>
+                                <img src="./images/mainPage/headphone_n.png" alt="오디오가이드"><a href="#">오디오가이드</a></img> -->
+                            </a>
                         </div>
                         <!-- <a href="#" class="prev"><img src="#" alt="이전으로"></a> -->
                         <a href="#" class="swiper-button-prev prev"><i class="fa-solid fa-circle-chevron-left"></i></a>
@@ -442,14 +454,6 @@
                                 <h2>기록과 경이: 한국현대사진</h2>
                                 <p class="date">2023-11-18~2024-01-27</p>
                                 <img src="" alt=""><a href="#"></a></img>
-                            </a>
-                            <a href="#" class="display swiper-slide">
-                                <p class="photo"><img class="img4 display_img"
-                                        src="./images/mainPage/display_image2_display4.jpg" alt="한국의 기하학적 추상미술"></p>
-                                <p class="category">과천</p>
-                                <h2>한국의 기하학적 추상미술</h2>
-                                <p class="date">2023-11-16~2024-05-19</p>
-                                <img src="./images/mainPage/headphone_n.png" alt="오디오가이드"><a href="#">오디오가이드</a></img>
                             </a>
                         </div>
                         <!-- <a href="#" class="prev"><img src="#" alt="이전으로"></a> -->
@@ -843,6 +847,7 @@
         </footer>
     </div> <!--   <div class="wrap"> main 최상위 전부 묶는 컨테이너 끝 -->
     <script src="./script/index.js"></script>
+    <script src="./script/common.js"></script>
 </body>
 
 </html>
