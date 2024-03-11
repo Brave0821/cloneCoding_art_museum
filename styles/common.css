@@ -8,13 +8,13 @@
 .wrap header.sticky {
     position: fixed;
     top: 0;
-    /* left: 140px;  */
-    /* width: 100%;  */
+    left: 140px; 
+    width: 100%; 
     z-index: 1000; 
     background: #fff;
  /*    margin-right: -70px; */
  /* 275px -> 노트북 환경에 150px */
-    width: calc(100% - 275px);
+  /*   width: calc(100% - 275px); */
 }
 .wrap {
     min-width: 1920px;

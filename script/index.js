@@ -116,6 +116,13 @@ Gwacheon,
 Seoul
 */
 
+/* 무지개  */
+
+const member_bnr = document.querySelector(".member_bnr")
+
+member_bnr.addEventListener("click",(event)=>{
+    event.preventDefault();
+})
 
 /* 전시 a탭 클릭시 색 변환 */
 /* display_btn -> a 탭 전체 */
@@ -243,6 +250,12 @@ const my_swiper_children = new Swiper('.display_children_container', {
         prevEl: '.display_children_container .swiper-button-prev',
     },
 })
+
+/* display_bnr_list */
+const display_overall_ = document.querySelector(".display_tap_btn1")
+
+console.log(display_tap_btn1)
+
 
 /* 전시 끝 ------------------------------------------------------------------------------- */
 

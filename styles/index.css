@@ -16,6 +16,7 @@
 /* 팝업은 head와 body사이에 위치. */
 
 /* 무지개 스마트서치 시작. */
+
 .smart_search {display: none;}
 .smart_search a {}
 .smart_search a img {}
@@ -312,12 +313,12 @@ body {
 
 .wrap main .display_full_container .new_display_wrap .prev i[class^=fa] {
     font-size: 45px; 
-    position: absolute; left: 0px; top: -20px;
+    position: absolute; left: 0px; top: -130px;
     color: #000;
 }
 .wrap main .display_full_container .new_display_wrap .next i[class^=fa]{
     font-size: 45px;
-    position: absolute; right: 0px; top: -20px;
+    position: absolute; right: 0px; top: -130px;
     color: #000;
 }
 .wrap main .display_full_container .display_btm_container .next img {}
@@ -343,7 +344,6 @@ body {
    /* padding: 0px 80px 0px 80px; */
 }
 .wrap main .collection_full_container .collection_container .collection_head { 
-    margin-top: 10px;
     display: flex;
     justify-content: space-between;
 } /* 소장품 해드 */
@@ -367,6 +367,7 @@ body {
 /*  소장품 공통 img 0108 */
 .wrap main .collection_full_container .collection_container .collection_images {
    /*  display: flex; */
+   padding: 15px 50px 0px 65px;
    
 }
 
@@ -443,14 +444,15 @@ body {
 /* 이전으로 & 다음으로 */
 .wrap main .collection_full_container .collection_container .prev  i[class^=fa] {
     font-size: 45px; 
-    position: absolute; left: 0px; top: 70px;
+    position: absolute; left: -8px;
+    top: 5px;
     color: #000;
 
 }
 .wrap main .collection_full_container .collection_container .prev img {}
 .wrap main .collection_full_container .collection_container .next i[class^=fa] {
     font-size: 45px;
-    position: absolute; right: 0px; top: 70px;
+    position: absolute; right: -8px; top: 5px;
     color: #000;
 
 }
@@ -470,8 +472,8 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin-top:40px; /* 디지털 미술관 위 아래 간격 */
-    margin-bottom: 20px;
+    margin-top:30px; /* 디지털 미술관 위 아래 간격 */
+    margin-bottom: 30px;
 } /* 디지털 미술관 해드 */
 .wrap main .digital_wrap .digital_container .digital_head h1 {
     font-size: 28px;
@@ -484,10 +486,11 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    padding: 0px 50px 0px 50px;
 }
 .wrap main .digital_wrap .digital_container .digital_videos a {
     width: calc(100% / 3 - 50px / 3);
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 } /* 비디오 묶음 */
 .wrap main .digital_wrap .digital_container .digital_videos a .photo {
     
@@ -497,7 +500,7 @@ body {
     
 } 
 .wrap main .digital_wrap .digital_container .digital_videos a .sub_title {
-    
+    margin-top: 5px;
 } /* p 클래스 MMCA TV */
 .wrap main .digital_wrap .digital_container .digital_videos a h2 {
     font-size: 28px;
@@ -525,10 +528,10 @@ body {
 }
 /* 뉴스 해드 끝 */
 .wrap main .news_wrap .news_container .news_images {
-   /*  background: seagreen; */
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
+    padding: 0px 50px 0px 60px;
     
 } /* 뉴스 이미지들  */
 .wrap main .news_wrap .news_container .news_images .news_img {
@@ -556,13 +559,13 @@ body {
 
 .wrap main .news_wrap .news_container .prev i[class^=fa]{
     font-size: 45px; 
-    position: absolute; left: 0px; top: 50px;
+    position: absolute; left: -9px; top: 3px;
     color: #000;
 }
 
 .wrap main .news_wrap .news_container .next i[class^=fa]{
     font-size: 45px; 
-    position: absolute; right: 0px; top: 50px;
+    position: absolute; right: -9px; top: 3px;
     color: #000;
 }
 /* img1 ~ 4로 있었다면 4개 더 늘어야했지만 홈페이지 확인 결과 동일 사이즈 확인. */
@@ -570,15 +573,16 @@ body {
 /* MMCA 뉴스레터 하단 시작 0116 추가*/
 .wrap main .find_wrap {
     /* border: 1px solid #000; */
-    padding-top: 30px;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin-bottom: 40px;
     border-top: 1px solid #000;
+    margin: 30px 0px 30px 0px;
+    padding-top: 25px;
 } /* 최상위 wrap */
 .wrap main .find_wrap .find_images {
     display: flex;
     justify-content: space-between;
+    padding: 10px 50px 10px 50px;
 } /* 상위 wrap */
 .wrap main .find_wrap .find_images .news_btm {
     width: calc((100% / 4)- 20px);
@@ -603,8 +607,6 @@ body {
 } /* 미술은행 */
 .wrap main .find_wrap .find_images .news_btm .btm .more {
     text-align: end;
-    margin-bottom: 20px;
-    padding-bottom: 60px;
     margin-right: 6px;
     border-bottom: 1px solid #000;
 } /* 더 알아보기 */
@@ -614,8 +616,7 @@ body {
 .wrap main .news_wrap .news_head {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
-    margin-bottom: 25px; margin-top: 30px;
+    margin: 30px 0px 30px 0px;
 }
 .wrap main .news_wrap .news_head h1 {
     font-size: 24px;

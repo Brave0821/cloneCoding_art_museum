@@ -26,10 +26,14 @@ const exhibition_lnb = document.querySelector(".exhibition_lnb")
 })
 
  */
+
+
 window.onload = function() {
     // 페이지로 처음 들어올 떄  .lnb 요소를 숨김
     document.querySelectorAll('.lnb').forEach(lnb => lnb.style.display = 'none');
     art_view_a_black.style.color = "#000";
+    display_tap_btn1.style.color = "#000";
+
 };
 
 
