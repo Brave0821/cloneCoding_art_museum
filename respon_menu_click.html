@@ -11,28 +11,128 @@
     <!-- 햄버거바 펼쳤을 떄 페이지인데. wrap로 크게 묶을 필요가 있을까? 12/25 -->
     <div class="respon_menu_wrap">
         <header>
-            <!-- 23/12 1차 점검 - > 모바일용 페이지 별개의 메뉴 페이지 제작. -->
-            <!--   <button type="button" class="menu_btn"><img src="#" alt="메뉴햄버거바"></button>
-                    클릭 시 밑에 새로운 페이지가 열린다. 근데 이걸 어떻게 어디에 배치하지? -->
-            <div class="mobile_menu">
-                <div class="respon_top_menu">
-                    <h1><img src="#" alt="메인로고"><a href="#"></a></h1>
-                </div>
-                <div class="respon_right_menu">
-                    <button type="button" class="search_btn"><img src="#" alt="검색"></button>
-                    <!-- 반응형 페이지에서 햄버거바 누르면 새로운 페이지 열리면 이 페이지 메뉴 닫기 버튼 x가 있다.  -->
-                    <a href="#" class="close_button"><img src="#" alt="닫기"></a>
-                    <!-- menu_btn(햄버거바) - > 클릭 시 다른 페이지(div 열리는 개념) -->
-                </div>
+            <div class="header_first_top">
+                <h1><a href="./index.html"><img src="./images/mainPage/bg_logo_full.png" alt="국립현대미술관"></a></h1>
+                <!-- 로고 -->
+                <!-- 상단 오른쪽 메뉴 -->
+                <div class="first_top_right">
+                    <a href="./join.html" class="mmca_join">MMCA<br>회원가입</a>
+                    <a href="./login.html">로그인</a>
+                    <select name="top_lang_option" id="top_lang_option">
+                        <option value>한국어</option>
+                        <option value="en">ENG</option>
+                        <option value="ch">中文</option>
+                        <option value="jp">日本語</option>
+                    </select>
+                    <button type="button" class="lang_btn">GO</button>
+                </div> <!-- 로고 오른쪽 회원가입. -->
+            </div> <!-- 상단 해드 끝 -->
+            <nav>
+                <ul class="gnb">
+                    <!-- 12/29 gnb class추가 -->
+                    <li class="li active">
+                        <a href="#" class="a art_view_a">관람·참여 </a>
+                        <div class="lnb art_view_lnb">
+                            <ul>
+                                <!-- top_bnr_art_view 관람 참여 탭 -->
+                                <li><a href="#">서울</a></li>
+                                <li><a href="#">과천</a></li>
+                                <li><a href="#">덕수궁</a></li>
+                                <li><a href="#">청주</a></li>
+                                <li><a href="#">어린이미술관</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">통합예약</a></li>
+                                <!-- 전시해설, 레지던시, 미술은행 전부 nth 사용해서 글자 얇게  -->
+                                <li><a href="#">전시해설</a></li>
+                                <li><a href="#">레지던시</a></li>
+                                <li><a href="#">미술은행</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li active">
+                        <a href="./now_display.html" class="a display_a">전시</a>
+                        <div class="lnb display_lnb">
+                            <ul>
+                                <!-- top_bnr_art_display 전시탭 -->
+                                <li><a href="./now_display.html">현재전시</a></li>
+                                <li><a href="#">예정전시</a></li>
+                                <li><a href="#">과거전시</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li active">
+                        <a href="./education_intro.html" class="a education_a">교육</a>
+                        <div class="lnb education_lnb">
+                            <ul>
+                                <!--top_bnr_art_education 교육탭 -->
+                                <li><a href="./education_intro.html">미술관교육소개</a></li>
+                                <li><a href="#">어린이</a></li>
+                                <li><a href="#">청소년</a></li>
+                                <li><a href="#">교사</a></li>
+                                <li><a href="#">성인</a></li>
+                                <li><a href="#">교육자료실</a></li>
+                                <li><a href="#">참여신청</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li active">
+                        <a href="#" class="a collection_a">소장품</a>
+                        <div class="lnb collection_lnb">
+                            <ul>
+                                <!-- top_bnr_art_collection 소장품 -->
+                                <li><a href="#">소장품검색</a></li>
+                                <li><a href="#">소장품탐색</a></li>
+                                <li><a href="#">보존과학</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li active">
+                        <a href="#" class="a art_research_a">미술연구</a>
+                        <div class="lnb art_research_lnb">
+                            <!-- research 연구 -->
+                            <ul>
+                                <!-- top_bnr_art_research 미술연구 -->
+                                <li><a href="#">도서와 아카이브</a></li>
+                                <li><a href="#">연구</a></li>
+                                <li><a href="#">발간자료</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li active">
+                        <a href="#" class="a digital_a">디지털미술관</a>
+                        <div class="lnb digital_lnb">
+                            <ul>
+                                <!-- top_bnr_art_digital 디지털미술관 -->
+                                <li><a href="#">메인</a></li>
+                                <li><a href="#">맞춤검색</a></li>
+                                <li><a href="#">오디오가이드</a></li>
+                                <li><a href="#">이용자갤러리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li active">
+                        <a href="#" class="a exhibition_a">서울관10축제</a>
+                        <div class="lnb exhibition_lnb">
+                            <ul>
+                                <!-- exhibition 전시탭 -->
+                                <li><a href="#">행사소개</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
                 <!-- nav 옆 돋보기 12/25 생성 -->
-                <!-- 12/25 돋보기 눌렀을때 별개의 검색 페이지 생성  -->
-                <!-- 돋보기를 누르면 나오는 검색창 -->
-                <div class="search_click">
-                    <form action="#" method="post">
-                        <input type="text" name="user_search" id="user_search" placeholder="검색어를 입력하세요.">
-                        <button type="submit" class="search_button">검색</button>
-                    </form> 
-                </div>
+                <button type="button" class="search_btn"><img src="./images/mainPage/btn_totalsearch.png"
+                        alt="검색"></button>
+                <!--    <div class="search_click">에서 여기로 이동. 12/29 -->
+                <a href="#" class="close_button"><img src="#" alt="닫기"></a> <!-- 29 이동 완료 -->
+            </nav>
+            <!--  nav bnr_museum  끝 -->
+            <!-- 12/25 돋보기 눌렀을때 별도로 열리는 페이지  -->
+            <div class="search_click">
+                <form action="#" method="post">
+                    <input type="text" name="user_search" id="user_search" placeholder="검색어를 입력하세요.">
+                    <button type="submit" class="search_button">검색</button>
+                </form> <!-- form 경계 수정 12/29 -->
             </div>
         </header>
         <!-------------------------------------------------header 끝--------------------------------------------------------------->
@@ -174,6 +274,7 @@
             <!-- 옆에 반응형 줄어든거 돋보기랑 햄버거바 배치하기 -->
         </div> <!-- 로고 오른쪽 회원가입. -->
     </footer>
+    <script src="./script/common.js"></script>
 </body>
 </html>
 

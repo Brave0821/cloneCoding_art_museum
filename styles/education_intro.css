@@ -49,6 +49,8 @@
 }
 .wrap .education_intro_wrap main .education_Programs ul li .program_container .program_img img {}
 .wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info  {
+    width: 440px;
+    /* 0311 */
 }
 .wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content {
 
@@ -64,9 +66,11 @@
 .wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .program_item p {
     font-size: 20px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 .wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .program_item span {
     font-size: 15px;
+    font-weight: bold;
 }
 /* 버튼 */
 .wrap .education_intro_wrap main .education_Programs ul li .program_container .program_info .program_content .education_btn {

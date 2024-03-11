@@ -9,7 +9,8 @@
     z-index: 1000; 
     background: #fff;
  /*    margin-right: -70px; */
-    width: calc(100% - 275px);
+ /* 275px -> 노트북 환경에 150px */
+    width: calc(100% - 150px);
 }
 .wrap {
     min-width: 1920px;
@@ -96,11 +97,20 @@
     margin: 10px;
 } 
 .wrap header nav .gnb .li .lnb { 
-    display: none; width: 100%;
+    /* display: none; width: 100%;
     position: absolute;
-    border-bottom: 1px solid #000;  /* 0122 */
-    border-top: 1px solid #000; /* 0122 */
+    border-bottom: 1px solid #000;  
+    border-top: 1px solid #000;
+    background: #fff; */
+    display: none;
+    position: absolute;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
     background: #fff;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;    
 }
 /* 메뉴 클릭 시 뒷 배경 흰색 추가 0117 */
 .wrap header nav .gnb .li .lnb::before {

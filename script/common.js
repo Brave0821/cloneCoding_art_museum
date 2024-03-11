@@ -30,24 +30,22 @@ const tabs = document.querySelectorAll('.gnb li');
 
 tabs.forEach(tab => {
     tab.addEventListener('mousemove', () => {
-        // 모든 탭의 활성화 클래스를 제거합니다.
         tabs.forEach(t => t.classList.remove('active'));
-        // 클릭된 탭에 활성화 클래스를 추가합니다.
         tab.classList.add('active');
-        
-        // 모든 내용 영역을 숨깁니다.
         document.querySelectorAll('.lnb').forEach(lnb => lnb.style.display = 'none');
-        
-        // 클릭된 탭의 내용 영역을 보여줍니다.
         const lnb = tab.querySelector('.lnb');
         if (lnb) {
             lnb.style.display = 'block';
         }
     });
+    
+ // 'mouseleave' 이벤트 추가
+ tab.addEventListener('mouseleave', () => {
+    document.querySelectorAll('.lnb').forEach(lnb => lnb.style.display = 'none');
 });
 
 
-
+});
 
 
 
@@ -78,7 +76,7 @@ title_tap_btn.forEach((t,i)=>{
         e.preventDefault()
         title_tap_btn_reset()
         t.style.color = "#000"
-        t.style.borderBottom = "1px solid #000"
+       /*  t.style.borderBottom = "1px solid #000" */
     })
 })
 

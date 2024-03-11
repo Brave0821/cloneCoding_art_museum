@@ -44,9 +44,9 @@
             <nav>
                 <ul class="gnb">
                     <!-- 12/29 gnb class추가 -->
-                    <li>
-                        <a href="#">관람·참여 </a>
-                        <div class="lnb">
+                    <li class="li active">
+                        <a href="#" class="a art_view_a">관람·참여 </a>
+                        <div class="lnb art_view_lnb">
                             <ul>
                                 <!-- top_bnr_art_view 관람 참여 탭 -->
                                 <li><a href="#">서울</a></li>
@@ -62,12 +62,10 @@
                                 <li><a href="#">미술은행</a></li>
                             </ul>
                         </div>
-                        <!-- div로 한번 더 묶고 ul 클래스를 빼는게 좋을까? 12/22 - > 
-                            div>ul>li 구조로 바꿈(완) -->
                     </li>
-                    <li>
-                        <a href="./now_display.html">전시</a>
-                        <div class="lnb">
+                    <li class="li active">
+                        <a href="./now_display.html" class="a display_a">전시</a>
+                        <div class="lnb display_lnb">
                             <ul>
                                 <!-- top_bnr_art_display 전시탭 -->
                                 <li><a href="./now_display.html">현재전시</a></li>
@@ -76,9 +74,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <a href="./education_intro.html">교육</a>
-                        <div class="lnb">
+                    <li class="li active">
+                        <a href="./education_intro.html" class="a education_a">교육</a>
+                        <div class="lnb education_lnb">
                             <ul>
                                 <!--top_bnr_art_education 교육탭 -->
                                 <li><a href="./education_intro.html">미술관교육소개</a></li>
@@ -91,9 +89,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <a href="#">소장품</a>
-                        <div class="lnb">
+                    <li class="li active">
+                        <a href="#" class="a collection_a">소장품</a>
+                        <div class="lnb collection_lnb">
                             <ul>
                                 <!-- top_bnr_art_collection 소장품 -->
                                 <li><a href="#">소장품검색</a></li>
@@ -102,9 +100,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <a href="#">미술연구</a>
-                        <div class="lnb">
+                    <li class="li active">
+                        <a href="#" class="a art_research_a">미술연구</a>
+                        <div class="lnb art_research_lnb">
                             <!-- research 연구 -->
                             <ul>
                                 <!-- top_bnr_art_research 미술연구 -->
@@ -114,9 +112,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <a href="#">디지털미술관</a>
-                        <div class="lnb">
+                    <li class="li active">
+                        <a href="#" class="a digital_a">디지털미술관</a>
+                        <div class="lnb digital_lnb">
                             <ul>
                                 <!-- top_bnr_art_digital 디지털미술관 -->
                                 <li><a href="#">메인</a></li>
@@ -126,9 +124,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <a href="#">서울관10축제</a>
-                        <div class="lnb">
+                    <li class="li active">
+                        <a href="#" class="a exhibition_a">서울관10축제</a>
+                        <div class="lnb exhibition_lnb">
                             <ul>
                                 <!-- exhibition 전시탭 -->
                                 <li><a href="#">행사소개</a></li>
@@ -136,16 +134,13 @@
                         </div>
                     </li>
                 </ul>
-                <!--최상단. ul 끝  -->
                 <!-- nav 옆 돋보기 12/25 생성 -->
                 <button type="button" class="search_btn"><img src="./images/mainPage/btn_totalsearch.png"
                         alt="검색"></button>
                 <!--    <div class="search_click">에서 여기로 이동. 12/29 -->
                 <a href="#" class="close_button"><img src="#" alt="닫기"></a> <!-- 29 이동 완료 -->
             </nav>
-            <!--  nav bnr_museum  끝 
-            onClick="location.href='JOIN.html'"
-            -->
+            <!--  nav bnr_museum  끝 -->
             <!-- 12/25 돋보기 눌렀을때 별도로 열리는 페이지  -->
             <div class="search_click">
                 <form action="#" method="post">
@@ -353,6 +348,7 @@
             </div>
         </footer>
     </div>
+    <script src="./script/common.js"></script>
 </body>
 
 </html>

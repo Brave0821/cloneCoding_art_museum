@@ -10,35 +10,129 @@
 <body>
     <div class="respon_wrap">
         <header>
-            <div class="respon_top_menu">
-                <h1><img src="#" alt="메인로고"><a href="#"></a></h1>
-            </div>
-            <div class="respon_top_right_btn">
-                <button type="button" class="search_btn"><img src="#" alt="돋보기"></button>
-                <button type="button" class="menu_open_btn"><img src="#" alt="메뉴햄버거바"></button>
-            </div>
-            <!-- 검색 돋보기를 눌렀을때 열리는 검색 페이지 -->
+            <div class="header_first_top">
+                <h1><a href="./index.html"><img src="./images/mainPage/bg_logo_full.png" alt="국립현대미술관"></a></h1>
+                <!-- 로고 -->
+                <!-- 상단 오른쪽 메뉴 -->
+                <div class="first_top_right">
+                    <a href="./join.html" class="mmca_join">MMCA<br>회원가입</a>
+                    <a href="./login.html">로그인</a>
+                    <select name="top_lang_option" id="top_lang_option">
+                        <option value>한국어</option>
+                        <option value="en">ENG</option>
+                        <option value="ch">中文</option>
+                        <option value="jp">日本語</option>
+                    </select>
+                    <button type="button" class="lang_btn">GO</button>
+                </div> <!-- 로고 오른쪽 회원가입. -->
+            </div> <!-- 상단 해드 끝 -->
+            <nav>
+                <ul class="gnb">
+                    <!-- 12/29 gnb class추가 -->
+                    <li class="li active">
+                        <a href="#" class="a art_view_a">관람·참여 </a>
+                        <div class="lnb art_view_lnb">
+                            <ul>
+                                <!-- top_bnr_art_view 관람 참여 탭 -->
+                                <li><a href="#">서울</a></li>
+                                <li><a href="#">과천</a></li>
+                                <li><a href="#">덕수궁</a></li>
+                                <li><a href="#">청주</a></li>
+                                <li><a href="#">어린이미술관</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">통합예약</a></li>
+                                <!-- 전시해설, 레지던시, 미술은행 전부 nth 사용해서 글자 얇게  -->
+                                <li><a href="#">전시해설</a></li>
+                                <li><a href="#">레지던시</a></li>
+                                <li><a href="#">미술은행</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li active">
+                        <a href="./now_display.html" class="a display_a">전시</a>
+                        <div class="lnb display_lnb">
+                            <ul>
+                                <!-- top_bnr_art_display 전시탭 -->
+                                <li><a href="./now_display.html">현재전시</a></li>
+                                <li><a href="#">예정전시</a></li>
+                                <li><a href="#">과거전시</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li active">
+                        <a href="./education_intro.html" class="a education_a">교육</a>
+                        <div class="lnb education_lnb">
+                            <ul>
+                                <!--top_bnr_art_education 교육탭 -->
+                                <li><a href="./education_intro.html">미술관교육소개</a></li>
+                                <li><a href="#">어린이</a></li>
+                                <li><a href="#">청소년</a></li>
+                                <li><a href="#">교사</a></li>
+                                <li><a href="#">성인</a></li>
+                                <li><a href="#">교육자료실</a></li>
+                                <li><a href="#">참여신청</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li active">
+                        <a href="#" class="a collection_a">소장품</a>
+                        <div class="lnb collection_lnb">
+                            <ul>
+                                <!-- top_bnr_art_collection 소장품 -->
+                                <li><a href="#">소장품검색</a></li>
+                                <li><a href="#">소장품탐색</a></li>
+                                <li><a href="#">보존과학</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li active">
+                        <a href="#" class="a art_research_a">미술연구</a>
+                        <div class="lnb art_research_lnb">
+                            <!-- research 연구 -->
+                            <ul>
+                                <!-- top_bnr_art_research 미술연구 -->
+                                <li><a href="#">도서와 아카이브</a></li>
+                                <li><a href="#">연구</a></li>
+                                <li><a href="#">발간자료</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li active">
+                        <a href="#" class="a digital_a">디지털미술관</a>
+                        <div class="lnb digital_lnb">
+                            <ul>
+                                <!-- top_bnr_art_digital 디지털미술관 -->
+                                <li><a href="#">메인</a></li>
+                                <li><a href="#">맞춤검색</a></li>
+                                <li><a href="#">오디오가이드</a></li>
+                                <li><a href="#">이용자갤러리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li active">
+                        <a href="#" class="a exhibition_a">서울관10축제</a>
+                        <div class="lnb exhibition_lnb">
+                            <ul>
+                                <!-- exhibition 전시탭 -->
+                                <li><a href="#">행사소개</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <!-- nav 옆 돋보기 12/25 생성 -->
+                <button type="button" class="search_btn"><img src="./images/mainPage/btn_totalsearch.png"
+                        alt="검색"></button>
+                <!--    <div class="search_click">에서 여기로 이동. 12/29 -->
+                <a href="#" class="close_button"><img src="#" alt="닫기"></a> <!-- 29 이동 완료 -->
+            </nav>
+            <!--  nav bnr_museum  끝 -->
+            <!-- 12/25 돋보기 눌렀을때 별도로 열리는 페이지  -->
             <div class="search_click">
                 <form action="#" method="post">
                     <input type="text" name="user_search" id="user_search" placeholder="검색어를 입력하세요.">
-                </form>
-                <a href="#" class="close_button"><img src="#" alt="닫기"></a>
-                <button type="submit" class="search_button">검색</button>
+                    <button type="submit" class="search_button">검색</button>
+                </form> <!-- form 경계 수정 12/29 -->
             </div>
-            <!-- 햄버거바(메뉴바) 클릭 -> respon_menu_click 페이지 열림. -->
-            <!-- ------------------------------------------------------------------------------------------------ -->
-            <div class="respon_hidden_reservation">
-                <!-- reservation 예약하다. -->
-                <h1>국립현대미술관 관람예약 바로가기</h1> <!-- h1에 div를 줘야할지? -->
-                <img class="respon_close_button" src="#" alt="닫기"><a href="#"></a>
-                <div class="respon_button">
-                    <button type="button" class="black_button_reservation">전시 관람 예약하기</button>
-                    <button type="button" class="white_button_reservation">자주 묻는 질문 바로가기</button>
-                </div>
-                <p>화요일-일요일 10:00-18:00 (월요일 서울 개관)
-                    서울·덕수궁:수요일, 토요일 야간개장 10:00-21:00</p>
-            </div>
-            <!-- ----------------------------------------------------------------------------------------------- -->
         </header>
         <main>
             <!-- 이미지 - > [과천]한국의 기하학적 추상미술 -->
@@ -131,6 +225,7 @@
             <!-- MMCA 뉴스레터 구독 신청 ~ 대표자~ 국립현대미술관로고까지. -->
         </footer>
     </div>
+    <script src="./script/common.js"></script>
 </body>
 
 </html>
