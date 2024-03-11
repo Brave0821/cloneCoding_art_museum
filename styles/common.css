@@ -1,16 +1,20 @@
 /* <공통부분> css 1.head 2.footer */
 /* 메인페이지 header 시작. */
 
+.index_header_menu {
+    display: none;
+}
+
 .wrap header.sticky {
     position: fixed;
     top: 0;
-   /*  left: 150px;  */
+    /* left: 140px;  */
     /* width: 100%;  */
     z-index: 1000; 
     background: #fff;
  /*    margin-right: -70px; */
  /* 275px -> 노트북 환경에 150px */
-    width: calc(100% - 150px);
+    width: calc(100% - 275px);
 }
 .wrap {
     min-width: 1920px;
@@ -73,6 +77,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     position: relative; 
+    /* border-bottom: 1px solid #000; */
 }
 
 .wrap header nav .gnb >li > a .lnb >ul > .li > a {
@@ -113,14 +118,22 @@
     z-index: 1000;
     margin-top: -20px;
 }
+
 /* 메뉴 클릭 시 뒷 배경 흰색 추가 0117 */
-.wrap header nav .gnb .li .lnb::before {
+/* .wrap header nav .gnb .li .lnb::before {
     content: ""; display: block;
     background: rgba(255, 255, 255, 0.5);
     width: 100%; height: 100vh;
     position: absolute;
-    display: none; /* 가려져있어서 일단 값 가림 0117 */
-} /* 여기 값들 확인해보기 */
+} */
+
+.lnb-background  {
+    content: ""; display: block;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%; height: 100vh;
+    position: absolute;
+}
+
 .wrap header nav .gnb .li:first-child .lnb {
     display: block;
 }

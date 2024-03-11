@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <!-- 해더부분 수정된거 다른 페이지에서도 적용하기 즉 html; 선택자 변경된거 다른 페이지는 적용 x -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="">
@@ -12,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <!-- 부트스트랩 -->
-<!--   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <!--   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -32,6 +33,7 @@
     <!-- <link rel="stylesheet" href="./common.css"> -->
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/responsive/index_responsive.css">
+    <link rel="stylesheet" href="./styles/responsive/common_responsive.css">
 </head>
 <!-- https://www.mmca.go.kr/  -->
 <!-- 팝업은 body 위로 관람예약 및 회원가입(로그인) 서비스 일시중단 안내 -->
@@ -80,9 +82,14 @@
                         <option value="en">ENG</option>
                         <option value="ch">中文</option>
                         <option value="jp">日本語</option>
+                        <!-- 반응형 탭 열리는 곳 -->
                     </select>
                     <button type="button" class="lang_btn">GO</button>
                 </div> <!-- 로고 오른쪽 회원가입. -->
+                <div class="index_header_menu">
+                    <a href="#"><img src="./images/mainPage/btn_totalsearch.png" alt="스마트검색"></a>
+                    <a href="#"><img src="./images/mainPage/btn_mobOpen.png" alt="모바일 메뉴"></a>
+                </div>
             </div> <!-- 상단 해드 끝 -->
             <nav>
                 <ul class="gnb">
@@ -297,9 +304,13 @@
                     alt="새로워진  국립현대미술관 멤버십 국립현대미술관의 친구.가족이 되어주세요"></a>
             <!-----------------------------------------------------경계선-------------------------------------------------------->
             <!-- <전시> 시작! -->
-            <div class="display_full_container"> 
-                <div class="display_bnr"> 
-                    <h2>전시</h2>
+            <div class="display_full_container">
+                <div class="display_bnr">
+                    <h2 class="display_title_main">전시</h2>
+                    <div class="display_mob_title">
+                        <h2 class="display_title_mob">전시</h2>
+                        <a href="#" class="view_all_mob">전시모두보기<img src="./images/mainPage/view_all_img.png" alt=""></a>
+                    </div>
                     <div class="display_bnr_list">
                         <ul>
                             <li><a href="#" class="display_tap_btn1 display_tap">전체</a></li>
@@ -313,7 +324,7 @@
                     <a href="#" class="view_all">전시모두보기<img src="./images/mainPage/view_all_img.png" alt=""></a>
                 </div>
                 <!--  전시 탭 해더 끝. -->
-                <div class="new_display_wrap"> 
+                <div class="new_display_wrap">
                     <div class="swiper-container display_btm_container display_image1">
                         <div class="display_image swiper-wrapper ">
                             <a href="#" class="display swiper-slide">
@@ -349,7 +360,7 @@
                                 <p class="category">과천</p>
                                 <h2>한국의 기하학적 추상미술</h2>
                                 <p class="date">2023-11-16~2024-05-19</p>
-                                <img src="./images/mainPage/headphone_n.png" alt="오디오가이드"><a href="#">오디오가이드</a></img>
+                               <!--  <img src="./images/mainPage/headphone_n.png" alt="오디오가이드"><a href="#">오디오가이드</a></img> -->
                             </a>
                             <a href="#" class="display swiper-slide">
                                 <p class="photo"><img class="img5 display_img"
@@ -412,7 +423,7 @@
                                 <img src="./images/mainPage/headphone_n.png" alt="오디오가이드"><a href="#">오디오가이드</a></img>
                             </a>
                             <a href="#" class="display swiper-slide">
-                               <!--  <p class="photo"><img class="img4 display_img"
+                                <!--  <p class="photo"><img class="img4 display_img"
                                         src="./images/mainPage/display_image2_display4.jpg" alt="한국의 기하학적 추상미술"></p>
                                 <p class="category">과천</p>
                                 <h2>한국의 기하학적 추상미술</h2>

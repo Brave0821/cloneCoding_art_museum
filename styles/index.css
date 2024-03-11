@@ -202,14 +202,26 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content:space-between;
-    padding: 40px 0 40px 0;
+    padding: 40px 0 10px 0;
 } /* 전시 탭 해더  전체 서울 등등  */ 
 
-.wrap main .display_full_container .display_bnr h2 {
+.wrap main .display_full_container .display_bnr .display_title_main {
     font-size: 26px;
     font-weight: bold;
     margin-bottom: 25px;
 }   
+
+/* 모바일용 전시 타이틀 */
+.display_mob_title {
+    display: none;
+
+}
+
+.wrap main .display_full_container .display_bnr .view_all_mob{
+    display: none;
+}
+
+
 .wrap main .display_full_container .display_bnr .display_bnr_list {} /* 목록 리스트 */   
 .wrap main .display_full_container .display_bnr .display_bnr_list ul {
     display: flex;

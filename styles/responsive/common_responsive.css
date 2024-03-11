@@ -1,0 +1,18 @@
+@media screen and (max-width:940px){
+    .wrap {
+        min-width: 940px;
+    }
+    .wrap header {
+        border-bottom: 0px;
+    }
+    .wrap header nav {
+        display: none;
+    }
+    .wrap header nav .gnb {
+        display: none;
+    }
+    .wrap header.sticky {
+        width: 100%;
+    }
+
+}
