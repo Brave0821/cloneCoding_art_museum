@@ -110,7 +110,8 @@
     top: 100%;
     left: 0;
     width: 100%;
-    z-index: 1000;    
+    z-index: 1000;
+    margin-top: -20px;
 }
 /* 메뉴 클릭 시 뒷 배경 흰색 추가 0117 */
 .wrap header nav .gnb .li .lnb::before {
