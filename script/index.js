@@ -4,8 +4,6 @@ window.addEventListener("scroll", function () {
     wrap_header_scroll.classList.toggle("sticky", window.scrollY > 0);
 });
 
-/*  */
-
 
 
 /* 전시 탭 변환 */
@@ -174,11 +172,11 @@ const my_swiper_overall = new Swiper('.display_image1', {
             slidesPerView: 4, //레이아웃 2열
         },
 
-        940: {
+        972: {
             slidesPerView: 4,
         },
 
-        768: {
+        0: {
             slidesPerView: 1,
         },
     },
@@ -272,11 +270,11 @@ const my_swiper_collection = new Swiper('.collection_container', {
             slidesPerView: 3, //레이아웃 2열
         },
 
-        940: {
+        972: {
             slidesPerView: 3,
         },
 
-        768: {
+        0: {
             slidesPerView: 1,
         },
     },
@@ -307,11 +305,11 @@ const my_swiper_news = new Swiper('.news_container', {
             slidesPerView: 3, //레이아웃 2열
         },
 
-        940: {
+        972: {
             slidesPerView: 3,
         },
 
-        768: {
+        0: {
             slidesPerView: 1,
         },
     },

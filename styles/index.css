@@ -53,6 +53,13 @@ body {
     margin: -2px 0px 0px;
     letter-spacing: -1.8px;
 }
+/* 모바일용 로고  */
+
+.wrap .index_header .header_first_top .index_mob_logo {
+    display: none;
+}
+
+
 .wrap main .reservation_container .go_container .left p {
     font-size: 15px;
     font-weight: bold;
@@ -257,6 +264,7 @@ body {
     margin-top: 40px;
     position: relative;
     overflow: hidden;
+    padding: 0px 20px 0px 20px;
 } 
 /* swiper-container */
 .wrap main .display_full_container .new_display_wrap .display_btm_container{
@@ -266,7 +274,7 @@ body {
 .wrap main .display_full_container .new_display_wrap .display_btm_container .display_image{
     display: flex;
     flex-flow: row nowrap;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 /* swiper-slide */
 .wrap main .display_full_container .new_display_wrap .display_btm_container .display_image .display{
@@ -486,7 +494,7 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    padding: 0px 50px 0px 50px;
+    padding: 0px 60px 0px 60px;
 }
 .wrap main .digital_wrap .digital_container .digital_videos a {
     width: calc(100% / 3 - 50px / 3);

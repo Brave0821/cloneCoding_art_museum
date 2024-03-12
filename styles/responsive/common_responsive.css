@@ -1,6 +1,6 @@
-@media screen and (max-width:940px){
+@media screen and (max-width:972px){
     .wrap {
-        min-width: 940px;
+        /* min-width: 940px; */
     }
     .wrap header {
         border-bottom: 0px;

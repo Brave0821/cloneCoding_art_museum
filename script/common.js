@@ -1,3 +1,42 @@
+/* 스크롤 관련해서 */
+/* 스크롤 창 내릴 떄 nav 관련해서 */
+
+window.addEventListener("scroll", function () {
+
+
+
+    const index_header = document.querySelector(".index_header")
+    const header_nav = document.querySelector(".index_header > nav")
+    const header_logo = document.querySelector(".header_first_top")
+
+    const header_first_top = document.querySelector(".header_first_top img")
+    const first_top_right = document.querySelector(".first_top_right")
+    console.log(header_first_top)
+
+
+    /* 
+    
+    .wrap header .header_first_top .first_top_right
+    
+    */
+    /* height */
+    if (window.scrollY > 0) {
+        header_first_top.style.width = '209px'; // 스크롤을 내릴 때 헤더의 높이를 50px로 설정
+    //headerFirstTop.style.fontSize = '14px'; // 스크롤을 내릴 때 헤더의 폰트 크기를 줄임
+        first_top_right.style.display = "none"
+        header_nav.style.justifyContent = "center"
+        header_logo.style.display = "none"
+        
+} else {
+        header_first_top.style.width = '309px'; // 스크롤이 맨 위에 있을 때 헤더의 높이를 다시 원래대로 설정
+        first_top_right.style.display = "block"
+        header_nav.style.justifyContent = ""
+        header_logo.style.display = "flex"
+        // headerFirstTop.style.fontSize = '16px'; // 헤더의 폰트 크기를 다시 원래대로 설정
+    }
+});
+
+
 /* nav 탭 js */
 
 /* 관람 & 참여 a click - > ↓ div 열리게. */
@@ -99,5 +138,5 @@ title_tap_btn.forEach((t, i) => {
         /*  t.style.borderBottom = "1px solid #000" */
     })
 })
-title_tap_btn()
+/* title_tap_btn() */
 /* ------------------------------------- */
