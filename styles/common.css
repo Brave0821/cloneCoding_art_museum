@@ -187,7 +187,7 @@
 .wrap footer .footer_wrap .footer_content {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content:start;
     margin-top: 40px;
     margin-bottom: 80px;
 }
@@ -223,6 +223,11 @@
     font-size: 28px;
     font-weight: bold;
 } 
+
+.wrap footer .footer_wrap .footer_content .left_content .left_list li a:hover {
+    font-size: 30px;
+    color: #000;
+}
 .wrap footer .footer_wrap .footer_content .right_content {
     display: flex;
 }  
@@ -234,7 +239,12 @@
     
 } /* 메뉴  */ 
 .wrap footer .footer_wrap .footer_content .right_content .right_menus .menu li a {
-    font-size: 15px;
+    font-size: 16px;
+}
+.wrap footer .footer_wrap .footer_content .right_content .right_menus .menu li a:hover {
+    color: #000;
+    font-weight: bold;
+ /*    font-size: 16px; */
 }
 .wrap footer .footer_wrap .footer_content .right_content .right_menus .menu .menu_bord {
     background: #fff;
@@ -259,6 +269,10 @@
     margin-left: 10px;
 } 
 .wrap footer .end_btm address a {} 
+.wrap footer .end_btm address a:hover {
+    color: #000;
+    font-weight: bold;
+}
 .wrap footer .end_btm .log {
     margin-bottom: 80px;
 } 

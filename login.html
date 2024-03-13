@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="./images/mainPage/favicon1.png" type="image/x-icon">
     <link rel="icon" href="./images/mainPage/favicon1.png" type="image/x-icon">
@@ -17,8 +19,10 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/login.css">
     <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/responsive/common_responsive.css">
+    <link rel="stylesheet" href="./styles/responsive/login_responsive.css">
+  <!--   <link rel="stylesheet" href="./styles/responsive/index_responsive.css"> -->
     <!-- <link rel="stylesheet" href="./common.css"> -->
-    <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 <body>
     <div class="wrap">
@@ -158,37 +162,41 @@
                         <div class="login_title_right">
                         </div>
                     </div>
-                    <div class="login_span">
-                        <h1>국립현대미술관 홈페이지를 방문해주셔서 감사합니다.<br>
-                            로그인하시면 홈페이지를 보다 편리하게 이용하실 수 있습니다.</h1>
-                        <span class="span_red">※회원가입시 휴대폰 본인인증을 하지 않은 가입회원(22년 1월 이전)의 경우<br>
-                            본인인증을 한 후 이용해주시기 바랍니다.</span><br>
-                        <span class="span_blue">(나의 페이지 > 개인정보 수정 > 휴대폰 본인인증)</span>
-                    </div>
-                    <div class="login_container_center"> <!-- 로그인 밑 중앙으로 정렬을 위한 div -->
-                        <form action="#" method="post" id="loginFrm">
-                            <fieldset>
-                                <legend class="skip">id pw 로그인 진행중</legend>
-                                <div class="login_input">
-                                    <span><input type="text" placeholder="아이디(이메일주소)를 입력해주세요." id="user_id"></span>
-                                    <span><input type="password" placeholder="비밀번호를 입력하세요." id="user_pw"></span>
-                                </div>
-                                <div class="id_email_save">
-                                    <input type="checkbox" name="id_email_y" id="id_email_y">
-                                    <label for="login_state_y" class="login_state_y">아이디(이메일)저장</label>
-                                </div>
-                                <!--  로그인 상태유지 == 아이디 이메일 저장  -->
-                                <div class="login_btn_container">
-                                    <button type="button" id="login_btn">로그인</button>
-                                </div>
-                            </fieldset>
-                        </form>
-                        <div class="search_join">
-                            <a href="#">아이디(이메일찾기)</a>
-                            <a href="#">비밀번호찾기</a>
-                            <a href="#">회원가입</a>
+                    <div class="center_login_wrap">
+                        <!-- 0313 이번에 추가 -->
+                        <div class="login_span">
+                            <h1>국립현대미술관 홈페이지를 방문해주셔서 감사합니다.<br>
+                                로그인하시면 홈페이지를 보다 편리하게 이용하실 수 있습니다.</h1>
+                            <span class="span_red">※회원가입시 휴대폰 본인인증을 하지 않은 가입회원(22년 1월 이전)의 경우<br>
+                                본인인증을 한 후 이용해주시기 바랍니다.</span><br>
+                            <span class="span_blue">(나의 페이지 > 개인정보 수정 > 휴대폰 본인인증)</span>
                         </div>
-                    </div> <!-- 로그인 센터 -->
+                        <div class="login_container_center"> <!-- 로그인 밑 중앙으로 정렬을 위한 div -->
+                            <form action="#" method="post" id="loginFrmlogin_span">
+                                <fieldset>
+                                    <legend class="skip">id pw 로그인 진행중</legend>
+                                    <div class="login_input">
+                                        <span><input type="email" class="form-control border-0" aria-describedby="passwordHelpBlock" placeholder="아이디(이메일주소)를 입력해주세요." id="user_id"></span>
+                                        <span><input type="password" class="form-control border-0" aria-describedby="passwordHelpBlock" placeholder="비밀번호를 입력하세요." id="user_pw"></span>
+                                    </div>
+                                    <div class="id_email_save">
+                                        <input type="checkbox" name="id_email_y" id="id_email_y">
+                                        <label for="id_email_y"class="checkbox-label"><span class="login_state_y" >아이디(이메일)저장</span></label>
+                                    </div>
+                                    <!--  로그인 상태유지 == 아이디 이메일 저장  -->
+                                    <div class="login_btn_container">
+                                        <!--  class="btn btn-dark" 부트스트랩 사용하려면 -->
+                                        <button type="button" id="login_btn">로그인</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <div class="search_join">
+                                <a href="#">아이디(이메일찾기)</a>
+                                <a href="#">비밀번호찾기</a>
+                                <a href="#">회원가입</a>
+                            </div>
+                        </div> <!-- 로그인 센터 -->
+                    </div>
                 </div>
             </main>
         </div>
@@ -263,6 +271,7 @@
         </footer>
     </div> <!-- 최상위 wrap -->
     <script src="./script/common.js"></script>
+    <script src="./script/login.js"></script>
 </body>
 
 </html>

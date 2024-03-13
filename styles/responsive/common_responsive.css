@@ -1,3 +1,16 @@
+
+@media screen and (max-width:1240px) {
+
+    .wrap header .header_first_top {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        width: 1240px;
+    }
+ }
+
+
+
 @media screen and (max-width:972px){
     .wrap {
         /* min-width: 940px; */
@@ -13,6 +26,15 @@
     }
     .wrap header.sticky {
         width: 100%;
+        left: auto;
     }
+    .wrap header .header_first_top .first_top_right {
+        display: none;
+    }
+    
+    .wrap header .header_first_top {
+        border-bottom: 1px solid #000;
+    }
+
 
 }

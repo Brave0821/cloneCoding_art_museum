@@ -11,13 +11,6 @@
 
 @media screen and (max-width:1240px) {
 
-    .wrap header .header_first_top {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        width: 1240px;
-    }
-
     .wrap main .reservation_container {
         background-color: #fff;
         width: 1240px;
@@ -41,11 +34,6 @@
 
     .wrap .index_header .header_first_top .index_mob_logo {
         display: block;
-    }
-
-    .wrap header.sticky {
-        width: 100%;
-        left: auto;
     }
 
     /* 해더 국립현대미술관 관람 예약 바로가기 
@@ -74,10 +62,6 @@
     .wrap main .reservation_container .go_container .right {
         padding: 15px 0px 10px 0px;
         display: flex;
-    }
-
-    .wrap header .header_first_top {
-        border-bottom: 1px solid #000;
     }
 
     .wrap main .display_full_container .display_bnr .display_bnr_list ul {

@@ -1,9 +1,7 @@
 /* 스크롤 관련해서 */
-/* 스크롤 창 내릴 떄 nav 관련해서 */
+/* 스크롤 창 내릴 떄 nav 변형 */
 
 window.addEventListener("scroll", function () {
-
-
 
     const index_header = document.querySelector(".index_header")
     const header_nav = document.querySelector(".index_header > nav")
@@ -13,33 +11,26 @@ window.addEventListener("scroll", function () {
     const first_top_right = document.querySelector(".first_top_right")
     console.log(header_first_top)
 
-
-    /* 
-    
-    .wrap header .header_first_top .first_top_right
-    
-    */
-    /* height */
     if (window.scrollY > 0) {
-        header_first_top.style.width = '209px'; // 스크롤을 내릴 때 헤더의 높이를 50px로 설정
-    //headerFirstTop.style.fontSize = '14px'; // 스크롤을 내릴 때 헤더의 폰트 크기를 줄임
+        header_first_top.style.width = '209px'; 
+        //headerFirstTop.style.fontSize = '14px'; 
         first_top_right.style.display = "none"
-        header_nav.style.justifyContent = "center"
+       /*  header_nav.style.justifyContent = "center" */
         header_logo.style.display = "none"
         
 } else {
-        header_first_top.style.width = '309px'; // 스크롤이 맨 위에 있을 때 헤더의 높이를 다시 원래대로 설정
+        header_first_top.style.width = '309px'; 
         first_top_right.style.display = "block"
-        header_nav.style.justifyContent = ""
+        /* header_nav.style.justifyContent = "" */
         header_logo.style.display = "flex"
-        // headerFirstTop.style.fontSize = '16px'; // 헤더의 폰트 크기를 다시 원래대로 설정
+        // headerFirstTop.style.fontSize = '16px';
     }
 });
 
+/* -------------------------------------------스크롤-nav이벤트끝------------------------------------------ */
 
-/* nav 탭 js */
+/* ---------------------------------관람 & 참여 a click - > ↓ div 열리게.------------------------------ */
 
-/* 관람 & 참여 a click - > ↓ div 열리게. */
 /* art_view_lnb.style.display = "none"  */
 const art_view_a = document.querySelector(".art_view_a")
 const display_a = document.querySelector(".display_a")
@@ -60,21 +51,16 @@ const digital_lnb = document.querySelector(".digital_lnb")
 const exhibition_lnb = document.querySelector(".exhibition_lnb")
 
 /* 같은게 아니니까 각  */
-/* title_tap_btn.forEach((t,i)=>{
-    
-})
+/* title_tap_btn.forEach((t,i)=>{})*/
 
- */
-
-
+/* 처음 들어올 때 글자 컬러 nav에 관람·참여 */
 window.onload = function() {
     // 페이지로 처음 들어올 떄  .lnb 요소를 숨김
     document.querySelectorAll('.lnb').forEach(lnb => lnb.style.display = 'none');
     art_view_a_black.style.color = "#000";
-    display_tap_btn1.style.color = "#000";
+/*     display_tap_btn1.style.color = "#000"; */
 
 };
-
 
 
 /* 실험! 0309  index처럼하면 너무 길어져서 시도 */

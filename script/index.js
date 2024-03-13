@@ -1,8 +1,22 @@
-/* nav 스크롤 */
+/* 스크롤 내릴 때 탭 보이게 */
 window.addEventListener("scroll", function () {
     var wrap_header_scroll = document.querySelector("header");
     wrap_header_scroll.classList.toggle("sticky", window.scrollY > 0);
 });
+
+
+// const display_lnb = document.querySelector(".display_lnb")
+
+
+// /* 처음 들어올 때 글자 컬러 전시에 전체 #000 */
+// window.onload = function() {
+//     // 페이지로 처음 들어올 떄  .lnb 요소를 숨김
+//     document.querySelectorAll('.lnb').forEach(lnb => lnb.style.display = 'none');
+//    /*  art_view_a_black.style.color = "#000"; */
+//     display_tap_btn1.style.color = "#000";
+
+// };
+
 
 
 
