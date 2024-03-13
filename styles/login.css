@@ -197,3 +197,10 @@
     font-weight: bold;
     color: #000;
 }
+
+
+/* 로그인 경고 메세지  */
+.wrap .login_title_wrap  .login_title_container .center_login_wrap .login_container_center #loginFrmlogin_span fieldset .error_message_num {
+    font-size: 0.91rem;
+    color: #f00; padding: 10px 0px;
+} 

@@ -26,10 +26,8 @@ const user_email_input = document.getElementById("user_id");
 const user_pw_input = document.getElementById("user_pw");
 /* / 정규식이라는 의미 */
 const email_condition = /^([0-9a-zA-Z_-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
-
 const pw_condition = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
-
-
+const error_message_num = document.querySelector(".error_message_num") 
 
 login_btn.addEventListener("click", ()=>{
     const user_email_value = user_email_input.value.trim();
@@ -37,12 +35,14 @@ login_btn.addEventListener("click", ()=>{
     if (user_email_value === "") {
         alert("이메일을 입력해주세요")
     } else if (!email_condition.test(user_email_value)) {
-        alert("올바른 이메일 형식이 아닙니다.")
+      /*   alert("올바른 이메일 형식이 아닙니다.") */
+        error_message_num.innerHTML = "※이메일 형식에 맞게 입력해주세요."
     /* pw 비밀번호  최소 8자 1개 이상 문자, 하나의 숫자 및 하나의 특수문자 정규식 */
     } else if(user_pw_value === "") {
         alert("비밀번호를 입력해주세요")
     } else if(!pw_condition.test(user_pw_value)) {
-        alert("올바른 비밀번호 형식이 아닙니다.")
+        /* alert("올바른 비밀번호 형식이 아닙니다.") */
+        error_message_num.innerHTML = "※ 비밀번호를 최소 8자 1개 이상 문자, 하나의 숫자 및 하나의 특수문자를 포함해서 입력해주세요"
     } else {
         alert("로그인 성공")
         /* 메인 페이지로 이동 */
