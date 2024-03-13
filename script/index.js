@@ -5,20 +5,17 @@ window.addEventListener("scroll", function () {
 });
 
 
-// const display_lnb = document.querySelector(".display_lnb")
+const display_lnb = document.querySelector(".display_lnb")
 
+/* 일단 보류 0313 */
+/* 처음 들어올 때 글자 컬러 전시에 전체 #000 */
+window.onload = function() {
+    // 페이지로 처음 들어올 떄  .lnb 요소를 숨김
+    document.querySelectorAll('.lnb').forEach(lnb => lnb.style.display = 'none');
+   /*  art_view_a_black.style.color = "#000"; */
+    display_tap_btn1.style.color = "#000";
 
-// /* 처음 들어올 때 글자 컬러 전시에 전체 #000 */
-// window.onload = function() {
-//     // 페이지로 처음 들어올 떄  .lnb 요소를 숨김
-//     document.querySelectorAll('.lnb').forEach(lnb => lnb.style.display = 'none');
-//    /*  art_view_a_black.style.color = "#000"; */
-//     display_tap_btn1.style.color = "#000";
-
-// };
-
-
-
+};
 
 /* 전시 탭 변환 */
 /* 전체 */
