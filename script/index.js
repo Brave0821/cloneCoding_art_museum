@@ -6,7 +6,7 @@ window.addEventListener("scroll", function () {
 
 /* 실험! 0314 mob창 열기 */
   // JavaScript 코드
-  
+
 document.addEventListener('DOMContentLoaded', function () {
     // 메뉴 아이콘을 클릭했을 때의 동작 설정
     document.querySelector('.index_mob_menu').addEventListener('click', function () {
@@ -27,22 +27,23 @@ close_button.addEventListener("click", () => {
     mob_wrap.classList.remove("show");
     console.log("성공?")
 });
-/* 닫히게 */
-/* document.addEventListener('DOMContentLoaded', function () {
-    // 메뉴 아이콘을 클릭했을 때의 동작 설정
-    document.querySelector('.index_mob_menu').addEventListener('click', function () {
-        // mob_wrap 요소에 show 클래스를 추가하여 보이게 만듭니다.
-        document.querySelector('.mob_wrap').classList.toggle('show');
-    });
-
-    // close_button을 클릭했을 때의 동작 설정
-    document.querySelector('.close_button').addEventListener('click', function () {
-        // mob_wrap 요소의 show 클래스를 제거하여 숨깁니다.
-        document.querySelector('.mob_wrap').classList.remove('show');
-    });
-}); */
 
 
+function toggle_mob_wrap(){
+    document.querySelector(".mob_wrap").classList.toggle("show");
+}
+
+/* 실험! */
+// 브라우저 창의 크기가 변경될 때마다 실행되는 함수
+window.addEventListener('resize', () => {
+    // 현재 브라우저 창의 너비를 확인합니다.
+    const windowWidth = window.innerWidth;
+    /* 940px 가 지나면 닫히기 */
+    if (windowWidth > 940) {
+        document.querySelector('.mob_wrap').classList.remove("show");
+    }
+
+});
 
 /* 실험! 0314 끝 */
 
