@@ -4,9 +4,6 @@ window.addEventListener("scroll", function () {
     wrap_header_scroll.classList.toggle("sticky", window.scrollY > 0);
 });
 
-
-
-
 /* 실험! 0314 mob창 열기 */
   // JavaScript 코드
   

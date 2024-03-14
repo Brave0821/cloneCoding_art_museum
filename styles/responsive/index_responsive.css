@@ -276,6 +276,11 @@
 
 /* mob_menu 탭 */
 @media screen and (max-width:940px) {
+    
+/*     .mob_wrap {
+        display: block;
+    } */
+    
     .respon_menu_wrap {
         display: block;
     }
