@@ -5,6 +5,51 @@ window.addEventListener("scroll", function () {
 });
 
 
+
+
+/* 실험! 0314 mob창 열기 */
+  // JavaScript 코드
+  
+document.addEventListener('DOMContentLoaded', function () {
+    // 메뉴 아이콘을 클릭했을 때의 동작 설정
+    document.querySelector('.index_mob_menu').addEventListener('click', function () {
+        // mob_wrap 요소에 show 클래스를 추가하여 보이게 만듭니다.
+        document.querySelector('.mob_wrap').classList.toggle('show');
+    });
+});
+
+
+const close_button = document.querySelector(".mob_close_button")
+const mob_wrap = document.querySelector(".mob_wrap")
+
+console.log(close_button, mob_wrap)
+
+// close_button을 클릭했을 때의 동작 설정
+close_button.addEventListener("click", () => {
+    // mob_wrap 요소의 show 클래스를 제거하여 창을 닫습니다.
+    mob_wrap.classList.remove("show");
+    console.log("성공?")
+});
+/* 닫히게 */
+/* document.addEventListener('DOMContentLoaded', function () {
+    // 메뉴 아이콘을 클릭했을 때의 동작 설정
+    document.querySelector('.index_mob_menu').addEventListener('click', function () {
+        // mob_wrap 요소에 show 클래스를 추가하여 보이게 만듭니다.
+        document.querySelector('.mob_wrap').classList.toggle('show');
+    });
+
+    // close_button을 클릭했을 때의 동작 설정
+    document.querySelector('.close_button').addEventListener('click', function () {
+        // mob_wrap 요소의 show 클래스를 제거하여 숨깁니다.
+        document.querySelector('.mob_wrap').classList.remove('show');
+    });
+}); */
+
+
+
+/* 실험! 0314 끝 */
+
+
 const display_lnb = document.querySelector(".display_lnb")
 
 /* 일단 보류 0313 */
@@ -53,7 +98,6 @@ display_tap_btn1.addEventListener("click", () => {
     display_image5.style.display = "none";
     display_image6.style.display = "none";
     event.preventDefault();
-    console.log("성공?")
 });
 
 /* display_tap_btn2 - 서울 */
@@ -65,7 +109,6 @@ display_tap_btn2.addEventListener("click", () => {
     display_image5.style.display = "none"
     display_image6.style.display = "none"
     event.preventDefault();
-    console.log("성공?")
 });
 
 /* display_tap_btn3 - 과천 -  */
@@ -77,7 +120,6 @@ display_tap_btn3.addEventListener("click", () => {
     display_image5.style.display = "none"
     display_image6.style.display = "none"
     event.preventDefault();
-    console.log("성공?")
 });
 
 /* display_tap_btn4 - 덕수궁 -  */
@@ -100,7 +142,6 @@ display_tap_btn5.addEventListener("click", () => {
     display_image5.style.display = "block"
     display_image6.style.display = "none"
     event.preventDefault();
-    console.log("성공?")
 });
 
 /* display_tap_btn6 -어린이미술관-  */
@@ -112,7 +153,6 @@ display_tap_btn6.addEventListener("click", () => {
     display_image5.style.display = "none"
     display_image6.style.display = "block"
     event.preventDefault();
-    console.log("성공?")
 });
 
 
@@ -263,7 +303,7 @@ const my_swiper_children = new Swiper('.display_children_container', {
 /* display_bnr_list */
 const display_overall_ = document.querySelector(".display_tap_btn1")
 
-console.log(display_tap_btn1)
+
 
 
 /* 전시 끝 ------------------------------------------------------------------------------- */

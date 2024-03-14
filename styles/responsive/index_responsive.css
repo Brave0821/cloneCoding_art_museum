@@ -23,6 +23,7 @@
 
 @media screen and (max-width:972px) {
 
+ 
     /* 전시 예약하기  */
     .wrap main .display_top_wrap .display_top_container .images {
         text-align: center;
@@ -32,8 +33,19 @@
         display: none;
     }
 
-    .wrap .index_header .header_first_top .index_mob_logo {
-        display: block;
+    .wrap .index_header .header_first_top .mob_mob_title {
+        display: flex;
+        justify-content: space-between;
+    }
+    .wrap .index_header .header_first_top .mob_mob_title .index_mob_logo{
+        display: flex;
+        
+    }
+    .wrap .index_header .header_first_top .mob_mob_title .index_mob_menu{
+        margin-top: 8px;
+        display: flex;
+        align-items: flex-start;
+        /* float: right; */
     }
 
     /* 해더 국립현대미술관 관람 예약 바로가기 
@@ -259,5 +271,18 @@
 
     .wrap main .find_wrap .find_images .news_btm .btm .more {
         padding-bottom: 10px;
+    }
+}
+
+/* mob_menu 탭 */
+@media screen and (max-width:940px) {
+    .respon_menu_wrap {
+        display: block;
+    }
+    .respon_menu_wrap main {
+        display: block;
+    }
+    footer .respon_below_menu{
+        display: flex;
     }
 }
