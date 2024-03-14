@@ -13,11 +13,11 @@
 
     .wrap main .reservation_container {
         background-color: #fff;
-        width: 1240px;
+      /*   width: 1240px; */
     }
 
     .wrap main .display_top_wrap .display_top_container .display_container {
-        width: 1240px;
+       /*  width: 1240px; */
     }
 }
 
@@ -36,6 +36,7 @@
     .wrap .index_header .header_first_top .mob_mob_title {
         display: flex;
         justify-content: space-between;
+        width: 100%;
     }
     .wrap .index_header .header_first_top .mob_mob_title .index_mob_logo{
         display: flex;
@@ -106,13 +107,10 @@
         text-align: center;
         font-size: 25px;
         margin: 10px 0px 10px 0px;
-
-
     }
 
     .wrap main .display_full_container .new_display_wrap .display_btm_container .display_image .display .date {
         text-align: center;
-
     }
 
     .wrap main .display_full_container .new_display_wrap .display_btm_container .display_image .display img {}
@@ -161,6 +159,7 @@
     .wrap main .place_museum_wrap .museum_contents .museum_img .museum_button {
         display: none;
     }
+
 
     .wrap header .header_first_top h1 a img {
         width: 175px;

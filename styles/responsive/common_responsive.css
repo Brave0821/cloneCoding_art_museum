@@ -34,7 +34,29 @@
     
     .wrap header .header_first_top {
         border-bottom: 1px solid #000;
+        width: 100%;
     }
 
 
+}
+
+
+@media screen and (max-width:687px) {
+    .wrap main .reservation_container .go_container .left h1 {
+        font-size: 30px;
+    }
+    .wrap main .reservation_container .go_container .left p {
+        font-size: 14px;
+    }
+    .wrap main .reservation_container .go_container .right {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .wrap main .reservation_container .go_container .right a:nth-child(1){
+        width: 100%;
+    }
+    .wrap main .reservation_container .go_container .right a:nth-child(2) {
+        margin: 0px;
+    }
 }
