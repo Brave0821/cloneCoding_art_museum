@@ -5,13 +5,14 @@
     display: none;
 }
 
-.wrap header.sticky {
+.wrap .index_header.sticky {
     position: fixed;
     top: 0;
     left: auto; 
     width: 100%; 
     z-index: 1000; 
     background: #fff;
+    
  /*    margin-right: -70px; */
  /* 275px -> 노트북 환경에 150px */
   /*   width: calc(100% - 275px); */
@@ -48,6 +49,7 @@
 }
 .wrap header .header_first_top h1 a {}
 .wrap header .header_first_top h1 a img {}
+
 .wrap header .header_first_top .first_top_right {
     display: inline-block;
     
@@ -63,8 +65,15 @@
     padding: 20px 0.5px 20px 0.5px;
     width: 80px; height: 80px;
     margin-right: 15px;
+    transition: background-color 0.3s; 
 
-} /* 회원가입 */
+}
+
+.wrap header .header_first_top .first_top_right .mmca_join:active {
+    background-color: #666; 
+}
+
+/* 회원가입 */
 .wrap header .header_first_top .first_top_right a {
     font-size: 15px;
     margin-right: 15px;
@@ -113,11 +122,6 @@
     margin: 10px;
 } 
 .wrap header nav .gnb .li .lnb { 
-    /* display: none; width: 100%;
-    position: absolute;
-    border-bottom: 1px solid #000;  
-    border-top: 1px solid #000;
-    background: #fff; */
     display: none;
     position: absolute;
     border-bottom: 1px solid #000;

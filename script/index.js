@@ -1,64 +1,24 @@
-/* 스크롤 내릴 때 탭 보이게 */
+/* const main_header = document.querySelector(".index_header") */
+
+/* 스크롤 내릴 때 nav탭 보이게 */
 window.addEventListener("scroll", function () {
-    var wrap_header_scroll = document.querySelector("header");
+    const wrap_header_scroll = document.querySelector(".index_header");
     wrap_header_scroll.classList.toggle("sticky", window.scrollY > 0);
 });
 
-/* 실험! 0314 mob창 열기 */
-  // JavaScript 코드
-
-document.addEventListener('DOMContentLoaded', function () {
-    // 메뉴 아이콘을 클릭했을 때의 동작 설정
-    document.querySelector('.index_mob_menu').addEventListener('click', function () {
-        // mob_wrap 요소에 show 클래스를 추가하여 보이게 만듭니다.
-        document.querySelector('.mob_wrap').classList.toggle('show');
-    });
-});
-
-
-const close_button = document.querySelector(".mob_close_button")
-const mob_wrap = document.querySelector(".mob_wrap")
-
-console.log(close_button, mob_wrap)
-
-// close_button을 클릭했을 때의 동작 설정
-close_button.addEventListener("click", () => {
-    // mob_wrap 요소의 show 클래스를 제거하여 창을 닫습니다.
-    mob_wrap.classList.remove("show");
-    console.log("성공?")
-});
-
-
-function toggle_mob_wrap(){
-    document.querySelector(".mob_wrap").classList.toggle("show");
-}
-
-/* 실험! */
-// 브라우저 창의 크기가 변경될 때마다 실행되는 함수
-window.addEventListener('resize', () => {
-    // 현재 브라우저 창의 너비를 확인합니다.
-    const windowWidth = window.innerWidth;
-    /* 940px 가 지나면 닫히기 */
-    if (windowWidth > 940) {
-        document.querySelector('.mob_wrap').classList.remove("show");
-    }
-
-});
-
-/* 실험! 0314 끝 */
-
-
+/* 
 const display_lnb = document.querySelector(".display_lnb")
+const art_view_a = document.querySelector(".art_view_a") */
 
-/* 일단 보류 0313 */
-/* 처음 들어올 때 글자 컬러 전시에 전체 #000 */
-window.onload = function() {
-    // 페이지로 처음 들어올 떄  .lnb 요소를 숨김
-    document.querySelectorAll('.lnb').forEach(lnb => lnb.style.display = 'none');
-   /*  art_view_a_black.style.color = "#000"; */
-    display_tap_btn1.style.color = "#000";
+// /* 일단 보류 0313 */
+// /* 처음 들어올 때 글자 컬러 전시에 전체 #000 */
+// window.onload = function() {
+//     // 페이지로 처음 들어올 떄  .lnb 요소를 숨김
+//     document.querySelectorAll('.lnb').forEach(lnb => lnb.style.display = 'none');
+//    /*  art_view_a_black.style.color = "#000"; */
+//    /*  art_view_a.style.color = "#000"; */
 
-};
+// };
 
 /* 전시 탭 변환 */
 /* 전체 */
@@ -231,24 +191,6 @@ const my_swiper_overall = new Swiper('.display_image1', {
     },
 })
 
-// /* 페이지 새로고침????? 실패 */
-// function updateSlidesPerView() {
-
-//     // 미디어 쿼리를 사용하여 화면 너비에 따라 slidesPerView를 변경
-//     if (window.matchMedia('(max-width: 940px)').matches) {
-//         my_swiper_overall.params.slidesPerView = 1;
-//     } else {
-//         my_swiper_collection.params.slidesPerView = 4;
-//     }
-//     my_swiper_collection.update(); // Swiper 업데이트
-//     }
-//     // 페이지 로드될 때 업데이트 실행
-//     updateSlidesPerView();
-
-//     // 창 크기 변경 시 slidesPerView 업데이트
-//     window.addEventListener('resize', my_swiper_overall);
-
-
 
 /* 전시 서울 */
 const my_swiper_seoul = new Swiper('.display_seoul_container', {
@@ -364,3 +306,88 @@ const my_swiper_news = new Swiper('.news_container', {
     },
 })
 
+
+
+
+/* 실험! 0314 mob창 열기 */
+  // JavaScript 코드
+const close_button = document.querySelector(".mob_close_button")
+const mob_wrap = document.querySelector(".mob_wrap")
+
+    document.addEventListener('DOMContentLoaded', function () {
+    // 메뉴 아이콘을 클릭했을 때의 동작 설정
+    document.querySelector('.index_mob_menu').addEventListener('click', function () {
+        // mob_wrap 요소에 show 클래스를 추가하여 보이게 만듬.
+        document.querySelector('.mob_wrap').classList.toggle('show');
+    });
+});
+
+
+
+console.log(close_button, mob_wrap)
+
+// close_button을 클릭했을 때의 동작 설정
+close_button.addEventListener("click", () => {
+    // mob_wrap 요소의 show 클래스를 제거하여 창을 닫기.
+    mob_wrap.classList.remove("show");
+});
+
+function toggle_mob_wrap(){
+    document.querySelector(".mob_wrap").classList.toggle("show");
+}
+
+/* close 버튼을 누르면 스크롤바가 다시 생기고 mob_menu를 누르면 스크롤바가 없어진다. */
+/* --- */
+
+const wrap = document.querySelector(".wrap")
+const index_mob_menu = document.querySelector(".index_mob_menu")
+const body = document.querySelector("body")
+
+/* close_button.addEventListener("click",()=>{
+    wrap.style.overflowY="hidden"
+    console.log("성공??????????")
+})
+ */
+
+/* index_mob_menu.addEventListener("click",()=>{
+    body.style.overflowY = "hidden";
+    console.log("성공😊!!!")
+})  */
+
+let isScrollHidden = false;
+
+index_mob_menu.addEventListener("click", () => {
+    body.style.overflowY = "hidden";
+    isScrollHidden = true;
+    console.log("성공😊!!!");
+});
+
+close_button.addEventListener("click", () => {
+    if (isScrollHidden) {
+        body.style.overflowY = "";
+        isScrollHidden = false;
+    }
+});
+
+
+
+/* 이제 여기서 close_button을 클릭하면 hidden으로 숨겨졌던게 다시 나오게 if문으로 작성하면?
+
+ */
+
+
+/* ------------------------------ */
+/* 실험! */
+// 브라우저 창의 크기가 변경될 때마다 실행되는 함수
+window.addEventListener('resize', () => {
+    // 현재 브라우저 창의 너비를 확인합니다.
+    const window_width = window.innerWidth;
+    /* 940px 가 지나면 닫히기 */
+    /* 940px 이상이면 window_width가 remove*/
+    if (window_width > 940) {
+        document.querySelector('.mob_wrap').classList.remove("show");
+    }
+
+});
+
+/* 실험! 0314 끝 */

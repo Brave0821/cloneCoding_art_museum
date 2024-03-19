@@ -1,12 +1,12 @@
 
 @media screen and (max-width:1240px) {
 
-    .wrap header .header_first_top {
+ /*    .wrap header .header_first_top {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
         width: 1240px;
-    }
+    } */
  }
 
 
@@ -30,6 +30,7 @@
     }
     .wrap header .header_first_top .first_top_right {
         display: none;
+        background: violet;
     }
     
     .wrap header .header_first_top {

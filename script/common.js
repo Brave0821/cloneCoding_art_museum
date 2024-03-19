@@ -1,3 +1,10 @@
+/* 
+window.addEventListener("scroll", function () {
+    const wrap_header_scroll = document.querySelector(".index_header");
+    wrap_header_scroll.classList.toggle("sticky", window.scrollY > 0);
+});
+ */
+
 /* 스크롤 관련해서 */
 /* 스크롤 창 내릴 떄 nav 변형 */
 
@@ -6,27 +13,24 @@ window.addEventListener("scroll", function () {
     const index_header = document.querySelector(".index_header")
     const header_nav = document.querySelector(".index_header > nav")
     const header_logo = document.querySelector(".header_first_top")
-
     const header_first_top = document.querySelector(".header_first_top img")
     const first_top_right = document.querySelector(".first_top_right")
-    console.log(header_first_top)
 
     if (window.scrollY > 0) {
+       /*  index_header.style.display = "block" */
         header_first_top.style.width = '209px'; 
         //headerFirstTop.style.fontSize = '14px'; 
         first_top_right.style.display = "none"
        /*  header_nav.style.justifyContent = "center" */
         header_logo.style.display = "none"
-        
-} else {
+    } else {
         header_first_top.style.width = '309px'; 
-        first_top_right.style.display = "block"
+        first_top_right.style.display = ""
         /* header_nav.style.justifyContent = "" */
         header_logo.style.display = "flex"
         // headerFirstTop.style.fontSize = '16px';
     }
 });
-
 /* -------------------------------------------스크롤-nav이벤트끝------------------------------------------ */
 
 /* ---------------------------------관람 & 참여 a click - > ↓ div 열리게.------------------------------ */
@@ -77,7 +81,7 @@ tabs.forEach(tab => { /* mousemove - */
         }
     });
     
- 
+
     // 'mouseleave' 이벤트 추가
     /* nav에 마우스를 떄면 숨긴다. */
     tab.addEventListener('mouseleave', () => {
@@ -126,3 +130,5 @@ title_tap_btn.forEach((t, i) => {
 })
 /* title_tap_btn() */
 /* ------------------------------------- */
+
+

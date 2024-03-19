@@ -1,8 +1,8 @@
 @media screen and (max-width:1660px) {
-    .wrap {
+  /*   .wrap {
         max-width: 1660px;
         padding: 0px 30px 0px 30px;
-    }
+    } */
 }
 /*  margin: 0px 30px;
     max-width: 1660px;
@@ -23,7 +23,6 @@
 
 @media screen and (max-width:972px) {
 
- 
     /* 전시 예약하기  */
     .wrap main .display_top_wrap .display_top_container .images {
         text-align: center;
@@ -126,6 +125,7 @@
     .wrap header nav .gnb .li .lnb ul li a {
         font-size: 17px;
     } */
+
     .wrap main .display_full_container .new_display_wrap .display_btm_container .display_image .display .photo .display_img {
         width: 450px;
     }
@@ -180,9 +180,10 @@
         height: 780px;
     }
 
-    .wrap header .header_first_top .first_top_right {
+    /*.wrap header .header_first_top .first_top_right {
         display: none;
-    }
+        background: violet;
+    } */
 
     .wrap main .display_top_wrap .display_top_container .display_container .left h1 {
         font-size: 30px;
@@ -275,11 +276,9 @@
 
 /* mob_menu 탭 */
 @media screen and (max-width:940px) {
-    
-/*     .mob_wrap {
+    .mob_wrap {
         display: block;
-    } */
-    
+    }
     .respon_menu_wrap {
         display: block;
     }
