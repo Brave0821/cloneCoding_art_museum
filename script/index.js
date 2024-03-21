@@ -6,6 +6,48 @@ window.addEventListener("scroll", function () {
     wrap_header_scroll.classList.toggle("sticky", window.scrollY > 0);
 });
 
+/* 모바일 클릭 시 숨겨진 탭 열림-------------------------------------- */
+// Get all elements with class 'mob_plus_a'
+const mobPlusAs = document.querySelectorAll('.mob_plus_a');
+
+// Loop through each element and attach click event listener
+mobPlusAs.forEach(mobPlusA => {
+    mobPlusA.addEventListener('click', toggleResponLnb);
+});
+
+// Function to toggle respon_lnb visibility
+function toggleResponLnb(event) {
+    // Find the closest respon_gnb_tab parent
+    const responGnbTab = event.target.closest('.respon_gnb_tab');
+
+    // Find the next sibling element with class 'respon_lnb'
+    const responLnb = responGnbTab.nextElementSibling;
+
+    // Toggle the display style of responLnb
+    if (responLnb.style.display === 'none') {
+        responLnb.style.display = 'block';
+    } else {
+        responLnb.style.display = 'none';
+    }
+
+}
+
+
+// /* 부드럽게 열림. */
+// // Function to toggle respon_lnb visibility
+// function toggleResponLnb(event) {
+//     // Find the closest respon_gnb_tab parent
+//     const responGnbTab = event.target.closest('.respon_gnb_tab');
+
+//     // Find the next sibling element with class 'respon_lnb'
+//     const responLnb = responGnbTab.nextElementSibling;
+
+//     // Toggle the active class of responLnb
+//     responLnb.classList.toggle('active');
+// }
+
+/* 모바일 클릭 시 숨겨진 탭 열림----------------------------------------- */
+
 /* 
 const display_lnb = document.querySelector(".display_lnb")
 const art_view_a = document.querySelector(".art_view_a") */
@@ -28,6 +70,10 @@ const display_tap_btn3 = document.querySelector(".display_tap_btn3")
 const display_tap_btn4 = document.querySelector(".display_tap_btn4")
 const display_tap_btn5 = document.querySelector(".display_tap_btn5")
 const display_tap_btn6 = document.querySelector(".display_tap_btn6")
+
+
+
+
 
 
 /* 각각 탭 스와이퍼 컨테이너 컨테이너 */
@@ -123,13 +169,20 @@ Gwacheon,
 Seoul
 */
 
-/* 무지개  */
+/* 무지개색 배너 클릭 시 위로 x  */
 
 const member_bnr = document.querySelector(".member_bnr")
 
-member_bnr.addEventListener("click",(event)=>{
+member_bnr.addEventListener("click", (event) => {
     event.preventDefault();
 })
+
+window.onload = function () {
+    display_tap_btn1.style.color = "#000"
+}
+
+
+
 
 /* 전시 a탭 클릭시 색 변환 */
 /* display_btn -> a 탭 전체 */
@@ -159,6 +212,11 @@ display_btn.forEach((t, i) => {
 
     })
 })
+
+/* 전시 탭에 전체 초기 스타일 지정 */
+// display_tap_btn1 초기 스타일 적용
+display_tap_btn1.style.color = "#000";
+display_tap_btn1.style.borderBottom = "1px solid #000";
 
 /* 전시 스와이퍼 */
 
@@ -310,11 +368,11 @@ const my_swiper_news = new Swiper('.news_container', {
 
 
 /* 실험! 0314 mob창 열기 */
-  // JavaScript 코드
+// JavaScript 코드
 const close_button = document.querySelector(".mob_close_button")
 const mob_wrap = document.querySelector(".mob_wrap")
 
-    document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     // 메뉴 아이콘을 클릭했을 때의 동작 설정
     document.querySelector('.index_mob_menu').addEventListener('click', function () {
         // mob_wrap 요소에 show 클래스를 추가하여 보이게 만듬.
@@ -332,7 +390,7 @@ close_button.addEventListener("click", () => {
     mob_wrap.classList.remove("show");
 });
 
-function toggle_mob_wrap(){
+function toggle_mob_wrap() {
     document.querySelector(".mob_wrap").classList.toggle("show");
 }
 

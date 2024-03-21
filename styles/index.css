@@ -754,12 +754,19 @@ body {
     height: 16px;
 }
 
-.respon_menu_wrap main nav .respon_gnb li .respon_lnb {}
+/* mob 탭 */
+.respon_menu_wrap main nav .respon_gnb li .respon_lnb {
+    display: none; /* Hide initially */
+    transition: display 0.3s ease; /* transition 추가 */
+}
+.respon_lnb.active {
+    display: block; /* active 클래스 추가 */
+  }
+
 
 .respon_menu_wrap main nav .respon_gnb li .respon_lnb ul {}
 
 .respon_menu_wrap main nav .respon_gnb li .respon_lnb ul li {
-    display: none;
 }
 
 /* 하위 탭 */
