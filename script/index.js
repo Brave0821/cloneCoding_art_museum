@@ -7,14 +7,7 @@ window.addEventListener("scroll", function () {
 });
 
 /* 모바일 클릭 시 숨겨진 탭 열림-------------------------------------- */
-// Get all elements with class 'mob_plus_a'
-// const mobPlusAs = document.querySelectorAll('.mob_plus_a');
 
-// Loop through each element and attach click event listener
-/* mobPlusAs.forEach(mobPlusA => {
-    mobPlusA.addEventListener('click', toggleResponLnb);
-});
- */
 // Function to toggle respon_lnb visibility
 function toggleResponLnb(event) {
     // Find the closest respon_gnb_tab parent
@@ -23,17 +16,16 @@ function toggleResponLnb(event) {
     // Find the next sibling element with class 'respon_lnb'
     const responLnb = responGnbTab.nextElementSibling;
 
-    // Toggle the display style of responLnb
-    if (responLnb.style.display === 'none') {
+     // Toggle the display style of responLnb
+    if (responLnb.style.display === 'none' || responLnb.style.display === '') {
         responLnb.style.display = 'block';
-          // Change the image to minus-solid
-          event.target.querySelector('.mob_plus_img').src = "./images/icon/minus-solid.png";
+        // Change the image to minus-solid
+        responGnbTab.querySelector('.mob_plus_img').src = "./images/icon/minus-solid.png";
     } else {
         responLnb.style.display = 'none';
-         // Change the image to plus-solid
-         event.target.querySelector('.mob_plus_img').src = "./images/icon/plus-solid.png";
+        // Change the image to plus-solid
+        responGnbTab.querySelector('.mob_plus_img').src = "./images/icon/plus-solid.png";
     }
-
 }
 
 // Get all elements with class 'mob_plus_a'
@@ -44,34 +36,9 @@ mobPlusAs.forEach(mobPlusA => {
     mobPlusA.addEventListener('click', toggleResponLnb);
 });
 
-// /* 부드럽게 열림. */
-// // Function to toggle respon_lnb visibility
-// function toggleResponLnb(event) {
-//     // Find the closest respon_gnb_tab parent
-//     const responGnbTab = event.target.closest('.respon_gnb_tab');
-
-//     // Find the next sibling element with class 'respon_lnb'
-//     const responLnb = responGnbTab.nextElementSibling;
-
-//     // Toggle the active class of responLnb
-//     responLnb.classList.toggle('active');
-// }
-
 /* 모바일 클릭 시 숨겨진 탭 열림----------------------------------------- */
 
-/* 
-const display_lnb = document.querySelector(".display_lnb")
-const art_view_a = document.querySelector(".art_view_a") */
 
-// /* 일단 보류 0313 */
-// /* 처음 들어올 때 글자 컬러 전시에 전체 #000 */
-// window.onload = function() {
-//     // 페이지로 처음 들어올 떄  .lnb 요소를 숨김
-//     document.querySelectorAll('.lnb').forEach(lnb => lnb.style.display = 'none');
-//    /*  art_view_a_black.style.color = "#000"; */
-//    /*  art_view_a.style.color = "#000"; */
-
-// };
 
 /* 전시 탭 변환 */
 /* 전체 */
@@ -81,10 +48,6 @@ const display_tap_btn3 = document.querySelector(".display_tap_btn3")
 const display_tap_btn4 = document.querySelector(".display_tap_btn4")
 const display_tap_btn5 = document.querySelector(".display_tap_btn5")
 const display_tap_btn6 = document.querySelector(".display_tap_btn6")
-
-
-
-
 
 
 /* 각각 탭 스와이퍼 컨테이너 컨테이너 */
