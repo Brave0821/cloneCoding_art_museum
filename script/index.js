@@ -8,13 +8,13 @@ window.addEventListener("scroll", function () {
 
 /* 모바일 클릭 시 숨겨진 탭 열림-------------------------------------- */
 // Get all elements with class 'mob_plus_a'
-const mobPlusAs = document.querySelectorAll('.mob_plus_a');
+// const mobPlusAs = document.querySelectorAll('.mob_plus_a');
 
 // Loop through each element and attach click event listener
-mobPlusAs.forEach(mobPlusA => {
+/* mobPlusAs.forEach(mobPlusA => {
     mobPlusA.addEventListener('click', toggleResponLnb);
 });
-
+ */
 // Function to toggle respon_lnb visibility
 function toggleResponLnb(event) {
     // Find the closest respon_gnb_tab parent
@@ -26,12 +26,23 @@ function toggleResponLnb(event) {
     // Toggle the display style of responLnb
     if (responLnb.style.display === 'none') {
         responLnb.style.display = 'block';
+          // Change the image to minus-solid
+          event.target.querySelector('.mob_plus_img').src = "./images/icon/minus-solid.png";
     } else {
         responLnb.style.display = 'none';
+         // Change the image to plus-solid
+         event.target.querySelector('.mob_plus_img').src = "./images/icon/plus-solid.png";
     }
 
 }
 
+// Get all elements with class 'mob_plus_a'
+const mobPlusAs = document.querySelectorAll('.mob_plus_a');
+
+// Loop through each element and attach click event listener
+mobPlusAs.forEach(mobPlusA => {
+    mobPlusA.addEventListener('click', toggleResponLnb);
+});
 
 // /* 부드럽게 열림. */
 // // Function to toggle respon_lnb visibility
