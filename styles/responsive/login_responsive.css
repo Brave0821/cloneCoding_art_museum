@@ -3,7 +3,17 @@
     .wrap footer .footer_wrap .footer_content .right_content .right_menus {
         align-items: center;
     }
+
+   /*  .wrap header .header_first_top h1 a img {
+        display: none;
+    } */
+
 }
+
+/* 애가 일반용 로고 */
+/* .wrap header .header_first_top .index_logo {
+    display: none;
+} */
 
 /* mob_menu 탭 */
 @media screen and (max-width:940px) {
