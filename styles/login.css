@@ -27,6 +27,12 @@
 .wrap .login_title_wrap .login_title_container .login_title .login_title_right {}
 /* 로그인 밑 긴 글 */
 
+/* 전체화면에서 모바일 로그 및 목록 숨김. */
+.mob_mob_title {
+    display: none;
+}
+
+
 /* 이 밑부터 center_login_wrap 추가 */
 
 .wrap .login_title_wrap .login_title_container .center_login_wrap .login_span {

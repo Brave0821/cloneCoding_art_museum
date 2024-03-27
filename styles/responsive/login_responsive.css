@@ -29,4 +29,17 @@
     footer .respon_below_menu{
         display: flex;
     }
+    .mob_mob_title {
+        width: 100%;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    .index_mob_menu{
+        margin-top: 20px;
+    }
+    .index_logo a img{
+        display: none;
+    }
+    
 }
